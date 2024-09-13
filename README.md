@@ -7,9 +7,6 @@
 <div align="center">
 Client Source Tree for D3 Techno-Management event by the Tech society IIIT-Bh.
 
-<a href="https://github.com/p-society/coupon-aggregator-client/releases/download/v1.0.0-alpha/app-release.apk">Download Android App</a>
-
-
 <h3>P-Society Handles</h3>
 <h3 align="center">
 	<a href="https://dev-psoc.netlify.app/">Website</a>
