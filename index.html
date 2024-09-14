@@ -1,13 +1,543 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#000000">
+    <meta property="og:type" content="website" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>D3 - IIIT Bhubaneswar</title>
+    <meta itemprop="name" content="D3 - IIIT Bhubaneswar" />
+    <meta property="og:title" content="D3 - IIIT Bhubaneswar" />
+    <meta name="twitter:title" content="D3 - IIIT Bhubaneswar">
+
+    <meta itemprop="image" content="https://d3nov.netlify.app/assets/thumb1182022.jpg" />
+    <meta name="twitter:image" content="https://d3nov.netlify.app/assets/thumb1182022.jpg" />
+    <meta name="twitter:image:src" content="https://d3nov.netlify.app/assets/thumb1182022.jpg">
+    <meta property="og:image" content="https://d3nov.netlify.app/assets/thumb1182022.jpg">
+
+    <link rel="icon" href="https://d3nov.netlify.app/assets/icon.png" />
+    <link rel="apple-touch-icon" href="https://d3nov.netlify.app/assets/icon.png" />
+    <link rel="shortcut icon" href="https://d3nov.netlify.app/assets/icon.png" type="image/x-icon">
+
+    <meta itemprop="description"
+        content="Techno-Management event bought to you by the Tech society IIIT-Bh in collaboration with E-Cell IIIT-Bh. Get ready for 4 days of amazing events, challenges, prizes, and learning." />
+    <meta property="og:description"
+        content="Techno-Management event bought to you by the Tech society IIIT-Bh in collaboration with E-Cell IIIT-Bh. Get ready for 4 days of amazing events, challenges, prizes, and learning." />
+    <meta name="twitter:description"
+        content="Techno-Management event bought to you by the Tech society IIIT-Bh in collaboration with E-Cell IIIT-Bh. Get ready for 4 days of amazing events, challenges, prizes, and learning." />
+    <meta name="description"
+        content="Techno-Management event bought to you by the Tech society IIIT-Bh in collaboration with E-Cell IIIT-Bh. Get ready for 4 days of amazing events, challenges, prizes, and learning.">
+
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://unpkg.com">
+    <link rel="preconnect" href="https://kit.fontawesome.com">
+
+    <script src="https://kit.fontawesome.com/20aa92e9f6.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@next/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/aos@next/dist/aos.js"></script>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@1.6.0/dist/lottie-player.js"></script>
+</head>
+
+<body>
+    <div id="background"></div>
+    <div id="loader_block">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <section id="header">
+        <div id="logoLottie">
+            <lottie-player src="./assets/logo.json" style="width: 100%; height: 100%" background="transparent" loop
+                autoplay>
+            </lottie-player>
+        </div>
+
+        <div data-aos="fade-up">
+            <div class="headline">Greetings folks!</div>
+            <div id="headerDesc">Tighten up your seat belts as we introduce to you the Techno-Management event bought to
+                you by the Tech
+                society IIIT-Bh in collaboration with E-Cell IIIT-Bh. We bring to you 3 days packed
+                with amazing events, fun challenges, awesome prizes, and lots of learning.</div>
+            <a href="./assets/d3brochure.pdf" target="_blank">
+                <div id="register">
+                    Download the Official Brochure
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="presentedBy">
+        <div class="headline">Presented to you by</div>
+        <div id="presentedImgs">
+            <!-- <img data-aos="fade-up" data-aos-delay="0" src="./assets/iiitbbsr.png"> -->
+            <img data-aos="fade-up" data-aos-delay="0" src="./assets/techSoc.png">
+            <img data-aos="fade-up" data-aos-delay="400" src="./assets/ecell.jpg">
+        </div>
+        <span class="curve"></span>
+    </section>
+
+    <section id="rewards">
+        <div id="rewardAmt">
+            <div class="headline" data-aos="fade-up">Prizes worth</div>
+            <div class="headline" data-aos="flip-down" data-aos-delay="600">₹2 Lakh+</div>
+        </div>
+        <div>
+            <lottie-player src="./assets/reward.json" style="width: 100%; height: 100%" background="transparent" loop
+                autoplay>
+            </lottie-player>
+        </div>
+    </section>
+
+    <section class="events">
+        <div class="headline" data-aos="fade-down">6th Oct</div>
+
+        <div class="eventCard">
+            <div>
+                <div class="eventHead">Opening Ceremony</div>
+                <div class="eventDesc">The opening ceremony of the D3 fest is where we will brief you and introduce you to the upcoming events. A lot of exciting announcements will also be made at the opening ceremony.</div>
+                <div class="eventTime">
+                    <i class="fa-solid fa-clock fa-fw"></i>
+                    5:00 pm - 07:00 pm
+                </div>
+                <div class="eventLocation">
+                    <i class="fa-solid fa-location-dot fa-fw"></i>
+                    <span>CG-02</span>
+                </div>
+            </div>
+            <div data-aos="flip-down" class="eventImg">
+                <img src="./assets/opening.jpg">
+            </div>
+        </div>
+
+        <div class="eventCard ">
+            <div>
+                <div class="eventHead">Geek-O-Thon</div>
+                <div class="eventDesc">An innovation driven hackathon aimed at testing your group and individual working skills and creativity. The first round will be a thirteen hour long offline coding event where the participants will be evaluated from time to time by the judges.</div>
+                <div class="eventTime">
+                    <i class="fa-solid fa-clock fa-fw"></i>
+                    07:00 pm - 08:00 am
+                </div>
+                <div class="eventLocation">
+                    <i class="fa-solid fa-location-dot fa-fw"></i>
+                    <span>T&P Cell</span>
+                </div>
+                <a href="https://practice.geeksforgeeks.org/hackathon/geek-o-thon#participants" target="_blank">
+                    <div class="readMore">
+                        Register NOW !
+                    </div>
+                </a>
+            </div>
+        <div data-aos="flip-left" class="eventContestFlippingCardParent">
+            <div  class="eventContestFlippingCard">
+                   <div class="eventCardFront"><img src="./assets/geek-o-thon.png"></div>
+                   <div class="eventCardBack">
+                    <div><h3>Prizes Worth</h3> </div>
+                    <div><h1> 🏆 INR 15K 🏆</h1></div>
+                    
+                   </div>
+
+            </div>
+        </div>
+            
+        </div>
+
+        <div class="eventCard" id="hackathonCard">
+            <div>
+                <div class="eventHead">AI-ML Hackthon</div>
+                <div class="eventDesc">Inviting all the machine learning enthusiasts to compete in this amazing event which tests them and brings the best out of them. The first round, which will be of 13 hours, will be for coding and evaluation by the judges.</div>
+                <div class="eventTime">
+                    <i class="fa-solid fa-clock fa-fw"></i>
+                    07:00 pm - 08:00 am
+                </div>
+                <div class="eventLocation">
+                    <i class="fa-solid fa-location-dot fa-fw"></i>
+                    <span>T&P Cell</span>
+                </div>
+                <a href="https://unstop.com/hackathons/ai-ml-hackathon-international-institute-of-information-technology-iiit-bhubaneswar-756119" target="_blank">
+                    <div class="readMore">
+                        Register Now !
+                    </div>
+                </a>
+            </div>
+
+            <div data-aos="flip-left" class="eventContestFlippingCardParent">
+                <div  class="eventContestFlippingCard">
+                       <div class="eventCardFront"><img src="./assets/aiml.png"></div>
+                       <div class="eventCardBack">
+                        <div><h3>Prizes Worth</h3> </div>
+                        <div><h1> 🏆 INR 12K 🏆</h1></div>
+                        
+                       </div>
+    
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="events eventsNext eventsAlt">
+        <div class="headline" data-aos="fade-down">7th Oct</div>
+
+        <div class="eventCard">
+            <div>
+                <div class="eventHead">Case or Face</br>Round-I</div>
+                <div class="eventDesc">Participants are given a real-life situation of a company where they have to identify the problem, the solution of the company that failed and a better solution from their side to tackle the situation. 
+                </div>
+                <div class="eventTime">
+                    <i class="fa-solid fa-clock fa-fw"></i>
+                    10:00 am - 01:00 pm
+                </div>
+                <div class="eventLocation">
+                    <i class="fa-solid fa-location-dot fa-fw"></i>
+                    <span>AG-01</span>
+                </div>
+                <a href="https://unstop.com/competitions/case-or-face-case-study-challenge-international-institute-of-information-technology-iiit-bhubaneswar-757161">
+                    <div class="readMore">
+                        Register for the Event
+                    </div>
+                </a>
+            </div>
+            <!-- <div data-aos="flip-down" class="eventImg">
+                <img src="./assets/case-study.png">
+            </div> -->
+
+            <div data-aos="flip-left" class="eventContestFlippingCardParent">
+                <div  class="eventContestFlippingCard">
+                       <div class="eventCardFront"><img src="./assets/case-study.png"></div>
+                       <div class="eventCardBack">
+                        <div><h3>Prizes Worth</h3> </div>
+                        <div><h1> 🏆 INR 5K 🏆</h1></div>
+                        
+                       </div>
+    
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="eventCard">
+            <div>
+                <div class="eventHead">CyberHunt</div>
+                <div class="eventDesc">Cyberhunt is a fusion of the conventional treasure hunt along with a twist of hacking where you need to find various flags hidden all over the internet using various hacking techniques.</div>
+                <div class="eventTime">
+                    <i class="fa-solid fa-clock fa-fw"></i>
+                    1:00 pm - 5:00 pm
+                </div>
+                <div class="eventLocation">
+                    <i class="fa-solid fa-location-dot fa-fw"></i>
+                    <span>AG-02</span>
+                </div>
+                <a href="https://forms.gle/yxVm9gqeAbNEdn1PA" target="_blank">
+                    <div class="readMore">
+                        Register for the Event
+                    </div>
+                </a>
+            </div>
+            <div data-aos="flip-left" class="eventContestFlippingCardParent">
+                <div  class="eventContestFlippingCard">
+                       <div class="eventCardFront"><img src="./assets/cyberhunt.png"></div>
+                       <div class="eventCardBack">
+                        <div><h3>Prizes Worth</h3> </div>
+                        <div><h1> 🏆 INR 9K 🏆</h1></div>
+                        
+                       </div>
+    
+                </div>
+            </div>
+            
+            <!-- <div data-aos="flip-down" class="eventImg">
+                <img src="./assets/cyberhunt.png">
+            </div> -->
+        </div>
+        
+        <div class="eventCard">
+            <div>
+                <div class="eventHead">Case or Face</br>Round-II</div>
+                <div class="eventDesc">This is the round to be conducted for participants who qualified the Case or Face ROUND I</div>
+                <div class="eventTime">
+                    <i class="fa-solid fa-clock fa-fw"></i>
+                    5:00 pm - 8:00 pm
+                </div>
+                <div class="eventLocation">
+                    <i class="fa-solid fa-location-dot fa-fw"></i>
+                    <span>AG-01</span>
+                </div>
+            </div>
+
+            <div data-aos="flip-left" class="eventContestFlippingCardParent">
+                <div  class="eventContestFlippingCard">
+                       <div class="eventCardFront"><img src="./assets/case-study.png"></div>
+                       <div class="eventCardBack">
+                        <div><h3>Prizes Worth</h3> </div>
+                        <div><h1> 🏆 INR 5K 🏆</h1></div>
+                        
+                       </div>
+    
+                </div>
+            </div>
+            
+        </div>
+
+        
+
+        <div class="eventCard">
+            <div>
+                <div class="eventHead">Code Thru ++</div>
+                <div class="eventDesc">A two hour long coding contest where coders can show the prowess of their knowledge of data structure and algorithms while tackling an amazing set of coding based questions.</div>
+                <div class="eventTime">
+                    <i class="fa-solid fa-clock fa-fw"></i>
+                    5:00 pm - 8:00 pm
+                </div>
+                <div class="eventLocation">
+                    <i class="fa-solid fa-location-dot fa-fw"></i>
+                    <span>AG-02</span>
+                </div>
+                <a href="https://www.codingninjas.com/studio/events/codethru?utm_source=campus-ambassador&utm_medium=ET&utm_campaign=Cn15494">
+                    <div class="readMore">
+                        Register NOW !
+                    </div>
+                </a>
+            </div>
+            <div data-aos="flip-left" class="eventContestFlippingCardParent">
+                <div  class="eventContestFlippingCard">
+                       <div class="eventCardFront"><img src="./assets/codethru++.png"></div>
+                       <div class="eventCardBack">
+                        <div><h3>Prizes Worth</h3> </div>
+                        <div><h1> 🏆 INR 20K 🏆</h1></div>
+                        
+                       </div>
+    
+                </div>
+            </div>
+
+           
+        </div>
+
+        <div class="eventCard">
+            <div>
+                <div class="eventHead">Cryptoverse</div>
+                <div class="eventDesc">An event in collaboration with Stockgroww which aims to simulate real-life crypt trading. The team with the highest profit at the end wins.</div>
+                <div class="eventTime">
+                    <i class="fa-solid fa-clock fa-fw"></i>
+                    5:00 pm - 8:00 pm
+                </div>
+                <div class="eventLocation">
+                    <i class="fa-solid fa-location-dot fa-fw"></i>
+                    <span>AG-01</span>
+                </div>
+                <a href="https://unstop.com/p/cryptoverse-international-institute-of-information-technology-iiit-bhubaneswar-757887" target="_blank">
+                    <div class="readMore">
+                        Register for the event
+                    </div>
+                </a>
+            </div>
+            
+            <div data-aos="flip-left" class="eventContestFlippingCardParent">
+                <div  class="eventContestFlippingCard">
+                       <div class="eventCardFront"><img src="./assets/cryptoverse.png"></div>
+                       <div class="eventCardBack">
+                        <div><h3>Prizes Worth</h3> </div>
+                        <div><h1> 🏆 INR 10K 🏆</h1></div>
+                        
+                       </div>
+    
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="events eventsNext">
+        <div class="headline" data-aos="fade-down">8th Oct</div>
+
+        <div class="eventCard ">
+            <div>
+                <div class="eventHead">Geek-O-Thon FINAL</div>
+                <div class="eventDesc">In the final round, The teams will have to pitch their ideas and projects in front of the audience. The winners will also be announced and awarded based on how the project stands out from the rest.</div>
+                <div class="eventTime">
+                    <i class="fa-solid fa-clock fa-fw"></i>
+                    10:00 am - 1:00 pm
+                </div>
+                <div class="eventLocation">
+                    <i class="fa-solid fa-location-dot fa-fw"></i>
+                    <span>CG-02</span>
+                </div>
+            </div>
+            
+            <div data-aos="flip-left" class="eventContestFlippingCardParent">
+                <div  class="eventContestFlippingCard">
+                       <div class="eventCardFront"><img src="./assets/geek-o-thon.png"></div>
+                       <div class="eventCardBack">
+                        <div><h3>Prizes Worth</h3> </div>
+                        <div><h1> 🏆 INR 15K 🏆</h1></div>
+                        
+                       </div>
+    
+                </div>
+            </div>
+              
+
+
+        </div>
+
+        <div class="eventCard">
+            <div>
+                <div class="eventHead">AI-ML Hackathon FINAL</div>
+                <div class="eventDesc">In this round the teams will have to pitch their ideas and projects in front of the audience where the winners will be determined and awarded for their efforts in making a project that stands out from the rest.</div>
+                <div class="eventTime">
+                    <i class="fa-solid fa-clock fa-fw"></i>
+                    10:00 am - 1:00 pm
+                </div>
+                <div class="eventLocation">
+                    <i class="fa-solid fa-location-dot fa-fw"></i>
+                    <span>CG-02</span>
+                </div>
+            </div>
+            <div data-aos="flip-left" class="eventContestFlippingCardParent">
+                <div  class="eventContestFlippingCard">
+                       <div class="eventCardFront"><img src="./assets/aiml.png"></div>
+                       <div class="eventCardBack">
+                        <div><h3>Prizes Worth</h3> </div>
+                        <div><h1> 🏆 INR 12K 🏆</h1></div>
+                        
+                       </div>
+    
+                </div>
+            </div>
+        </div>
+
+        <div class="eventCard">
+            <div>
+                <div class="eventHead">Mock Shark-Tank</div>
+                <div class="eventDesc">Shark Tank is a high-energy, pitch-style competition that brings together the brightest and most creative college students to showcase their entrepreneurial ideas to a panel of "sharks" – successful business moguls and investors who are eager to sink their teeth into the next big thing. 
+                </div>
+                <div class="eventTime">
+                    <i class="fa-solid fa-clock fa-fw"></i>
+                    02:00 pm - 04:00 pm
+                </div>
+                <div class="eventLocation">
+                    <i class="fa-solid fa-location-dot fa-fw"></i>
+                    <span>CG-02</span>
+                </div>
+                <a href="https://unstop.com/p/shark-tank-ultimate-university-showdown-international-institute-of-information-technology-iiit-bhubaneswar-759494" target="_blank">
+                    <div class="readMore">
+                        Register for the Event
+                    </div>
+                </a>
+            </div>
+            <div data-aos="flip-left" class="eventContestFlippingCardParent">
+                <div  class="eventContestFlippingCard">
+                       <div class="eventCardFront"><img src="./assets/mock-shark-tank.png"></div>
+                       <div class="eventCardBack">
+                        <div><h3>Prizes Worth</h3> </div>
+                        <div><h1> 🏆 INR 9K 🏆</h1></div>
+                        
+                       </div>
+    
+                </div>
+            </div>
+           
+        </div>
+
+        <div class="eventCard">
+            <div>
+                <div class="eventHead">Ignite Insights</div>
+                <div class="eventDesc">A enthralling session where we will dive deep into the realm of technology and management with some notable and well known speakers who will not only share their insights but clear all your doubts and queries on the same.</div>
+                <div class="eventTime">
+                    <i class="fa-solid fa-clock fa-fw"></i>
+                    4:00 pm - 6:00 pm
+                </div>
+                <div class="eventLocation">
+                    <i class="fa-solid fa-location-dot fa-fw"></i>
+                    <span>CG-02</span>
+                </div>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScVtz5FjjfQzKBTD4mckScUD9xFSGCqika4EgHJX13A9xKmlw/viewform?usp=sharing" target="_blank">
+                    <div class="readMore">
+                        Register for the event
+                    </div>
+                </a>
+            </div>
+            
+            <div data-aos="flip-left" class="eventContestFlippingCardParent">
+                <div data-aos="flip-down" class="eventImg">
+                    <img src="./assets/ignite-insights.png">
+                </div>
+            </div>
+
+        </div>
+
+        
+
+        <div class="eventCard">
+            <div>
+                <div class="eventHead">Entertainment Night</div>
+                <div class="eventDesc">Get ready to immerse yourself in a captivating fusion of rhythm, melody, and movement at our upcoming Cultural Entertainment Night. This unforgettable evening promises to be a celebration of diverse cultures through the universal languages of music and dance. Join us for an enchanting experience that will transport you to different corners of the world</div>
+                <div class="eventTime">
+                    <i class="fa-solid fa-clock fa-fw"></i>
+                    6:00 pm - 8:00 pm
+                </div>
+                <div class="eventLocation">
+                    <i class="fa-solid fa-location-dot fa-fw"></i>
+                    <span>Open Space</span>
+                </div>
+            </div>
+            <div data-aos="flip-down" class="eventImg">
+                <img src="./assets/entertainment-night.png">
+            </div>
+        </div>
+
+        <div id="gototop"><i class="fa-solid fa-circle-arrow-up"></i> Move to
+            top</div>
+    </section>
+    <footer>
+        <div class="footer-logo" id="logoLottie">
+            <lottie-player id="d3-logo-footer" src="./assets/logo.json" style="width: 50%; height: 100%; margin-left: auto; margin-right: auto;" background="transparent" loop
+                autoplay>
+            </lottie-player>
+        </div>
+        <div class="contact-details">
+            <h3>Convenor</h3>
+            <p>Aastha Nayak</p>
+            <p>+91-9337334853</p>
+            <p>d3@iiit-bh.ac.in</p>
+        </div>
+        <div class="contact-details">
+            <h3>Tech-Coordinator</h3>
+            <p>Swoyam Siddharth Nayak</p>
+            <p>+91-7608086659</p>
+            <p>tech-society@iiit-bh.ac.in</p>
+        </div>
+        <div class="contact-details">
+            <h3>Management-Coordinator</h3>
+            <p>Prince Pious Omm Prakash</p>
+            <p>+91-9827117988</p>
+            <p>ecell@iiit-bh.ac.in</p>
+        </div>
+        <div class="contact-details">
+            <h3>Outreach Head</h3>
+            <p>Ayush Kumar</p>
+            <p>+91-9060445435</p>
+            <p>d3@iiit-bh.ac.in</p>
+        </div>
+    </footer>
+
+    
+</body>
+
 </html>

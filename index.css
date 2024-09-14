@@ -1,0 +1,612 @@
+:root {
+    --blue: #9ACDFF;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    color: white;
+    font-family: 'Montserrat';
+    margin-top: 6rem;
+    margin-bottom: 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#background {
+    background: #001325;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translateY(-6rem);
+    height: 110vh;
+    width: 100vw;
+    position: fixed;
+    z-index: -5;
+}
+
+/* Loading screen start */
+
+#loader_block {
+    background: #001325;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    z-index: 100000;
+    transition: opacity 300ms ease-in-out;
+}
+
+#loader_block span {
+    border-radius: 50%;
+    border: 6px solid var(--blue);
+    margin: 10px;
+    opacity: 0.4;
+}
+
+#loader_block span:nth-child(1) {
+    animation: preloader 1s ease-in-out alternate infinite;
+}
+
+#loader_block span:nth-child(2) {
+    animation: preloader 1s ease-in-out alternate .3s infinite;
+}
+
+#loader_block span:nth-child(3) {
+    animation: preloader 1s ease-in-out alternate .6s infinite;
+}
+
+@keyframes preloader {
+    100% {
+        transform: scale(2);
+        opacity: 1;
+    }
+}
+
+/* Loading screen end */
+
+
+/* Header start */
+
+#header {
+    display: flex;
+    gap: 2rem;
+}
+
+.headline {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--blue);
+    background-image: linear-gradient(45deg, #c4e0fc, #60d7ef);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+#headerDesc {
+    max-width: 30rem;
+    line-height: 1.7rem;
+}
+
+#logoLottie {
+    width: 35rem;
+    display: block;
+}
+
+#register {
+    border: 0.2rem solid #96DCF6;
+    padding: 0.8rem 1.2rem;
+    border-radius: 0.7rem;
+    width: fit-content;
+    margin-top: 1.7rem;
+    font-weight: 700;
+    transition: 0.4s;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+#register:hover {
+    background: #96DCF6;
+    color: #05223f;
+}
+
+@media (max-width:1000px) {
+    #header {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #headerDesc {
+        max-width: unset;
+        width: 90vw;
+    }
+
+    #logoLottie {
+        width: 92vw;
+    }
+
+    #register {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Header end */
+
+/* Presented start */
+
+#presentedBy {
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+    background: #103450;
+}
+
+#presentedImgs img {
+    width: 7rem;
+    border-radius: 50%;
+    margin: 0 0.5rem;
+    margin-top: 0.3rem;
+    filter: drop-shadow(white 0px 2px 2px) drop-shadow(white 0px 3px 3px);
+    border: 2px white solid;
+}
+
+@media (max-width:1000px) {
+    #presentedBy {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        background: radial-gradient(circle farthest-side, #143b58, #05223f);
+        text-align: center;
+    }
+
+    #presentedImgs {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 2rem;
+        margin-top: 1rem;
+    }
+
+    #presentedImgs img {
+        width: 40vw;
+    }
+}
+
+/* Presented end */
+
+/* Rewards start */
+
+#rewards {
+    margin-top: 6rem;
+    display: flex;
+    align-items: center;
+    text-align: end;
+}
+
+#rewardAmt>div:nth-of-type(1) {
+    background-image: linear-gradient(45deg, #7fbbf7, #3691dc);
+    margin-bottom: 0;
+    margin-top: 0.7rem;
+}
+
+#rewardAmt>div:nth-of-type(2) {
+    font-size: 5rem;
+    margin-top: -0.7rem;
+}
+
+@media (max-width:1000px) {
+    #rewards {
+        flex-direction: column-reverse;
+        text-align: left;
+        justify-content: center;
+    }
+}
+
+/* Rewards end */
+
+/* Events start */
+
+.events {
+    margin-top: 6rem;
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #103450;
+}
+
+.eventsAlt {
+    background: none;
+}
+
+.eventsNext {
+    margin-top: 0;
+}
+
+.events .headline {
+    margin-bottom: 2rem;
+}
+
+.eventCard {
+    background: linear-gradient(180deg, rgba(16, 52, 80, 0) 0%, #001325 100%);
+    border: 0.1rem solid #1a4565;
+    border-radius: 1rem;
+    padding: 1rem 5rem;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    text-align: start;
+    max-width: 48rem;
+    gap: 2rem;
+}
+
+.eventCard>div:first-of-type {
+    padding: 2rem 0;
+}
+
+.eventsAlt .eventCard {
+    background: linear-gradient(0deg, rgba(16, 52, 80, 0) 0%, #134164 100%);
+}
+
+.eventCard:nth-of-type(2n) {
+    flex-direction: row-reverse;
+}
+
+.eventHead {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--blue);
+    width: 22rem;
+    display: block;
+}
+
+.eventContestFlippingCardParent{
+    width:85rem;
+    height:21rem;
+}
+
+.eventContestFlippingCard{
+    width:100%;
+    height:100%;
+    position: relative;
+    transition: transform 1500ms;
+    background: transparent;
+    transform-style: preserve-3d;
+    
+}
+ 
+.eventContestFlippingCard:hover {
+    cursor: pointer;
+    transform: rotateY(180deg);
+
+
+}
+
+.eventContestFlippingCard img{
+    width: 100%;
+    height:100%;
+    border-radius: 1rem;
+    overflow: hidden;
+/* border: 0.1rem solid #1a4565; */
+    object-fit: conver;    
+    /* border-radius: 1rem; */
+    /* border: 0.1rem solid #1a4565;
+    margin: 1.5rem 0; */
+}
+
+.eventCardFront,.eventCardBack{
+height:100%;
+width:100%;
+position:absolute;
+backface-visibility: hidden;
+border-radius: 1rem;
+border: 0.1rem solid #1a4565;
+
+}
+
+.eventCardBack{
+    background-color: #032f50;
+    transform: rotateY(180deg) ;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    
+}
+
+.eventCardBack h1{
+    font-size: 1cqw;
+    font-weight: bold;
+    color:#f7f5f4;
+}
+
+.eventCardBack h1{
+    font-size: 2rem;
+    font-weight: bold;
+    color:#efb584;
+}
+
+
+
+.eventImg {
+    transition: all 300ms ease-in-out;
+}
+
+.eventImg img {
+    width: 20rem;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 1rem;
+    border: 0.1rem solid #1a4565;
+    margin: 1.5rem 0;
+}
+
+.eventCard:nth-of-type(odd):hover .eventImg {
+    transform: scale(103%) rotate(5deg);
+}
+
+.eventCard:nth-of-type(even):hover .eventImg {
+    transform: scale(103%) rotate(-5deg);
+}
+
+.events:last-of-type {
+    padding-bottom: 4rem;
+}
+
+.eventTime {
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+    margin-top: 1.7rem;
+    margin-bottom: 0.5rem;
+}
+
+.eventLocation {
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+.readMore {
+    border: 0.2rem solid #ffffff;
+    padding: 0.8rem 1.2rem;
+    border-radius: 0.7rem;
+    width: fit-content;
+    margin-top: 1.7rem;
+    font-weight: 700;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.readMore:hover {
+    background: white;
+    color: #05223f;
+}
+
+@media (max-width:1000px) {
+
+    .eventCard,
+    .eventCard:nth-of-type(2n) {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        max-width: calc(100vw - 6rem);
+        padding: 2rem;
+        padding-top: 1rem;
+        gap: 1rem;
+    }
+
+    .eventCard>div:first-of-type {
+        padding: 0;
+    }
+
+    .eventHead {
+        width: auto;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+
+
+    .eventContestFlippingCard{
+
+        width: calc(100vw - 6rem);
+        height: calc(100vh - 12rem);
+        aspect-ratio: 1;
+        margin: 1rem 0;
+
+    }
+
+
+    .eventImg img {
+        width: calc(100vw - 6rem);
+        aspect-ratio: 1;
+        margin: 1rem 0;
+    }
+}
+
+/* Events end */
+
+
+#gototop {
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    border: 0.1rem solid #32648a;
+    color: #32648a;
+    border-radius: 5rem;
+    padding: 1rem 1.5rem;
+    justify-self: center;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+#gototop:hover {
+    transform: scale(97%);
+    color: #1a4565;
+    border: 0.1rem solid #1a4565;
+}
+
+#gototop i {
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+}
+
+/* Modal start */
+
+.modal-window {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.25);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    color: black;
+}
+
+.modal-window:target {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-window>div {
+    width: calc(931px - 4em);
+    border-radius: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    background: white;
+    overflow: auto;
+    height: calc(100% - 7rem);
+    padding-top: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 0 1rem;
+}
+
+.modal-window>div::-webkit-scrollbar {
+    display: none;
+}
+
+.modal-close {
+    font-weight: 700;
+    line-height: 60px;
+    font-size: 90%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 100px;
+    text-decoration: none;
+}
+
+.modal-close:hover {
+    color: black;
+}
+
+.problem>div:nth-of-type(1) {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.problem>div:nth-of-type(2) {
+    margin-bottom: 1.5rem;
+}
+
+.problem ul {
+    padding-left: 0.9rem;
+}
+
+.problem li:not(:last-child) {
+    margin-bottom: 0.8rem;
+}
+
+@media (max-width:1000px) {
+    .modal-window>div {
+        max-width: unset;
+        width: calc(100vw - 6rem);
+    }
+}
+
+/* Modal end */
+
+footer {
+    width: 100%;
+    background-color: #051425;
+    color: #fff;
+    padding: 15px 0; /* Add padding from top and bottom */
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next row on small screens */
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+/* Style the logo */
+.footer-logo img {
+    width: 100px; /* Adjust the size as needed */
+    margin-bottom: 10px; /* Add spacing below the logo */
+}
+
+/* Style the contact details */
+.contact-details {
+    text-align: left;
+    margin: 0 20px 20px 20px; /* Add spacing on all sides of each contact block */
+    flex: 1; /* Distribute equal width to each contact block */
+}
+
+.contact-details h3 {
+    font-size: 16px;
+    padding-top: auto;
+    padding-bottom: auto;
+}
+
+.contact-details p {
+    margin: 5px 0;
+}
+
+/* Add media query for smaller screens */
+@media screen and (max-width: 768px) {
+    footer {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items vertically on smaller screens */
+    }
+
+    .contact-details {
+        text-align: center; /* Center text on smaller screens */
+    }
+}
+
+footer{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
