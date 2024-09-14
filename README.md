@@ -27,7 +27,7 @@ Client Source Tree for D3 Techno-Management event by the Tech society IIIT-Bh.
 <br/>
 
 
-### Current contributors <a name="Current contributors"></a>
+### Cur	rent contributors <a name="Current contributors"></a>
 
 <a href="https://github.com/p-society/d3-web/graphs/contributors">
   <img src="https://contributors-img.web.app/image?repo=p-society/d3-web" />
@@ -37,4 +37,4 @@ Made with [contributors-img](https://contributors-img.web.app).
 
 # License <a name="License"></a>
 
-GC-Server and GC-Client is licensed under [Apache License](https://github.com/p-society/d3-web/blob/master/LICENSE)
+D3-Web is licensed under [Apache License](https://github.com/p-society/d3-web/blob/master/LICENSE)
