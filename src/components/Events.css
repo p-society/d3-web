@@ -1,0 +1,58 @@
+/* src/components/EventCard.css */
+.event-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 5px;
+    margin: 0 auto;
+    max-width: 1200px; /* Adjust based on your design */
+    background-image: url('GYk0dkbWwAAeGAD.jpeg');
+    background-repeat: no-repeat; /* Prevents the image from repeating */  
+    background-size: cover; /* Makes sure the image covers the entire element */  
+    background-position: center; /* Centers the image */  
+}
+
+.event-card {
+    width: 100%;
+    max-width: 400px; /* Adjust based on your design */
+    border: 1px solid #ccc;
+    background-color: #000;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    flex: 1 1 calc(50% - 20px); /* This allows two cards side by side with gap */
+    min-width: 300px; /* Ensures cards don't get too small */
+}
+
+.event-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.event-image-container {
+    overflow: hidden;
+}
+
+.event-image {
+    width: 100%;
+    height: 200px; /* Fixed height for consistency */
+    object-fit: cover; /* Ensures image covers area without distortion */
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover .event-image {
+    transform: scale(1.1);
+}
+
+.event-content {
+    padding: 16px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .event-card {
+        flex: 1 1 100%; /* Full width on smaller screens */
+    }
+}
