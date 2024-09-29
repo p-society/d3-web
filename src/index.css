@@ -66,3 +66,27 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+@font-face {
+  font-family: 'MINECRAFTER';
+  src: url('/fonts/Minecrafter_Reg.ttf') format('truetype'); 
+}
+
+body {
+  font-family: 'MINECRAFTER';
+}
+
+
+@media (max-width: 412px), (max-height: 915px) {
+  .message-label {
+      font-size: 20px;
+      text-align: center;
+  }
+}
+.message-label {
+  font-size: 23px; /* Default font size */
+  word-wrap: break-word; /* Allow breaking words */
+  overflow-wrap: break-word; /* Support for modern browsers */
+  white-space: normal; /* Allow text to wrap */
+  text-align: center; /* Center align text */
+}
