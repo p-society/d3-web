@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* body, html { */
+/*   overflow-x: hidden; */
+/*   background-image: 'assets/events_bg.png' */
+/* } */
+
+#root {
+  width: 100%;
+}
+.app-container {
+  padding: 20px;
+  background-image: url('../assets/events_bg.png');
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+
+.header-container {
+  margin-bottom: 20px;
+}
+
+.main-title {
+  font-size: 4.5rem;
+  font-family: 'Minecrafter Alt';
+  font-weight: 20;
+  margin-bottom: 0.5rem;
+}
+
+.sub-title {
+  font-size: 1rem;
+  font-family: 'Minecrafter Alt';
+  color: #666;
+  margin-bottom: 1rem;
+}

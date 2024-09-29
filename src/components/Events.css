@@ -51,6 +51,7 @@
     left: 0;
     bottom: 0;
     height: 50%;
+    font-size: 0.8rem;
     background-color: rgba(0, 0, 0, 0.7); /* Translucent black */
     color: white;
     width: 100%;
@@ -58,8 +59,13 @@
     opacity: 0;
     transition: opacity 0.3s ease;
     overflow: hidden;
+    scrollbar-width: none;
     display: flex;
     flex-direction: column;
+}
+.event-description::-webkit-scrollbar{
+    display: none;
+    scrollbar-width: none;
 }
 .event-card:hover .event-content {
   opacity: 1;
@@ -70,7 +76,7 @@
 }
 .event-description{
     height: 100px;
-    overflow-y: auto;
+    overflow-y: hidden;
 }
 
 /* Media query for smaller screens */
@@ -78,4 +84,8 @@
     .event-card {
         flex: 1 1 100%; /* Full width on smaller screens */
     }
+    .event-card:hover .event-content {
+        opacity: 1;
+    }
 }
+

@@ -3,16 +3,14 @@ import React, {useRef,useEffect, useState} from 'react';
 import './Events.css'; // Import the CSS file for styling
 
 const EventCard = ({ title, image, description }) => {
-     const descriptionRef = useRef(null);
+    const descriptionRef = useRef(null);
     const [isHovering, setIsHovering] = useState(false);
     const scrollInterval = useRef(null);
 
     useEffect(() => {
         if (isHovering) {
-            console.log('start scrolling');
             startScrolling();
         } else {
-            console.log('stop scrolling');
             stopScrolling();
         }
 
@@ -30,7 +28,7 @@ const EventCard = ({ title, image, description }) => {
                 scrollInterval.current = setInterval(() => {
                     scrollTop += 1;
                     if (scrollTop >= scrollHeight - clientHeight) {
-                        scrollTop = 0;
+                        setIsHovering(false)
                     }
                     element.scrollTop = scrollTop;
                 }, 30);
@@ -42,9 +40,6 @@ const EventCard = ({ title, image, description }) => {
         if (scrollInterval.current) {
             clearInterval(scrollInterval.current);
             scrollInterval.current = null;
-        }
-        if (descriptionRef.current) {
-            descriptionRef.current.scrollTop = 0;
         }
     };
     return (
