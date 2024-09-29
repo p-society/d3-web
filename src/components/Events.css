@@ -6,11 +6,7 @@
     gap: 20px;
     padding: 5px;
     margin: 0 auto;
-    max-width: 1200px; /* Adjust based on your design */
-    background-image: url('GYk0dkbWwAAeGAD.jpeg');
-    background-repeat: no-repeat; /* Prevents the image from repeating */  
-    background-size: cover; /* Makes sure the image covers the entire element */  
-    background-position: center; /* Centers the image */  
+    width: 100%; /* Adjust based on your design */
 }
 
 .event-card {
@@ -18,12 +14,13 @@
     max-width: 400px; /* Adjust based on your design */
     border: 1px solid #ccc;
     background-color: #000;
-    border-radius: 8px;
+    border-radius: 2px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
     flex: 1 1 calc(50% - 20px); /* This allows two cards side by side with gap */
     min-width: 300px; /* Ensures cards don't get too small */
+    position: relative;
 }
 
 .event-card:hover {
@@ -31,9 +28,9 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
-.event-image-container {
-    overflow: hidden;
-}
+/* .event-image-container { */
+/*     overflow: hidden; */
+/* } */
 
 .event-image {
     width: 100%;
@@ -47,7 +44,33 @@
 }
 
 .event-content {
+    /* padding: 16px; */
+    /* background-color:greenyellow ; */
+    /* opacity: 0.55; */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.7); /* Translucent black */
+    color: white;
+    width: 100%;
     padding: 16px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.event-card:hover .event-content {
+  opacity: 1;
+}
+.event-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.event-description{
+    height: 100px;
+    overflow-y: auto;
 }
 
 /* Media query for smaller screens */

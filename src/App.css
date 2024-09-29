@@ -1,42 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html {
+  overflow-x: hidden;
+  background-image: 'assets/events_bg.png'
+}
+
 #root {
-  max-width: 1280px;
+  width: 100%;
+  background-image: 'assets/events_bg.png'
+}
+.app-container {
+  padding: 20px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  background-image: 'src/events_bg.png'
+  /* background-color: yellowgreen; */
+  /* background-repeat: no-repeat; /* Prevents the image from repeating */   
+  /* background-size: cover; /* Makes sure the image covers the entire element */   
+  /* background-position: center; /* Centers the image */   
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+.header-container {
+  margin-bottom: 20px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-title {
+  font-size: 4.5rem;
+  font-family: 'Minecrafter Alt';
+  font-weight: 20;
+  margin-bottom: 0.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.sub-title {
+  font-size: 1rem;
+  font-family: 'Minecrafter Alt';
+  color: #666;
+  margin-bottom: 1rem;
 }
