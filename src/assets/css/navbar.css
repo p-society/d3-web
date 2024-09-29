@@ -1,0 +1,19 @@
+.d3_navbar{
+    width: 100%;
+    padding: 1.6em 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.d3_navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.5em;
+}
+.d3_navbar a{
+    text-decoration: none;
+    font-size: 1.6em;
+    color: white;
+}
