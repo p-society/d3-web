@@ -2,6 +2,7 @@
 .event-card-container {
     display: flex;
     flex-wrap: wrap;
+    margin-left: 50px;
     justify-content: center;
     gap: 40px;
     padding: 5px;
@@ -90,14 +91,15 @@
     .event-card {
         flex: 1 1 100%; /* Full width on smaller screens */
         max-width: 100%;
+        margin-left: 50px;
     }
     .event-card:hover .event-content {
         opacity: 1;
     }
 }
-
-@media (min-width: 1024px) {
-    .event-card::before {
-        padding-top: 58.33%; /* 12:7 aspect ratio (7 / 12 ≈ 0.5833) */
-    }
+@media (max-width: 500px) {
+  .event-card {
+    margin-left: 30px; /* Mobile */
+  }
 }
+

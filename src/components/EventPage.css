@@ -14,8 +14,7 @@
 .app-container {
   padding: 20px;
   background-image: url('../assets/events_bg.png');
-  max-width: 100%;
-  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 
@@ -24,12 +23,14 @@
 }
 
 .main-title {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   font-family: 'Minecrafter Alt';
   color: white;
   opacity: 0.9;
   font-weight: 20;
   margin-bottom: 0.5rem;
+  margin-top: 3.5rem;
+  margin-left: 100px;
 }
 
 .sub-title {
@@ -37,4 +38,16 @@
   font-family: 'Minecrafter Alt';
   color: #666;
   margin-bottom: 1rem;
+  margin-left: 100px;
+}
+@media (max-width: 767px) {
+  .main-title {
+    margin-left: 50px; /* Tablet */
+  }
+}
+
+@media (max-width: 500px) {
+  .main-title {
+    margin-left: 30px; /* Mobile */
+  }
 }

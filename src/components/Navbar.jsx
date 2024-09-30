@@ -2,6 +2,16 @@ import React from 'react';
 import '../assets/css/navbar.css'
 
 function Navbar() {
+  const scrollToEvents = (e) =>{
+      print('click hua')
+      e.preventDefault();
+      const eventsSection = document.getElementById('app-container');
+      if (eventsSection) {
+      console.log('kuch toh hua')
+      eventsSection.scrollIntoView({ behavior: 'smooth' });
+      window.history.pushState(null, '', '#events');
+    }
+  }
   return (
     <nav className='d3_navbar'>
       <div class="mobile_navbar">
@@ -14,7 +24,7 @@ function Navbar() {
             </div>  
           <div class="menu-items">
             <li><a className='navbar_links' href="#landing">Home</a></li>
-            <li><a className='navbar_links' href="#events">Events</a></li>
+            <li><a className='navbar_links' href="#events" onClick={scrollToEvents}>Events</a></li>
             <li><a className='navbar_links' href="#register">Register</a></li>
             <li><a className='navbar_links' href="#contact">Contact</a></li>
           </div>
