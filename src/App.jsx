@@ -3,6 +3,8 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home.jsx';
 import Events from './pages/EventPage.jsx';
+import {SpriteAnimator} from 'react-sprite-animator';
+
 
 const App = () => {
   return (

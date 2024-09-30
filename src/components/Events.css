@@ -3,29 +3,36 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
     padding: 5px;
     margin: 0 auto;
     width: 100%; /* Adjust based on your design */
+    max-width: 1200px;
 }
 
 .event-card {
     width: 100%;
-    max-width: 400px; /* Adjust based on your design */
-    border: 1px solid #ccc;
+    max-width: calc(50% - 20px);
+    /* border: 1px solid #ccc; */
     background-color: #000;
-    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
     overflow: hidden;
+    box-sizing:border-box ;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
     flex: 1 1 calc(50% - 20px); /* This allows two cards side by side with gap */
     min-width: 300px; /* Ensures cards don't get too small */
     position: relative;
 }
+.event-card::before {
+    display: block;
+    padding-top: 38.33%; /* 12:7 aspect ratio (7 / 12 ≈ 0.5833) */
+}
 
 .event-card:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.6);
 }
 
 /* .event-image-container { */
@@ -34,7 +41,6 @@
 
 .event-image {
     width: 100%;
-    height: 200px; /* Fixed height for consistency */
     object-fit: cover; /* Ensures image covers area without distortion */
     transition: transform 0.3s ease;
 }
@@ -83,9 +89,15 @@
 @media (max-width: 768px) {
     .event-card {
         flex: 1 1 100%; /* Full width on smaller screens */
+        max-width: 100%;
     }
     .event-card:hover .event-content {
         opacity: 1;
     }
 }
 
+@media (min-width: 1024px) {
+    .event-card::before {
+        padding-top: 58.33%; /* 12:7 aspect ratio (7 / 12 ≈ 0.5833) */
+    }
+}

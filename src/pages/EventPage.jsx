@@ -1,10 +1,8 @@
-import { useState } from 'react'
+import React, { useState , useRef} from 'react'
 import  EventCard from '../components/Events'
 import './EventPage.css'
 
 function EventPage() {
-  const [count, setCount] = useState(0)
-
   return (
       <div className="app-container">
       <div className="header-container">

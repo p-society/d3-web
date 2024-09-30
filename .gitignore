@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+src/assets/fire_sprite.png
+src/assets/spritesheet.svg
+src/assets/spritesheet2.png
+src/components/Enz4qz.png
