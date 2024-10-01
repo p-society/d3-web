@@ -35,7 +35,7 @@ app.post('/send', async(req, res)=>{
       })
     const info = {
         from : email,
-        to:process.env.EMAIL,
+        to: process.env.RECIPIENT_EMAIL,
         subject: subject,
         text:message,
         html: `<p>${message}</p>`
