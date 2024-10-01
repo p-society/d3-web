@@ -9,12 +9,30 @@ const ContactUs = () => {
     const [name, setname] = useState("");
     const [email, setemail] = useState("");
 
-    const handlesubmit = (e) => {
+    const handlesubmit = async(e) => {
         e.preventDefault();
         const formData = {
             subject, name, email, message
         }
         console.table(formData)
+        try {
+            const res = await fetch('http://localhost:8000/send', {
+                method: 'POST', 
+                headers: {
+                    'Content-Type': 'application/json', 
+                },
+                body: JSON.stringify(formData)
+            });
+            
+            const result = await res.json();
+            if(result.success){
+                console.log(result.message);
+            }else{
+                console.log(result.message)
+            }
+        } catch (error) {
+            console.log(error)
+        }
     }
     const backgroundStyle = {
         backgroundImage: `url(${bgImage})`,
@@ -114,7 +132,7 @@ const ContactUs = () => {
                                 <input required value={email} type='email' style={{ border: 'none', background: 'none' }} onChange={(e) => setemail(e.target.value)} />
                             </div>
                         </div>
-                        <button type='submit'>SEND</button>
+                        <button type='submit' style={{marginTop:'20px',width:'100%', background:'none'}}><p style={{fontSize:'23px'}}>SEND</p></button>
                     </form>
                 </div>
             </div>
