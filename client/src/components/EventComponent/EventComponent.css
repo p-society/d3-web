@@ -1,0 +1,57 @@
+.outer-border{
+    display:flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top:5%;
+    margin-bottom:5%;
+    color:white;
+}
+.p{
+    padding:0px;
+    margin:0px;
+    border:0px;
+}
+.Event{
+    font-size: 35px;
+
+}
+.Details{
+    font-size:25px
+}
+.Register{
+    font-size:25px;
+    position: relative;
+    top:35px;
+    color:white;
+}
+@media (max-width:747px){
+    .Event{
+        font-size: 25px;
+    
+    }
+    .Details{
+        font-size:20px
+    }
+    .Register{
+        font-size:20px;
+        position: relative;
+        top:30px;
+        color:white;
+    }
+}
+@media (max-width:500px){
+    .Event{
+        font-size: 22px;
+    
+    }
+    .Details{
+        font-size:18px
+    }
+    .Register{
+        font-size:18px;
+        position: relative;
+        top:23px;
+        color:white;
+    }
+}

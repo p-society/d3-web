@@ -1,0 +1,51 @@
+#Register {
+    background-image: url('../images/EventRegistration/EventRegistration.jpg');
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    z-index: -1000;
+}
+.EventHeading{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+    color:white;
+    height:120px;
+}
+.p{
+    padding: 0px;
+    margin:0px;
+    border:0px
+}
+.RFEHeading{
+    font-size:40px;
+}
+.ELHeading{
+    font-size:60px;
+    position: relative;
+    bottom: 50px;
+}
+
+ @media (max-width:767px){
+    .RFEHeading{
+        font-size:35px
+    }
+    .ELHeading{
+        font-size :55px;
+        position:relative;
+        bottom:47px;
+    }
+}
+@media (max-width:500px){
+    .RFEHeading{
+        font-size: 28px;
+        padding-bottom: 10px;
+    }
+    .ELHeading{
+        font-size: 32px;
+    }
+}
