@@ -8,7 +8,6 @@ import EventPage from './components/EventPage';
 import Landing from './components/Landing';
 import Sponsor from './components/Sponsor';
 import Register from './components/Register';
-import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
 import ContactUs from './components/ContactUs'
 import './App.css'
@@ -19,7 +18,7 @@ function App() {
     <>
       <Navbar />
       <Landing />
-      <Events/>
+      <EventPage/>
       <Sponsor />
       <Register />
       <ContactUs />

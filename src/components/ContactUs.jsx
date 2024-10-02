@@ -84,12 +84,12 @@ const ContactUs = () => {
             <div style={containerStyle}>
                 <div style={centeredDivStyle}>
                     <img src={upperRectangle} style={imgStyle} />
-                    <p style={{ fontFamily: 'MINECRAFTER', fontSize: '65px', marginTop: '0px' }}>
+                    <p style={{ fontFamily: 'MINECRAFTER', color:'white' ,fontSize: '65px', marginTop: '20px' , marginBottom:'75px'}}>
                         CONTACT US
                     </p>
                     <form onSubmit={handlesubmit}>
                         <div style={{ backgroundImage: `url(${lowerRectangle})`, height: '50px', display: 'flex', flexWrap: 'wrap', flexDirection: 'row', gap: '20px', marginTop: '-40px' }}>
-                            <p style={{ fontFamily: 'MINECRAFTER', fontSize: '23px', paddingLeft: '20px', marginTop: '7px' }}>SUBJECT</p>
+                            <p style={{ fontFamily: 'MINECRAFTER', color:'white' ,fontSize: '23px', paddingLeft: '40px', marginTop: '7px' }}>SUBJECT</p>
                             <input required value={subject} type='text' style={{ background: 'none', border: 'none' }} onChange={(e) => setsubject(e.target.value)} />
                         </div>
                         <div style={{
@@ -108,7 +108,8 @@ const ContactUs = () => {
                                 className='message-label'
                                 style={{
                                     fontFamily: 'MINECRAFTER',
-                                    marginLeft: '-185px',
+                                    color:'white' ,
+                                    marginLeft: '-225px',
                                     marginTop: '7px',
                                     marginBottom: '0px'
                                 }}
@@ -120,19 +121,19 @@ const ContactUs = () => {
 
                         <div style={{ display: 'flex', flexDirection: 'row', gap: '20px', marginTop: '20px' }}>
                             <div style={{ backgroundImage: `url(${lowerRectangle})`, width: '50%', height: '70px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
-                                <p style={{ fontFamily: 'MINECRAFTER', fontSize: '23px', margin: '0' }}>
+                                <p style={{ fontFamily: 'MINECRAFTER', color:'white' ,fontSize: '23px', marginTop: '10px' }}>
                                     YOUR NAME
                                 </p>
                                 <input required value={name} type='text' style={{ border: 'none', background: 'none' }} onChange={(e) => setname(e.target.value)} />
                             </div>
                             <div style={{ backgroundImage: `url(${lowerRectangle})`, width: '50%', height: '70px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
-                                <p style={{ fontFamily: 'MINECRAFTER', fontSize: '23px', margin: '0' }}>
+                                <p style={{ fontFamily: 'MINECRAFTER', color:'white' ,fontSize: '23px', marginTop: '10px' }}>
                                     YOUR EMAIL
                                 </p>
                                 <input required value={email} type='email' style={{ border: 'none', background: 'none' }} onChange={(e) => setemail(e.target.value)} />
                             </div>
                         </div>
-                        <button type='submit' style={{marginTop:'20px',width:'100%', background:'none'}}><p style={{fontSize:'23px'}}>SEND</p></button>
+                        <button type='submit' style={{marginTop:'20px',width:'100%', background:'none', border:'none',cursor:'pointer'}}><p style={{fontFamily:'MINECRAFTER',fontSize:'23px',color:'white' ,}}>SEND</p></button>
                     </form>
                 </div>
             </div>
