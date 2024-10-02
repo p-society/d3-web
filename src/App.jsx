@@ -16,13 +16,7 @@ function App() {
 
   return (
     <>
-      <Navbar />
-      <Landing />
-      <EventPage/>
-      <Sponsor />
-      <Register />
       <ContactUs />
-      <Footer />
     </>
   )
 }
