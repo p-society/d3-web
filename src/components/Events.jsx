@@ -1,4 +1,3 @@
-// src/components/EventCard.jsx
 import React, {useRef,useEffect, useState} from 'react';
 import  '../assets/css/events.css'; // Import the CSS file for styling
 
