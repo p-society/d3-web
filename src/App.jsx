@@ -1,7 +1,11 @@
+// src/App.jsx
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import { useState } from 'react'
 import Navbar from './components/Navbar';
+import EventPage from './components/EventPage';
 import Landing from './components/Landing';
-import Events from './components/Events';
 import Sponsor from './components/Sponsor';
 import Register from './components/Register';
 import ContactUs from './components/ContactUs';
@@ -15,7 +19,7 @@ function App() {
     <>
       <Navbar />
       <Landing />
-      <Events />
+      <Events/>
       <Sponsor />
       <Register />
       <ContactUs />
