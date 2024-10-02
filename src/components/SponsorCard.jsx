@@ -1,5 +1,5 @@
 import React from 'react'
-import './SponsorCard.css';
+import '../assets/css/sponsorcard.css';
 const SponsorCard = ({ title, image }) => {
     return (
         <div className="sponsor-card" >

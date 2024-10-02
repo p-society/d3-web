@@ -1,6 +1,6 @@
 import React, { useState , useRef} from 'react'
 import  EventCard from './Events.jsx'
-import './EventPage.css'
+import '../assets/css/eventpage.css'
 
 function EventPage() {
   return (
@@ -12,72 +12,72 @@ function EventPage() {
       <div className="event-card-container">
       <EventCard
       title="Event Title"
-      image="src/assets/event1.png"
+      image="src/assets/images/events/event1.png"
       description="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         />
       <EventCard
       title="Event Title"
-      image="src/assets/event2.png"
+      image="src/assets/images/events/event2.png"
       description="A brief description of the event goes here."
         />
       <EventCard
       title="Event Title"
-      image="src/assets/event3.png"
+      image="src/assets/images/events/event3.png"
       description="A brief description of the event goes here."
         />
       <EventCard
       title="Event Title"
-      image="src/assets/event4.png"
+      image="src/assets/images/events/event4.png"
       description="A brief description of the event goes here."
         />
       <EventCard
       title="Event Title"
-      image="src/assets/event1.png"
+      image="src/assets/images/events/event1.png"
       description="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         />
       <EventCard
       title="Event Title"
-      image="src/assets/event2.png"
+      image="src/assets/images/events/event2.png"
       description="A brief description of the event goes here."
         />
       <EventCard
       title="Event Title"
-      image="src/assets/event3.png"
+      image="src/assets/images/events/event3.png"
       description="A brief description of the event goes here."
         />
       <EventCard
       title="Event Title"
-      image="src/assets/event4.png"
+      image="src/assets/images/events/event4.png"
       description="A brief description of the event goes here."
         />
       <EventCard
       title="Event Title"
-      image="src/assets/event1.png"
+      image="src/assets/images/events/event1.png"
       description="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         />
       <EventCard
       title="Event Title"
-      image="src/assets/event2.png"
+      image="src/assets/images/events/event2.png"
       description="A brief description of the event goes here."
         />
       <EventCard
       title="Event Title"
-      image="src/assets/event3.png"
+      image="src/assets/images/events/event3.png"
       description="A brief description of the event goes here."
         />
       <EventCard
       title="Event Title"
-      image="src/assets/event4.png"
+      image="src/assets/images/events/event2.png"
       description="A brief description of the event goes here."
         />
       <EventCard
       title="Event Title"
-      image="src/assets/event3.png"
+      image="src/assets/images/events/event3.png"
       description="A brief description of the event goes here."
         />
       <EventCard
       title="Event Title"
-      image="src/assets/event4.png"
+      image="src/assets/images/events/event4.png"
       description="A brief description of the event goes here."
         />
       </div>

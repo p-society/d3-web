@@ -1,6 +1,6 @@
 import React from 'react';
 import SponsorCard from './SponsorCard.jsx';
-import './Sponsor.css';
+import '../assets/css/sponsors.css';
 function Sponsor() {
   return (
         <div className="sponsor-container">

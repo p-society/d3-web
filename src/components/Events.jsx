@@ -1,6 +1,6 @@
 // src/components/EventCard.jsx
 import React, {useRef,useEffect, useState} from 'react';
-import './Events.css'; // Import the CSS file for styling
+import  '../assets/css/events.css'; // Import the CSS file for styling
 
 const EventCard = ({ title, image, description }) => {
     const descriptionRef = useRef(null);
