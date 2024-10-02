@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* body, html { */
+/*   overflow-x: hidden; */
+/*   background-image: 'assets/events_bg.png' */
+/* } */
+
+#root {
+  width: 100%;
+}
+.app-container {
+  padding: 20px;
+  background-image: url('../images/events/events_bg.png');
+  box-sizing: border-box;
+}
+
+
+.header-container {
+  margin-bottom: 20px;
+}
+
+.main-title {
+  font-size: 3.5rem;
+  font-family: 'Minecrafter Alt';
+  color: white;
+  opacity: 0.9;
+  font-weight: 20;
+  margin-bottom: 0.5rem;
+  margin-top: 3.5rem;
+  margin-left: 100px;
+}
+
+.sub-title {
+  font-size: 1rem;
+  font-family: 'Minecrafter Alt';
+  color: #666;
+  margin-bottom: 1rem;
+  margin-left: 100px;
+}
+@media (max-width: 767px) {
+  .main-title {
+    margin-left: 50px; /* Tablet */
+  }
+}
+
+@media (max-width: 500px) {
+  .main-title {
+    margin-left: 30px; /* Mobile */
+  }
+}
