@@ -11,6 +11,9 @@
 #root {
   width: 100%;
 }
+.parent-container{
+    margin-left:100px;
+}
 .app-container {
   padding: 20px;
   background-image: url('../images/events/events_bg.png');
@@ -30,7 +33,6 @@
   font-weight: 20;
   margin-bottom: 0.5rem;
   margin-top: 3.5rem;
-  margin-left: 100px;
 }
 
 .sub-title {
@@ -41,13 +43,24 @@
   margin-left: 100px;
 }
 @media (max-width: 767px) {
-  .main-title {
-    margin-left: 50px; /* Tablet */
+  .parent-container {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+  .sub-title {
+    margin-left: 50px;
   }
 }
 
 @media (max-width: 500px) {
-  .main-title {
-    margin-left: 30px; /* Mobile */
+  .parent-container {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+  .sub-title {
+    margin-left: 30px;
   }
 }
+

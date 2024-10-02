@@ -5,6 +5,7 @@ import '../assets/css/eventpage.css'
 function EventPage() {
   return (
       <div className="app-container">
+      <div className="parent-container">
       <div className="header-container">
        <h1 className="main-title">Events</h1>
         <h2 className="sub-title">Lorem Ipsum</h2>
@@ -80,6 +81,7 @@ function EventPage() {
       image="src/assets/images/events/event4.png"
       description="A brief description of the event goes here."
         />
+      </div>
       </div>
       </div>
   )
