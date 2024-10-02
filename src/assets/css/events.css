@@ -24,6 +24,7 @@
     cursor: pointer;
     flex: 1 1 calc(50% - 20px); /* This allows two cards side by side with gap */
     min-width: 300px; /* Ensures cards don't get too small */
+    z-index: 1 ;
     position: relative;
 }
 .event-card::before {
@@ -86,20 +87,18 @@
     overflow-y: hidden;
 }
 
-/* Media query for smaller screens */
 @media (max-width: 768px) {
-    .event-card {
-        flex: 1 1 100%; /* Full width on smaller screens */
-        max-width: 100%;
-        margin-left: 50px;
+    .event-card-container {
+        padding: 5px 15px;
     }
+
+    .event-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
     .event-card:hover .event-content {
         opacity: 1;
     }
 }
-@media (max-width: 500px) {
-  .event-card {
-    margin-left: 30px; /* Mobile */
-  }
-}
-
