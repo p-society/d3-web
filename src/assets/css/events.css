@@ -1,0 +1,105 @@
+/* src/components/EventCard.css */
+.event-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    justify-content: center;
+    gap: 40px;
+    padding: 5px;
+    margin: 0 auto;
+    width: 100%; /* Adjust based on your design */
+    max-width: 1200px;
+}
+
+.event-card {
+    width: 100%;
+    max-width: calc(50% - 20px);
+    /* border: 1px solid #ccc; */
+    background-color: #000;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    box-sizing:border-box ;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    flex: 1 1 calc(50% - 20px); /* This allows two cards side by side with gap */
+    min-width: 300px; /* Ensures cards don't get too small */
+    position: relative;
+}
+.event-card::before {
+    display: block;
+    padding-top: 38.33%; /* 12:7 aspect ratio (7 / 12 ≈ 0.5833) */
+}
+
+.event-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.6);
+}
+
+/* .event-image-container { */
+/*     overflow: hidden; */
+/* } */
+
+.event-image {
+    width: 100%;
+    object-fit: cover; /* Ensures image covers area without distortion */
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover .event-image {
+    transform: scale(1.1);
+}
+
+.event-content {
+    /* padding: 16px; */
+    /* background-color:greenyellow ; */
+    /* opacity: 0.55; */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 50%;
+    font-size: 0.8rem;
+    background-color: rgba(0, 0, 0, 0.7); /* Translucent black */
+    color: white;
+    width: 100%;
+    padding: 16px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    overflow: hidden;
+    scrollbar-width: none;
+    display: flex;
+    flex-direction: column;
+}
+.event-description::-webkit-scrollbar{
+    display: none;
+    scrollbar-width: none;
+}
+.event-card:hover .event-content {
+  opacity: 1;
+}
+.event-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.event-description{
+    height: 100px;
+    overflow-y: hidden;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .event-card {
+        flex: 1 1 100%; /* Full width on smaller screens */
+        max-width: 100%;
+        margin-left: 50px;
+    }
+    .event-card:hover .event-content {
+        opacity: 1;
+    }
+}
+@media (max-width: 500px) {
+  .event-card {
+    margin-left: 30px; /* Mobile */
+  }
+}
+
