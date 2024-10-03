@@ -1,8 +1,5 @@
 // src/App.jsx
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
-import { useState } from 'react'
 import Navbar from './components/Navbar';
 import EventPage from './components/EventPage';
 import Landing from './components/Landing';
@@ -17,9 +14,9 @@ function App() {
     <>
       <Navbar />
       <Landing />
-      <Events/>
+      <Events />
       <Sponsor />
-      <Register />
+      {/* <Register /> */}
       <Contact />
       <Footer />
     </>
