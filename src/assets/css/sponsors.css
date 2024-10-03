@@ -1,13 +1,52 @@
 /* sponsors.css */
 .sponsor-container {
-    width:100%;
+    width: 100%;
     margin: 0 auto;
     padding: 20px;
+    position: relative;
+    /* Required for positioning the pseudo-elements */
     background-image: url('../images/sponsor/background.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+
+/* Create a pseudo-element for the top fade effect */
+.sponsor-container::before {
+    content: '';
+    position: absolute;
+    /* Position it absolutely within the container */
+    top: 0;
+    /* Align to the top */
+    left: 0;
+    width: 100%;
+    /* Cover the entire width */
+    height: 10px;
+    /* Height of the fade area */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    /* Fading effect */
+    z-index: 1;
+    /* Ensure this overlay is above the background */
+}
+
+/* Create a pseudo-element for the bottom fade effect */
+.sponsor-container::after {
+    content: '';
+    position: absolute;
+    /* Position it absolutely within the container */
+    bottom: 0;
+    /* Align to the bottom */
+    left: 0;
+    width: 100%;
+    /* Cover the entire width */
+    height: 10px;
+    /* Height of the fade area */
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    /* Fading effect */
+    z-index: 1;
+    /* Ensure this overlay is above the background */
+}
+
 
 .sponsor-title {
     text-align: center;

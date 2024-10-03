@@ -7,8 +7,10 @@
     gap: 40px;
     padding: 5px;
     margin: 0 auto;
-    width: 100%; /* Adjust based on your design */
+    width: 100%;
+    /* Adjust based on your design */
     max-width: 1200px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .event-card {
@@ -19,17 +21,21 @@
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
     border-radius: 8px;
     overflow: hidden;
-    box-sizing:border-box ;
+    box-sizing: border-box;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
-    flex: 1 1 calc(50% - 20px); /* This allows two cards side by side with gap */
-    min-width: 300px; /* Ensures cards don't get too small */
-    z-index: 1 ;
+    flex: 1 1 calc(50% - 20px);
+    /* This allows two cards side by side with gap */
+    min-width: 300px;
+    /* Ensures cards don't get too small */
+    z-index: 1;
     position: relative;
 }
+
 .event-card::before {
     display: block;
-    padding-top: 38.33%; /* 12:7 aspect ratio (7 / 12 ≈ 0.5833) */
+    padding-top: 38.33%;
+    /* 12:7 aspect ratio (7 / 12 ≈ 0.5833) */
 }
 
 .event-card:hover {
@@ -43,7 +49,8 @@
 
 .event-image {
     width: 100%;
-    object-fit: cover; /* Ensures image covers area without distortion */
+    object-fit: cover;
+    /* Ensures image covers area without distortion */
     transition: transform 0.3s ease;
 }
 
@@ -60,7 +67,8 @@
     bottom: 0;
     height: 50%;
     font-size: 0.8rem;
-    background-color: rgba(0, 0, 0, 0.7); /* Translucent black */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Translucent black */
     color: white;
     width: 100%;
     padding: 16px;
@@ -71,18 +79,22 @@
     display: flex;
     flex-direction: column;
 }
-.event-description::-webkit-scrollbar{
+
+.event-description::-webkit-scrollbar {
     display: none;
     scrollbar-width: none;
 }
+
 .event-card:hover .event-content {
-  opacity: 1;
+    opacity: 1;
 }
+
 .event-title {
     margin-top: 0;
     margin-bottom: 10px;
 }
-.event-description{
+
+.event-description {
     height: 100px;
     overflow-y: hidden;
 }
