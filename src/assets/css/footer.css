@@ -1,10 +1,83 @@
-footer {
-    background-color: white;
-    text-align: center;
-    height: 20rem;
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 3rem;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.75rem;
+    /* default for xs */
 }
 
-.alex {
-    width: 7rem;
-    margin
+div>li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    text-align: center;
+    padding: 10px;
+}
+
+div>li>a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer-logo {
+    display: none;
+    /* Hidden by default */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.footer-logos {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.footer-divider {
+    font-size: 1.5rem;
+    /* 2xl */
+    font-family: serif;
+}
+
+.footer-links,
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.footer-socials {
+    gap: 1rem;
+    /* lg:gap-6 */
+}
+
+.footer-address {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Media Queries */
+@media (min-width: 1024px) {
+    .footer {
+        justify-content: space-between;
+    }
+
+    .footer-logo {
+        display: block;
+        /* Show on larger screens */
+    }
 }

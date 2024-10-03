@@ -6,9 +6,10 @@ function EventDetails({ props }) {
       <div>
         <p className='Event'>{props.Event}</p>
         <p className='Details'>{props.Details}</p>
+        {console.log(props)}
       </div>
       <div>
-        <a className='Register' href={props.Register}>Register</a>
+        <a className='Register' href="https://www.google.com">Register</a>
       </div>
     </div>
   )
