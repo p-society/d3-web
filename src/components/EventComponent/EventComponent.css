@@ -1,57 +1,77 @@
-.outer-border{
-    display:flex;
+.outer-border {
+    display: flex;
     justify-content: space-between;
     margin-left: 10%;
     margin-right: 10%;
-    margin-top:5%;
-    margin-bottom:5%;
-    color:white;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: white;
 }
-.p{
-    padding:0px;
-    margin:0px;
-    border:0px;
-}
-.Event{
-    font-size: 35px;
 
+.p {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
 }
-.Details{
-    font-size:25px
+
+.Event {
+    font-size: 35px;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 10px;
 }
-.Register{
-    font-size:25px;
+
+.Details {
+    font-size: 15px;
+    max-width: calc(100vw/2);
+    color: #000;
+    background-color: white;
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+}
+
+.Register {
+    font-size: 25px;
     position: relative;
-    top:35px;
-    color:white;
+    top: 35px;
+    color: #000;
 }
-@media (max-width:747px){
-    .Event{
+
+@media (max-width:747px) {
+    .Event {
         font-size: 25px;
-    
+
     }
-    .Details{
-        font-size:20px
+
+    .Details {
+        font-size: 20px
     }
-    .Register{
-        font-size:20px;
+
+    .Register {
+        font-size: 20px;
         position: relative;
-        top:30px;
-        color:white;
+        top: 30px;
+        color: white;
     }
 }
-@media (max-width:500px){
-    .Event{
+
+@media (max-width:500px) {
+    .Event {
         font-size: 22px;
-    
+
     }
-    .Details{
-        font-size:18px
+
+    .Details {
+        font-size: 18px
     }
-    .Register{
-        font-size:18px;
+
+    .Register {
+        font-size: 18px;
         position: relative;
-        top:23px;
-        color:white;
+        top: 23px;
+        color: white;
     }
 }

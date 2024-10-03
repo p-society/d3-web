@@ -7,7 +7,8 @@
     position: relative;
     z-index: -1000;
 }
-.landing_main_text{
+
+.landing_main_text {
     font-size: 4.5em;
     color: white;
     margin: 0;
@@ -15,18 +16,21 @@
     top: 20%;
     left: 100px;
 }
-.brochure_btn{
+
+.brochure_btn {
     font-size: 25px;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
 }
-.landing_text_gradient{
-    background: linear-gradient(to right, #EBE200,#FF4C1A,#FF0000);
+
+.landing_text_gradient {
+    background: linear-gradient(to right, #EBE200, #FF4C1A, #FF0000);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.icons_list{
+
+.icons_list {
     color: white !important;
     display: flex;
     align-items: center;
@@ -41,20 +45,23 @@
 
 /* ---------------------------- */
 @media (max-width: 767px) {
-    .landing_main_text{
+    .landing_main_text {
         font-size: 4em;
         left: 50px;
     }
-    .brochure_btn{
+
+    .brochure_btn {
         font-size: 20px;
     }
 }
+
 @media (max-width: 500px) {
-    .landing_main_text{
+    .landing_main_text {
         font-size: 3em;
         left: 30px;
     }
-    .brochure_btn{
+
+    .brochure_btn {
         font-size: 18px;
     }
 }

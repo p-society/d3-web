@@ -10,11 +10,11 @@ function Landing() {
     <section id="landing">
       <p className='landing_main_text'>
         <span className='landing_text_gradient'>
-            <span>Dream.</span><br />
-            <span>Dare.</span><br />
-            <span>Develop.</span><br />
+          <span>Dream.</span><br />
+          <span>Dare.</span><br />
+          <span>Develop.</span><br />
         </span>
-        <span className='brochure_btn'>DOWNLOAD THE BROCHURE</span>
+        <span className='brochure_btn'>Download The Brochure</span>
       </p>
       <div className="icons_list">
         <Instagram />

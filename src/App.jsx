@@ -7,6 +7,7 @@ import Sponsor from './components/Sponsor';
 import Register from './components/Register';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import './App.css'
 const Events = EventPage
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
       <Landing />
       <Events />
       <Sponsor />
-      {/* <Register /> */}
+      <Register />
       <Contact />
       <Footer />
     </>
