@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 /* body, html { */
 /*   overflow-x: hidden; */
 /*   background-image: 'assets/events_bg.png' */
@@ -11,9 +12,11 @@
 #root {
   width: 100%;
 }
-.parent-container{
-    margin-left:100px;
+
+.parent-container {
+  margin-left: 100px;
 }
+
 .app-container {
   padding: 20px;
   background-image: url('../images/events/events_bg.png');
@@ -33,21 +36,24 @@
   font-weight: 20;
   margin-bottom: 0.5rem;
   margin-top: 3.5rem;
+  margin-bottom: 1rem;
+  margin-left: 100px;
 }
 
 .sub-title {
   font-size: 1rem;
   font-family: 'Minecrafter Alt';
-  color: #666;
+  color: #fff;
   margin-bottom: 1rem;
   margin-left: 100px;
 }
+
 @media (max-width: 767px) {
   .parent-container {
     margin-left: 50px;
     margin-right: 50px;
   }
-  
+
   .sub-title {
     margin-left: 50px;
   }
@@ -58,9 +64,8 @@
     margin-left: 30px;
     margin-right: 30px;
   }
-  
+
   .sub-title {
     margin-left: 30px;
   }
 }
-
