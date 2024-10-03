@@ -10,7 +10,7 @@ function EventPage() {
           <h1 className="main-title">Events</h1>
           <h2 className="sub-title">Welcome to D Fest - Where Technology Meets Innovation!
             <br />
-            Get ready to fuel your passion and amplify your skills at D3 , the
+            Get ready to fuel your passion and amplify your skills at D , the
             electrifying Techno-Management Fest of IIIT Bhubaneswar! Organized
             by the Tech Society of IIIT Bhubaneswar, in collaboration with the
             dynamic Automation and Robotics Society and RIPIT Company , D
