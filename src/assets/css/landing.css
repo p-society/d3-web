@@ -1,3 +1,4 @@
+/* Landing section */
 #landing {
     background-image: url('../images/landing/landing.png');
     background-position: center center;
@@ -5,7 +6,55 @@
     width: 100%;
     height: 100vh;
     position: relative;
-    z-index: -1000;
+    /* Required for positioning the pseudo-elements */
+}
+
+/* Create a pseudo-element for the top fade effect */
+#landing::before {
+    content: '';
+    position: absolute;
+    /* Position it absolutely within the section */
+    top: 0;
+    /* Align to the top */
+    left: 0;
+    width: 100%;
+    /* Cover the entire width */
+    height: 10px;
+    /* Height of the fade area */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    /* Fading effect */
+    z-index: 1;
+    /* Ensure this overlay is above the background */
+}
+
+/* Create a pseudo-element for the bottom fade effect */
+#landing::after {
+    content: '';
+    position: absolute;
+    /* Position it absolutely within the section */
+    bottom: 0;
+    /* Align to the bottom */
+    left: 0;
+    width: 100%;
+    /* Cover the entire width */
+    height: 10px;
+    /* Height of the fade area */
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    /* Fading effect */
+    z-index: 1;
+    /* Ensure this overlay is above the background */
+}
+
+/* Create a pseudo-element for the fade effect */
+#landing::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    z-index: 1;
 }
 
 .landing_main_text {
@@ -21,7 +70,6 @@
     font-size: 25px;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.8);
-    font-family: 'Courier New', Courier, monospace;
 }
 
 .landing_text_gradient {

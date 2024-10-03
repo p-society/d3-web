@@ -38,17 +38,7 @@ function Register() {
       Details: 'Challenge invites tech enthusiasts and budding engineers to design and create their own robots.Participants will showcase their creativity and technical skills in a dynamic environment',
       Register: 'unstop.com'
     },
-    {
-      Event: 'Tech Talk (Software Edition)',
-      Details: 'DETAILS',
-      Register: 'Link'
-    },
-    {
-      Event: 'Tech Talk for Hardware',
-      Details: 'DETAILS',
-      Register: 'Link'
-    },
-  ]
+      ]
   return (
     <section id="Register">
       <div className='EventHeading'>

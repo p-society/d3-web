@@ -8,7 +8,7 @@ function EventPage() {
       <div className="parent-container">
         <div className="header-container">
           <h1 className="main-title">Events</h1>
-          <h2 className="sub-title">Welcome to D Fest - Where Technology Meets Innovation!
+          <h2 className="sub-title">Welcome to D3 Fest - Where Technology Meets Innovation!
             <br />
             Get ready to fuel your passion and amplify your skills at D , the
             electrifying Techno-Management Fest of IIIT Bhubaneswar! Organized
@@ -32,22 +32,37 @@ function EventPage() {
             description="This competition challenges you to address critical issues like financial fraud,security breaches, national security threats, and emerging cyberattacks."
           />
           <EventCard
-            title="Event Title"
+            title="Code-O-Lympics"
+            image="src/assets/images/cybersecbattle.png"
+            description="This competition challenges you to address critical issues like financial fraud,security breaches, national security threats, and emerging cyberattacks."
+          />
+          <EventCard
+            title="Pitch and Win"
+            image="src/assets/images/cybersecbattle.png"
+            description="This competition challenges you to address critical issues like financial fraud,security breaches, national security threats, and emerging cyberattacks."
+          />
+          <EventCard
+            title="Tech Talk (Software Edition)"
             image="src/assets/images/events/event3.png"
-            description="A brief description of the event goes here."
+            description="Industry experts and passionate developers converge to share insights on the latest trends, tools, and innovations in software development. Engage in thought-provoking discussions, interactive workshops, and networking opportunities that will inspire your tech journey!"
           />
           <EventCard
-            title="Event Title"
+            title="Tech Talk (Hardware Edition)"
             image="src/assets/images/events/event4.png"
-            description="A brief description of the event goes here."
+            description="A dynamic forum where hardware enthusiasts and industry leaders come together to explore cutting-edge technologies, emerging trends, and practical applications in hardware development. Participate in engaging talks, hands-on demonstrations, and collaborative discussions that will elevate your understanding of the hardware landscape!"
           />
           <EventCard
-            title="Event Title"
+            title="Autobot"
             image="src/assets/images/events/event1.png"
             description="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
           />
           <EventCard
-            title="Event Title"
+            title="Robo Race"
+            image="src/assets/images/events/event1.png"
+            description="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          />
+          <EventCard
+            title="Build A Bot"
             image="src/assets/images/events/event2.png"
             description="A brief description of the event goes here."
           />
