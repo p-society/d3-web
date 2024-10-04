@@ -13,10 +13,6 @@
   width: 100%;
 }
 
-.parent-container {
-  margin-left: 100px;
-}
-
 .app-container {
   padding: 20px;
   background-image: url('../images/events/events_bg.png');
@@ -46,7 +42,7 @@
   color: #fff;
   margin-bottom: 1rem;
   margin-left: 100px;
-  max-width: calc(100vw/1.5);
+  max-width: 1200px;
 }
 
 @media (max-width: 767px) {

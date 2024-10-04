@@ -44,9 +44,11 @@ function Register() {
       <div className='EventHeading'>
         <p className='RFEHeading'>REGISTER FOR EVENTS</p>
       </div>
+      <div className="events_container">
       {Events.map((e) => (
         <EventDetails props={e} />
       ))}
+      </div>
 
     </section>
   );

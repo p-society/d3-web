@@ -1,15 +1,23 @@
+.registeration_events{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 .outer-border {
     display: flex;
     justify-content: space-between;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 5%;
-    margin-bottom: 5%;
     color: white;
 }
 .linkWrapper {
-    z-index: 1000;
     width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.GoogleLink{
+    font-size: 2em;
+    text-decoration: underline;
+    color: white;
 }
 .p {
     padding: 0px;
@@ -20,19 +28,20 @@
 .Event {
     font-size: 35px;
     color: black;
-    background-color: white;
-    margin-bottom: 10px;
     padding: 10px;
+    padding-bottom: 0;
+    padding-left: 0;
+    border-radius: 10px;
 }
 
 .Details {
     font-size: 15px;
     max-width: calc(100vw/2);
-    color: #000;
-    background-color: white;
+    color: #fff9f9;
+    background-color: #2e404395;
     padding: 10px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 900;
+    line-height: 24px;
+    font-weight: 300 !important;
 }
 
 .Register {

@@ -3,7 +3,8 @@ import './EventComponent.css';
 
 function EventDetails({ props }) {
   return (
-    <div className='outer-border'>
+    <div className="registeration_events">
+      <div className='outer-border'>
       <div>
         <p className='Event'>{props.Event}</p>
         <p className='Details'>{props.Details}</p>
@@ -14,6 +15,7 @@ function EventDetails({ props }) {
           Go to Google
         </a>
       </div>
+    </div>
     </div>
   );
 }
