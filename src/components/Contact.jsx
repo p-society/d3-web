@@ -8,7 +8,7 @@ function Contact() {
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs.sendForm('service_zin4nyz', 'template_c4bir93', e.target, 'LqKAhPE3L0Md4zlV3')
+    emailjs.sendForm('service_1n01ek5', 'template_c4bir93', e.target, 'LqKAhPE3L0Md4zlV3')
       .then((result) => {
           setSuccessMessage('Your email has been sent successfully!');
           e.target.reset();
