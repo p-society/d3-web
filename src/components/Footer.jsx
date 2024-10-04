@@ -2,17 +2,26 @@ import React from 'react';
 import "../assets/css/footer.css";
 import { Facebook, Instagram, Linkedin, Twitter } from 'lucide-react';
 
+// Import images dynamically
+import alexImage from '../assets/images/alex.png';
+import techImage from '../assets/images/tech.png';
+import xImage from '../assets/images/X.png';
+import tarsImage from '../assets/images/tars.png';
+import steveImage from '../assets/images/steve.png';
+
 function Footer() {
   return (
     <footer className='footer'>
       <div className='footer-logo hidden lg:block'>
-        <img src="src/assets/images/alex.png" alt="" />
+        {/* Dynamically imported image */}
+        <img src={alexImage} alt="Alex Logo" />
       </div>
       <div className='footer-content'>
         <div className='footer-logos'>
-          <img src="src/assets/images/tech.png" alt="" />
-          <img src="src/assets/images/X.png" alt="" />
-          <img src="src/assets/images/tars.png" alt="" />
+          {/* Dynamically imported images */}
+          <img src={techImage} alt="Tech Logo" />
+          <img src={xImage} alt="X Logo" />
+          <img src={tarsImage} alt="TARS Logo" />
         </div>
         <div className='footer-links'>
           <li><a href="#landing">Home</a></li>
@@ -47,7 +56,8 @@ function Footer() {
         </div>
       </div>
       <div className='footer-logo hidden lg:block'>
-        <img src="src/assets/images/steve.png" alt="" />
+        {/* Dynamically imported image */}
+        <img src={steveImage} alt="Steve Logo" />
       </div>
     </footer>
   );

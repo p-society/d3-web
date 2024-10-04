@@ -4,18 +4,22 @@
     background-size: cover;
     width: 100%;
     position: relative;
-    padding: 10px;
+    padding: 100px;
 }
-
+.events_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
 .EventHeading {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 10%;
     color: #000;
-    height: 120px;
+    padding-top: 0;
 }
 
 .p {
@@ -25,7 +29,9 @@
 }
 
 .RFEHeading {
-    font-size: 60px;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: white;
 }
 
 .ELHeading {
@@ -44,8 +50,35 @@
         position: relative;
         bottom: 47px;
     }
+    .Event{
+        font-size: 25px;
+    }
+    #Register{
+        padding: 50px;
+    }
+    .GoogleLink{
+        font-size: 1.3em !important;
+    }
+    .outer-border{
+        flex-direction: column !important;
+    }
+    .Details{
+        max-width: 100% !important;
+    }
+    .linkWrapper{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: left;
+        display: block !important;
+        padding: 10px;
+        padding-top: 0;
+    }
 }
-
+@media (max-width:560px) {
+    #Register{
+        padding: 30px !important;
+    }
+}
 @media (max-width:500px) {
     .RFEHeading {
         font-size: 28px;
@@ -54,5 +87,10 @@
 
     .ELHeading {
         font-size: 32px;
+    }
+}
+@media (max-width:460px) {
+    #Register{
+        padding: 22px !important;
     }
 }

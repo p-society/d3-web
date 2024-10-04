@@ -1,16 +1,29 @@
+.registeration_events{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 .outer-border {
     display: flex;
     justify-content: space-between;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 5%;
-    margin-bottom: 5%;
     color: white;
 }
 .linkWrapper {
-    z-index: 1000;
     width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.GoogleLink{
+    font-size: 2em;
+    text-decoration: underline;
+    color: #85ae4e;
+}
+
+.GoogleLink:hover {
+    color: red;
+}
+
 .p {
     padding: 0px;
     margin: 0px;
@@ -19,20 +32,21 @@
 
 .Event {
     font-size: 35px;
-    color: black;
-    background-color: white;
+    color: #85ae4e;
+    background-color: #2f4145a4;
     margin-bottom: 10px;
+    padding-left: 0;
     padding: 10px;
 }
 
 .Details {
     font-size: 15px;
     max-width: calc(100vw/2);
-    color: #000;
-    background-color: white;
+    color: #fff9f9;
+    background-color: #2f4145a4;
     padding: 10px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 900;
+    line-height: 24px;
+    font-weight: 300 !important;
 }
 
 .Register {
@@ -45,13 +59,9 @@
 }
 
 @media (max-width:747px) {
-    .Event {
-        font-size: 25px;
-
-    }
 
     .Details {
-        font-size: 20px
+        font-size: 16px;
     }
 
     .Register {
