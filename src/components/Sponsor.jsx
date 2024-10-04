@@ -1,6 +1,7 @@
 import React from 'react';
 import SponsorCard from './SponsorCard.jsx';
 import '../assets/css/sponsors.css';
+import soon from '../assets/images/soon.png';
 function Sponsor() {
     return (
         <div className="sponsor-container">
@@ -8,27 +9,26 @@ function Sponsor() {
             <div className="sponsor-card-container">
                 <SponsorCard
                     title="Sponsor Title"
-                    image="src/assets/images/soon.png"
+                    image= {soon}
                 />
                 <SponsorCard
                     title="Sponsor Title"
-                    image="src/assets/images/soon.png"
+                    image= {soon}
                 />
                 <SponsorCard
                     title="Sponsor Title"
-                    image="src/assets/images/soon.png"
+                    image= {soon}
                 />
                 <SponsorCard
                     title="Sponsor Title"
-                    image="src/assets/images/soon.png"
+                    image= {soon}
                 />
                 <SponsorCard
                     title="Sponsor Title"
-                    image="src/assets/images/soon.png"
+                    image= {soon}
                 />
                 <SponsorCard
-                    title="Sponsor Title"
-                    image="src/assets/images/soon.png"
+                    image= {soon}
                 />
             </div>
         </div>

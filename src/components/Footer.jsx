@@ -2,17 +2,23 @@ import React from 'react';
 import "../assets/css/footer.css";
 import { Facebook, Instagram, Linkedin, Twitter } from 'lucide-react';
 
+import alex from '../assets/images/alex.png';
+import steve from '../assets/images/steve.png';
+import tech from '../assets/images/tech.png';
+import X from '../assets/images/X.png';
+import tars from '../assets/images/tars.png';
+
 function Footer() {
   return (
     <footer className='footer'>
       <div className='footer-logo hidden lg:block'>
-        <img src="src/assets/images/alex.png" alt="" />
+        <img src={alex} alt="A Minecraft character named Alex!" />
       </div>
       <div className='footer-content'>
         <div className='footer-logos'>
-          <img src="src/assets/images/tech.png" alt="" />
-          <img src="src/assets/images/X.png" alt="" />
-          <img src="src/assets/images/tars.png" alt="" />
+          <img src={tech} alt="Tech society logo" />
+          <img src={X} alt="X logo" />
+          <img src={tars} alt="TARS logo" />
         </div>
         <div className='footer-links'>
           <li><a href="#landing">Home</a></li>
@@ -47,7 +53,7 @@ function Footer() {
         </div>
       </div>
       <div className='footer-logo hidden lg:block'>
-        <img src="src/assets/images/steve.png" alt="" />
+        <img src={steve} alt="" />
       </div>
     </footer>
   );
