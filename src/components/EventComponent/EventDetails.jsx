@@ -1,5 +1,6 @@
-import React from 'react'
-import './EventComponent.css'
+import React from 'react';
+import './EventComponent.css';
+
 function EventDetails({ props }) {
   return (
     <div className='outer-border'>
@@ -8,11 +9,13 @@ function EventDetails({ props }) {
         <p className='Details'>{props.Details}</p>
         {console.log(props)}
       </div>
-      <div>
-        <a className='Register' href="https://www.google.com">Register</a>
+      <div className='linkWrapper'>
+        <a className='GoogleLink' href='https://www.google.com' target='_blank' rel='noopener noreferrer'>
+          Go to Google
+        </a>
       </div>
     </div>
-  )
+  );
 }
 
-export default EventDetails
+export default EventDetails;
