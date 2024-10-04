@@ -9,3 +9,13 @@
   font-family: 'minecraft',sans-serif;
   background-color: #000000;
 }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 10%;
+}
+
+@media (max-width: 768px) {
+  html {
+    scroll-padding-top: 11%;
+  }  
+}
