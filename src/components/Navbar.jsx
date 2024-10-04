@@ -25,16 +25,16 @@ function Navbar() {
           <div class="menu-items">
             <li><a className='navbar_links' href="#landing">Home</a></li>
             <li><a className='navbar_links' href="#events" onClick={scrollToEvents}>Events</a></li>
-            <li><a className='navbar_links' href="#register">Register</a></li>
-            <li><a className='navbar_links' href="#contact">Contact</a></li>
+            <li><a className='navbar_links' href="#Register">Register</a></li>
+            <li><a className='navbar_links' href="#Contact">Contact</a></li>
           </div>
         </div>
       </div>
       <div className='pc_navbar'>
         <span><a className='navbar_links' href="#landing">Home</a></span>
         <span><a className='navbar_links' href="#events">Events</a></span>
-        <span><a className='navbar_links' href="#register">Register</a></span>
-        <span><a className='navbar_links' href="#contact">Contact</a></span>
+        <span><a className='navbar_links' href="#Register">Register</a></span>
+        <span><a className='navbar_links' href="#Contact">Contact</a></span>
       </div>
     </nav>
   );

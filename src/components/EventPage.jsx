@@ -16,7 +16,7 @@ import BuildABot from '../assets/images/v1/bab.png';
 
 function EventPage() {
   return (
-    <div className="app-container">
+    <div className="app-container" id='events'>
       <div className="parent-container">
         <div className="header-container">
           <h1 className="main-title">Events</h1>
