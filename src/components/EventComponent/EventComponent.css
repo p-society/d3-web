@@ -7,7 +7,10 @@
     margin-bottom: 5%;
     color: white;
 }
-
+.linkWrapper {
+    z-index: 1000;
+    width: auto;
+}
 .p {
     padding: 0px;
     margin: 0px;
@@ -17,7 +20,6 @@
 .Event {
     font-size: 35px;
     color: black;
-    font-family: 'Courier New', Courier, monospace;
     background-color: white;
     margin-bottom: 10px;
     padding: 10px;
@@ -38,6 +40,8 @@
     position: relative;
     top: 35px;
     color: #000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    z-index: 10000;
 }
 
 @media (max-width:747px) {

@@ -46,6 +46,7 @@
   color: #fff;
   margin-bottom: 1rem;
   margin-left: 100px;
+  max-width: calc(100vw/1.5);
 }
 
 @media (max-width: 767px) {
