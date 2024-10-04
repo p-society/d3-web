@@ -78,6 +78,18 @@ div>li>a {
 
     .footer-logo {
         display: block;
-        /* Show on larger screens */
+    }
+}
+@media (max-width: 560px) {
+    .footer-links, .footer-socials{
+        gap: 0 !important;
+    }
+}
+@media (max-width: 500px) {
+    .footer-links, .footer-socials{
+        flex-wrap: wrap;
+    }
+    .footer{
+        padding: 2.4rem;
     }
 }

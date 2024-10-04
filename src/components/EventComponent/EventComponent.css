@@ -17,7 +17,7 @@
 .GoogleLink{
     font-size: 2em;
     text-decoration: underline;
-    color: white;
+    color: #85ae4e;
 }
 .p {
     padding: 0px;
@@ -27,18 +27,18 @@
 
 .Event {
     font-size: 35px;
-    color: black;
-    padding: 10px;
-    padding-bottom: 0;
+    color: #85ae4e;
+    background-color: #2f4145a4;
+    margin-bottom: 10px;
     padding-left: 0;
-    border-radius: 10px;
+    padding: 10px;
 }
 
 .Details {
     font-size: 15px;
     max-width: calc(100vw/2);
     color: #fff9f9;
-    background-color: #2e404395;
+    background-color: #2f4145a4;
     padding: 10px;
     line-height: 24px;
     font-weight: 300 !important;
@@ -54,13 +54,9 @@
 }
 
 @media (max-width:747px) {
-    .Event {
-        font-size: 25px;
-
-    }
 
     .Details {
-        font-size: 20px
+        font-size: 16px;
     }
 
     .Register {

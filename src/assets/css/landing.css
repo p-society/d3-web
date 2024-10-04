@@ -84,7 +84,7 @@
 @media (max-width: 767px) {
     .landing_main_text {
         font-size: 4em;
-        left: 50px;
+        left: 50px !important;
     }
 
     .brochure_btn {
@@ -92,10 +92,10 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 560px) {
     .landing_main_text {
         font-size: 3em;
-        left: 30px;
+        left: 30px !important;
     }
 
     .brochure_btn {

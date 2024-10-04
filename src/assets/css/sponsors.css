@@ -2,13 +2,12 @@
 .sponsor-container {
     width: 100%;
     margin: 0 auto;
-    padding: 20px;
     position: relative;
-    /* Required for positioning the pseudo-elements */
     background-image: url('../images/sponsor/background.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    padding: 50px;
 }
 
 /* Create a pseudo-element for the top fade effect */
