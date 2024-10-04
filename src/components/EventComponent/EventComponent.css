@@ -19,6 +19,11 @@
     text-decoration: underline;
     color: #85ae4e;
 }
+
+.GoogleLink:hover {
+    color: red;
+}
+
 .p {
     padding: 0px;
     margin: 0px;

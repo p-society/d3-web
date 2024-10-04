@@ -15,30 +15,30 @@ function Register() {
     },
     {
       Event: 'CyberSec Battle',
-      Details: 'his competition challenges you to address critical issues like financial fraud, security breaches,national security threats and emerging cyberattacks. ',
-      Register: 'Link'
+      Details: 'This competition challenges you to address critical issues like financial fraud, security breaches,national security threats and emerging cyberattacks. ',
+      Register: 'https://unstop.com/hackathons/cybersec-battle-d3-techno-management-fest-international-institute-of-information-technology-iiit-bhubaneswar-1172051'
     },
     {
       Event: 'Pitch And Win',
       Details: 'This event is all about showcasing unique, innovative ideas across any field —be it technology, sustainability, social change, health, or beyond. Whether you\'re tackling global issues or bringing a fresh twist to a common challenge, we want to hear from you!',
-      Register: 'unstop.com'
+      Register: 'https://unstop.com/competitions/pitch-and-win-d3-techno-management-fest-international-institute-of-information-technology-iiit-bhubaneswar-1173515'
     },
     {
       Event: 'Robo Race',
       Details: 'Design and build a robot capable of navigating a challenging obstacle course while racing against time.Showcase your technical expertise and problem- solving skills in a high - energy competition.',
-      Register: 'unstop.com'
+      Register: 'https://unstop.com/competitions/roborace-d3-techno-management-fest-international-institute-of-information-technology-iiit-bhubaneswar-1173418'
     },
     {
       Event: 'AutoBot',
-      Details: 'demonstrate your ability to design a fully autonomous robot! Build a bot that can independently follow a marked path while handling twists, turns, and obstacles with precision and speed',
-      Register: 'Link'
+      Details: 'Demonstrate your ability to design a fully autonomous robot! Build a bot that can independently follow a marked path while handling twists, turns, and obstacles with precision and speed',
+      Register: 'https://unstop.com/competitions/autobot-d3-techno-management-fest-international-institute-of-information-technology-iiit-bhubaneswar-1173404'
     },
     {
       Event: 'Build A Bot',
       Details: 'Challenge invites tech enthusiasts and budding engineers to design and create their own robots.Participants will showcase their creativity and technical skills in a dynamic environment',
-      Register: 'unstop.com'
+      Register: 'https://unstop.com/hackathons/build-a-bot-d3-techno-management-fest-international-institute-of-information-technology-iiit-bhubaneswar-1173391'
     },
-      ]
+  ]
   return (
     <section id="Register">
       <div className='EventHeading'>

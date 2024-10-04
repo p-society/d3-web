@@ -11,8 +11,8 @@ function EventDetails({ props }) {
         {console.log(props)}
       </div>
       <div className='linkWrapper'>
-        <a className='GoogleLink' href='https://www.google.com' target='_blank' rel='noopener noreferrer'>
-          Go to Google
+        <a className='GoogleLink' href={props.Register} target='_blank' rel='noopener noreferrer'>
+          Register NOW!
         </a>
       </div>
     </div>
