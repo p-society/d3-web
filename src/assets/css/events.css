@@ -2,10 +2,12 @@
 .event-card-container {
     display: flex;
     flex-wrap: wrap;
+    margin-left: 50px;
     justify-content: center;
     gap: 40px;
     margin: 0 auto;
     width: 100%;
+    /* Adjust based on your design */
     max-width: 1200px;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -13,6 +15,7 @@
 .event-card {
     width: 100%;
     max-width: calc(50% - 20px);
+    /* border: 1px solid #ccc; */
     background-color: #000;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
     border-radius: 8px;
@@ -21,20 +24,33 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
     flex: 1 1 calc(50% - 20px);
+    /* This allows two cards side by side with gap */
     min-width: 300px;
+    /* Ensures cards don't get too small */
     z-index: 1;
     position: relative;
-    aspect-ratio: 16 / 9; /* Set a fixed aspect ratio for the card */
 }
+
+.event-card::before {
+    display: block;
+    padding-top: 38.33%;
+    /* 12:7 aspect ratio (7 / 12 ≈ 0.5833) */
+}
+
+.event-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.6);
+}
+
+/* .event-image-container { */
+/*     overflow: hidden; */
+/* } */
 
 .event-image {
     width: 100%;
-    height: 100%;
     object-fit: cover;
+    /* Ensures image covers area without distortion */
     transition: transform 0.3s ease;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 .event-card:hover .event-image {
@@ -42,12 +58,16 @@
 }
 
 .event-content {
+    /* padding: 16px; */
+    /* background-color:greenyellow ; */
+    /* opacity: 0.55; */
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 55%;
+    height: 50%;
     font-size: 0.8rem;
     background-color: rgba(0, 0, 0, 0.7);
+    /* Translucent black */
     color: white;
     width: 100%;
     padding: 16px;
@@ -59,78 +79,23 @@
     flex-direction: column;
 }
 
-.event-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 10px;
-    width: 100%;
-    flex-wrap: wrap;
-}
-
-.event-title-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
-    flex-wrap: wrap;
-}
-
-.event-title {
-    margin: 0;
-    font-size: 1.2rem;
-    flex: 1 1 auto;
-    margin-right: 10px;
-}
-
-.prize_pool {
-    color: #ffd700;
-    font-size: 1rem;
-    text-align: right;
-    font-weight: bold;
-    flex: 0 0 auto;
-    word-break: break-word;
-}
-
-.event-description {
-    height: 100px;
-    overflow-y: auto;
-    margin-bottom: 20px;
-}
-
-.event-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-top: auto;
-    width: 100%;
-    flex-wrap: wrap;
-}
-
-.organizers {
-    color: #888;
-    font-size: 0.9rem;
-    text-align: left;
-    flex: 1 1 auto;
-    margin-right: 10px;
-    word-break: break-word;
-}
-
-.date {
-    color: red;
-    font-size: 1rem;
-    font-weight: bold;
-    text-align: right;
-    flex: 0 0 auto;
-    word-break: break-word;
-}
-
 .event-description::-webkit-scrollbar {
     display: none;
+    scrollbar-width: none;
 }
 
 .event-card:hover .event-content {
     opacity: 1;
+}
+
+.event-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.event-description {
+    height: 100px;
+    overflow-y: hidden;
 }
 
 @media (max-width: 768px) {
@@ -146,27 +111,5 @@
 
     .event-card:hover .event-content {
         opacity: 1;
-        height: 100%;
-    }
-
-    .event-header,
-    .event-title-wrapper,
-    .event-footer {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .prize_pool,
-    .date {
-        margin-top: 5px;
-        text-align: left;
-    }
-
-    .event-title,
-    .prize_pool,
-    .organizers,
-    .date {
-        width: 100%;
-        word-break: break-word;
     }
 }

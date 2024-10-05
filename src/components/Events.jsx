@@ -1,7 +1,7 @@
 import React, {useRef,useEffect, useState} from 'react';
 import  '../assets/css/events.css'; // Import the CSS file for styling
 
-const EventCard = ({ title, image, description, prize_pool, coordinators, date}) => {
+const EventCard = ({ title, image, description }) => {
     const descriptionRef = useRef(null);
     const [isHovering, setIsHovering] = useState(false);
     const scrollInterval = useRef(null);
@@ -30,7 +30,7 @@ const EventCard = ({ title, image, description, prize_pool, coordinators, date})
                         setIsHovering(false)
                     }
                     element.scrollTop = scrollTop;
-                }, 50);
+                }, 30);
             }
         }
     };
@@ -48,16 +48,8 @@ const EventCard = ({ title, image, description, prize_pool, coordinators, date})
         >
             <img src={image} alt={title}  className="event-image" />
             <div className="event-content">
-                <div className='event-header'>
                 <h3 className='event-title' >{title}</h3>
-                <span className='prize_pool'>Prize Pool : {prize_pool}</span> 
-                </div>
-                <p className='event-description' ref={descriptionRef}>{description}
-                </p> 
-                <div className='event-footer'>
-        <span className='coordinators'><b>{coordinators}</b></span>
-        <span className='date'><b>{date}</b></span>
-            </div>
+                <p className='event-description' ref={descriptionRef}>{description}</p>
             </div>
         </div>
     );
