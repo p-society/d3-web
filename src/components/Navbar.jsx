@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../assets/css/navbar.css'
 
 function Navbar() {
@@ -12,6 +12,11 @@ function Navbar() {
       window.history.pushState(null, '', '#events');
     }
   }
+  let closechk=()=>{
+    const checkState=document.querySelector('.checkbox').checked;
+    if(checkState==true)
+      document.querySelector('.checkbox').checked=false;
+  }
   return (
     <nav className='d3_navbar'>
       <div class="mobile_navbar">
@@ -22,11 +27,11 @@ function Navbar() {
               <span class="line line2"></span>
               <span class="line line3"></span>
             </div>  
-          <div class="menu-items">
-            <li><a className='navbar_links' href="#landing">Home</a></li>
-            <li><a className='navbar_links' href="#events" onClick={scrollToEvents}>Events</a></li>
-            <li><a className='navbar_links' href="#Register">Register</a></li>
-            <li><a className='navbar_links' href="#Contact">Contact</a></li>
+          <div class="menu-items"  >
+            <li><a className='navbar_links' onClick={closechk}  href="#landing">Home</a></li>
+            <li><a className='navbar_links' onClick={closechk} href="#events">Events</a></li>
+            <li><a className='navbar_links' onClick={closechk} href="#Register">Register</a></li>
+            <li><a className='navbar_links' onClick={closechk} href="#Contact">Contact</a></li>
           </div>
         </div>
       </div>
