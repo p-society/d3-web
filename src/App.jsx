@@ -1,5 +1,7 @@
 // src/App.jsx
 import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Navbar from './components/Navbar';
 import EventPage from './components/EventPage';
 import Landing from './components/Landing';
@@ -13,6 +15,7 @@ const Events = EventPage
 function App() {
   return (
     <>
+      <ToastContainer />
       <Navbar />
       <Landing />
       <Events />
