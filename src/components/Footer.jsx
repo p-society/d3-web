@@ -14,16 +14,16 @@ const Tooltip = ({ text, position }) => {
   return (
     <p
       style={{
-        backgroundColor: 'white', 
-        color:'black',
-        position: 'absolute', 
-        left: position.x, 
+        backgroundColor: 'white',
+        color: 'black',
+        position: 'absolute',
+        left: position.x,
         top: position.y + 20,
-        background:'black',
-        color: '#fff', 
-        padding: '5px 10px', 
-        borderRadius: '5px', 
-        zIndex: 1000 
+        background: 'black',
+        color: '#fff',
+        padding: '5px 10px',
+        borderRadius: '5px',
+        zIndex: 1000
       }}
     >
       {text}
@@ -105,34 +105,45 @@ function Footer() {
             <a href="https://www.linkedin.com/company/tech-society-iiitbh/">Linkedin</a>
           </li>
           <li className='social-item'>
-            <Mail  />
+            <Mail />
             <a href="mailto:Dcube_techfest@iiit-bh.ac.in">Mail</a>
           </li>
         </div>
 
         <div className='contact'>
           <li onMouseEnter={(e) => showTooltip(contact_A, e)} onMouseLeave={() => hideTooltip()} style={{ cursor: 'pointer' }}>
-            <p>Ehtisham Mohd  <p className='contact-item' onClick={() => copyPhoneNumber(contact_A.no.split(' ').join(''))}>
-              {contact_A.no}</p>
+            <p>
+              Ehtisham Mohd
+              <span className='contact-item' onClick={() => copyPhoneNumber(contact_A.no.split(' ').join(''))}>
+                {contact_A.no}
+              </span>
             </p>
           </li>
           <li onMouseEnter={(e) => showTooltip(contact_B, e)} onMouseLeave={() => hideTooltip()} style={{ cursor: 'pointer' }}>
-            <p>Soubhik Kumar Gon  <p className='contact-item' onClick={() => copyPhoneNumber(contact_B.no.split(' ').join(''))}>
-              {contact_B.no}</p>
+            <p>
+              Soubhik Kumar Gon
+              <span className='contact-item' onClick={() => copyPhoneNumber(contact_B.no.split(' ').join(''))}>
+                {contact_B.no}
+              </span>
             </p>
           </li>
           <li onMouseEnter={(e) => showTooltip(contact_C, e)} onMouseLeave={() => hideTooltip()} style={{ cursor: 'pointer' }}>
-            <p>Saswat Parasar Behera <p className='contact-item' onClick={() => copyPhoneNumber(contact_C.no.split(' ').join(''))} >
-              {contact_C.no}</p>
+            <p>
+              Saswat Parasar Behera
+              <span className='contact-item' onClick={() => copyPhoneNumber(contact_C.no.split(' ').join(''))}>
+                {contact_C.no}
+              </span>
             </p>
           </li>
           <li onMouseEnter={(e) => showTooltip(contact_D, e)} onMouseLeave={() => hideTooltip()} style={{ cursor: 'pointer' }}>
-            <p>Abhijeet  <p className='contact-item' onClick={() => copyPhoneNumber(contact_D.no.split(' ').join(''))} >
-              {contact_D.no}</p>
+            <p>
+              Abhijeet
+              <span className='contact-item' onClick={() => copyPhoneNumber(contact_D.no.split(' ').join(''))}>
+                {contact_D.no}
+              </span>
             </p>
           </li>
         </div>
-
 
 
         <div className='footer-address'>

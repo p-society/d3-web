@@ -1,20 +1,33 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import '../assets/css/contact.css';
+import { toast } from 'react-toastify';
 
 function Contact() {
-  const [successMessage, setSuccessMessage] = useState(''); 
+  const [fromName, setFromName] = useState('');
+  const [fromEmail, setFromEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [htmlMessage, setHtmlMessage] = useState('');
 
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs.sendForm('service_1n01ek5', 'template_c4bir93', e.target, 'LqKAhPE3L0Md4zlV3')
+    const templateParams = {
+      to_name: 'Recipient Name',
+      from_name: fromName,
+      message: htmlMessage,
+      reply_to: fromEmail,
+    };
+
+    emailjs.send('service_1n01ek5', 'template_riovy6p', templateParams, 'OKkhesuDlW6tfPh_x')
       .then((result) => {
-          setSuccessMessage('Your email has been sent successfully!');
-          e.target.reset();
-          setTimeout(() => setSuccessMessage(''), 4000);
+        setFromName('');
+        setFromEmail('');
+        setSubject('');
+        setHtmlMessage('');
+        toast("Your email has been sent successfully!")
       }, (error) => {
-          console.log(error.text);
+        console.log(error.text); // Log errors if any
       });
   }
 
@@ -22,28 +35,51 @@ function Contact() {
     <section id="Contact">
       <h2 className='heading_title_contact'>Contact</h2>
       <div className="container">
-        {successMessage && ( 
-          <div className="prompt-message">
-            {successMessage}
-          </div>
-        )}
         <form className="contact-form col-md-8" onSubmit={sendEmail}>
           <div className="row">
             <div className="col-md-12">
               <input type="hidden" name="contact_number" />
             </div>
             <div className="col-md-12">
-              <input type="text" name="subject" placeholder='SUBJECT' required/>
+              <input
+                type="text"
+                name="subject"
+                placeholder='SUBJECT'
+                value={subject}
+                onChange={(e) => setSubject(e.target.value)}
+                required
+              />
             </div>
             <div className="col-md-12">
-              <textarea name="html_message" rows={5} placeholder='WRITE YOUR MESSAGE' required/>
+              <textarea
+                name="html_message"
+                rows={5}
+                placeholder='WRITE YOUR MESSAGE'
+                value={htmlMessage}
+                onChange={(e) => setHtmlMessage(e.target.value)}
+                required
+              />
             </div>
             <div className="two_col_contact">
               <div className="col-md-6">
-                <input type="text" name="from_name" placeholder='YOUR NAME' required/>
+                <input
+                  type="text"
+                  name="from_name"
+                  placeholder='YOUR NAME'
+                  value={fromName}
+                  onChange={(e) => setFromName(e.target.value)}
+                  required
+                />
               </div>
               <div className="col-md-6">
-                <input type="email" name="from_email" placeholder='YOUR EMAIL' required/>
+                <input
+                  type="email"
+                  name="from_email"
+                  placeholder='YOUR EMAIL'
+                  value={fromEmail}
+                  onChange={(e) => setFromEmail(e.target.value)}
+                  required
+                />
               </div>
             </div>
           </div>

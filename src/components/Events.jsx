@@ -50,7 +50,7 @@ const EventCard = ({ title, image, description, prize_pool, coordinators, date})
             <div className="event-content">
                 <div className='event-header'>
                 <h3 className='event-title' >{title}</h3>
-                <span className='prize_pool'>Prize Pool : {prize_pool}</span> 
+                <span className='prize_pool'>{prize_pool}</span> 
                 </div>
                 <p className='event-description' ref={descriptionRef}>{description}
                 </p> 
