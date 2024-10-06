@@ -90,10 +90,10 @@ function Footer() {
 
         <div className='footer-links'>
           <li><a href="#landing">Home</a></li>
-          <li><a href="#landing">Community</a></li>
-          <li><a href="#landing">Gallery</a></li>
-          <li><a href="#landing">About</a></li>
-          <li><a href="#landing">Contact</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#sponsors">Sponsors</a></li>
+          <li><a href="#Register">Register</a></li>
+          <li><a href="#Contact">Contact</a></li>
         </div>
         <div className='footer-socials'>
           <li className='social-item'>
