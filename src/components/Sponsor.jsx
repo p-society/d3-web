@@ -19,7 +19,7 @@ const sponsors = [
 
 function Sponsor() {
     return (
-        <div className="sponsor-container">
+        <div className="sponsor-container" id='sponsors'>
             <h1 className="sponsor-title">Presenting our Sponsors</h1>
             <div className="sponsor-card-container">
                 {sponsors.map((sponsor, index) => (
