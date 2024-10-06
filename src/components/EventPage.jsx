@@ -38,7 +38,7 @@ function EventPage() {
             image={CraftNCode}
             description="This national-level hackathon invites brilliant minds from across the country to innovate, collaborate, and solve real-world challenges."
             date="Date: 8th Nov 2024, 10:00 PM - 9th Nov 2024, 8:00 AM"
-            prize_pool="Price Pool: INR 50,000"
+            prize_pool="Prize Pool: INR 50,000"
             coordinators="Co-ordinators: Soubhik Gon, Saswat Parasar Behera"
           />
           <EventCard
@@ -46,7 +46,7 @@ function EventPage() {
             image={CyberSecBattle}
             description="This competition challenges you to address critical issues like financial fraud, security breaches, national security threats, and emerging cyberattacks."
             date="Date: 9th Nov 2024, 10:00 PM - 10th Nov 2024, 8:00 AM"
-            prize_pool="Price Pool: INR 16,000"
+            prize_pool="Prize Pool: INR 16,000"
             coordinators="Co-ordinators: Gourav Munjan, Soubhik Gon"
           />
           <EventCard
@@ -54,7 +54,7 @@ function EventPage() {
             image={CodeOLympics}
             description="Cod-o-lympics is an ICPC-inspired programming competition where each team competes to solve a set of problems within a given time frame."
             date="Date: 9th Nov 2024, 4:00 PM - 7:30 PM"
-            prize_pool="Price Pool: INR 16,000"
+            prize_pool="Prize Pool: INR 16,000"
             coordinators="Co-ordinators: Krishna Kalra, Saswat Parasar Behera"
           />
           <EventCard
@@ -62,7 +62,7 @@ function EventPage() {
             image={PitchAndWin}
             description="The Pitch and Win competition challenges participants to create groundbreaking solutions to existing problems and pitch them to industry experts."
             date="Date: 10th Nov 2024, 10:00 AM - 1:00 PM"
-            prize_pool="Price Pool: INR 35,000"
+            prize_pool="Prize Pool: INR 35,000"
             coordinators="Co-ordinators: Anirudh Pradhan, Pinaki RS"
           />
           <EventCard
@@ -91,7 +91,7 @@ function EventPage() {
             image={Autobot}
             description="This competition challenges you to build and program a fully autonomous robot capable of navigating a complex course."
             date="Date: 10th Nov 2024, 10:00 AM - 3:00 PM"
-            prize_pool="Price Pool: INR 15,000"
+            prize_pool="Prize Pool: INR 15,000"
             coordinators="Co-ordinators: Abhijeet Mukherjee, Preetam"
           />
           <EventCard
@@ -99,7 +99,7 @@ function EventPage() {
             image={RoboRace}
             description="Competitors will design and construct robots capable of navigating a specially designed obstacle course."
             date="Date: 9th Nov 2024, 10:00 AM - 6:00 PM"
-            prize_pool="Price Pool: INR 10,000"
+            prize_pool="Prize Pool: INR 10,000"
             coordinators="Co-ordinators: Abhijeet Mukherjee, Preetam"
           />
           <EventCard
@@ -107,7 +107,7 @@ function EventPage() {
             image={BuildABot}
             description="This event invites students to engage in a thrilling 24-hour challenge where they design and build a functional bot."
             date="Date: 8th Nov 2024, 10:00 PM - 9th Nov 2024, 8:00 AM"
-            prize_pool="Price Pool: INR 30,000"
+            prize_pool="Prize Pool: INR 30,000"
             coordinators="Co-ordinators: Abhijeet Mukherjee, Preetam"
           />
         </div>

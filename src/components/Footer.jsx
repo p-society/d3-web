@@ -149,7 +149,7 @@ function Footer() {
         <div className='footer-address'>
           <p>IIIT Bhubaneswar, Gothapatna, Bhubaneswar, Odisha, 751003</p>
           <p>Email: techsociety@iiitbh.ac.in</p>
-          <p>Phone: +91-1234567890</p>
+          <p>Phone: +91-9198851103</p>
           <p>© 2024 IIIT Bhubaneswar Tech Society. All Rights Reserved.</p>
         </div>
       </div>
