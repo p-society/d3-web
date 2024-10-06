@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "../assets/css/footer.css";
-import { Facebook, Instagram, Linkedin, Twitter } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, Mail, Twitter } from 'lucide-react';
 
 // Import images dynamically
 import alexImage from '../assets/images/alex.png';
@@ -97,20 +97,16 @@ function Footer() {
         </div>
         <div className='footer-socials'>
           <li className='social-item'>
-            <Facebook />
-            <a href="">Facebook</a>
-          </li>
-          <li className='social-item'>
             <Instagram />
-            <a href="">Instagram</a>
+            <a href="https://www.instagram.com/d3fest.iiitbh/">Instagram</a>
           </li>
           <li className='social-item'>
             <Linkedin />
-            <a href="">Linkedin</a>
+            <a href="https://www.linkedin.com/company/tech-society-iiitbh/">Linkedin</a>
           </li>
           <li className='social-item'>
-            <Twitter />
-            <a href="">Twitter</a>
+            <Mail  />
+            <a href="mailto:Dcube_techfest@iiit-bh.ac.in">Mail</a>
           </li>
         </div>
 

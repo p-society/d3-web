@@ -11,7 +11,7 @@ function Register() {
     {
       Event: 'Code-O-Lympics',
       Details: 'ICPC (International Collegiate Programming Contest)- inspired programming competition where teams of coders come together to solve a series of algorithmic problems within a specified time limit.Each teamworks collaboratively to tackle a variety of computational challenges that test their coding skills, problem - solving abilities, and efficiency in implementing algorithms.',
-      Register: 'https://unstop.com/hackathons/craftncode-d3-techno-management-fest-international-institute-of-information-technology-iiit-bhubaneswar-1171379'
+      Register: 'https://unstop.com/p/cod-o-lympics-d3-techno-management-fest-international-institute-of-information-technology-iiit-bhubaneswar-1171549'
     },
     {
       Event: 'CyberSec Battle',

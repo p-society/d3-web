@@ -65,20 +65,26 @@ function EventPage() {
             coordinators="Co-ordinators: Soubhik Gon, Saswat Parasar Behera"
           />
           <EventCard
-            title="Tech Talk (Software Edition)"
+            title="Beyond Boundaries"
             image={BeyondBoundaries}
             description="Industry experts and passionate developers converge to share insights on the latest trends, tools, and innovations in software development. Engage in thought-provoking discussions, interactive workshops, and networking opportunities that will inspire your tech journey!"
             date="Date: 20th - 21st march 2024"
             prize_pool="INR 50,000"
             coordinators="Co-ordinators: Soubhik Gon, Saswat Parasar Behera"
           />
+
           <EventCard
-            title="Tech Talk (Hardware Edition)"
+            title="Digicast"
             image={Digicast}
             description="A dynamic forum where hardware enthusiasts and industry leaders come together to explore cutting-edge technologies, emerging trends, and practical applications in hardware development. Participate in engaging talks, hands-on demonstrations, and collaborative discussions that will elevate your understanding of the hardware landscape!"
             date="Date: 20th - 21st march 2024"
             prize_pool="INR 50,000"
             coordinators="Co-ordinators: Soubhik Gon, Saswat Parasar Behera"
+          />
+          <EventCard
+            title="E-Talk"
+            image={BeyondBoundaries}
+            description="Industry experts and passionate developers converge to share insights on the latest trends, tools, and innovations in software development. Engage in thought-provoking discussions, interactive workshops, and networking opportunities that will inspire your tech journey!"
           />
           <EventCard
             title="Autobot"
@@ -91,14 +97,6 @@ function EventPage() {
           <EventCard
             title="Robo Race"
             image={RoboRace}
-            description="Competitors will design and construct robots capable of navigating a specially designed obstacle course that challenges not just speed, but also precision and agility. Your task is to create a robot that can overcome every hurdle and complete the course in the shortest time possible. Every second counts!"
-            date="Date: 20th - 21st march 2024"
-            prize_pool="INR 50,000"
-            coordinators="Co-ordinators: Soubhik Gon, Saswat Parasar Behera"
-          />
-          <EventCard
-            title="Digicast"
-            image={Digicast}
             description="Competitors will design and construct robots capable of navigating a specially designed obstacle course that challenges not just speed, but also precision and agility. Your task is to create a robot that can overcome every hurdle and complete the course in the shortest time possible. Every second counts!"
             date="Date: 20th - 21st march 2024"
             prize_pool="INR 50,000"

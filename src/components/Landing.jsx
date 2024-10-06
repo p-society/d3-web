@@ -1,6 +1,6 @@
 import React from 'react';
 import '../assets/css/landing.css'
-import { Instagram } from 'lucide-react';
+import { Instagram, Mail } from 'lucide-react';
 import { Linkedin } from 'lucide-react';
 import { Facebook } from 'lucide-react';
 import { Twitter } from 'lucide-react';
@@ -18,10 +18,9 @@ function Landing() {
         <span className='brochure_btn'><a target='_blank' href={pdf_brouch}>Download The Brochure</a></span>
       </p>
       <div className="icons_list">
-        <a href=""><Instagram /></a>
-        <a href=""><Linkedin /></a>
-        <a href=""><Facebook /></a>
-        <a href=""><Twitter /></a>
+        <a href="https://www.instagram.com/d3fest.iiitbh/"><Instagram /></a>
+        <a href="https://www.linkedin.com/company/tech-society-iiitbh/"><Linkedin /></a>
+        <a href="mailto:Dcube_techfest@iiit-bh.ac.in"><Mail /></a>
       </div>
     </section>
   );
