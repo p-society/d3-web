@@ -22,7 +22,7 @@ Client Source Tree for D3 Techno-Management event by the Tech society IIIT-Bh.
 
 <div align="center">
 <br/>
-<img src='https://skillicons.dev/icons?i=nextjs' ></img>
+<img src='https://skillicons.dev/icons?i=react,js,tailwind' ></img>
 </div>
 <br/>
 
