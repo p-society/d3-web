@@ -1,0 +1,26 @@
+.announcement-bar {
+    background-color: rgb(17, 243, 17); 
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+    font-family: sans-serif;
+    margin-bottom: 0;
+  }
+
+  .announcement-bar a {
+    color: #3f1cb0;
+  }
+
+
+  @media (max-width: 767px) {
+    .announcement-bar {
+        display: none;
+    }
+}
+  

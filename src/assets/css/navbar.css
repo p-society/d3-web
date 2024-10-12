@@ -3,7 +3,7 @@
     padding: 1.6em 0;
     position: fixed;
     z-index: 50;
-    top: 0;
+    top: 35px;
     left: 0;
     right: 0;
     background-color: #000;
@@ -160,5 +160,11 @@
     }
     .d3_navbar {
         padding-top: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .d3_navbar {
+        top: 0; 
     }
 }
