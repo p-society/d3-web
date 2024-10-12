@@ -46,7 +46,7 @@
     color: white;
     margin: 0;
     position: absolute;
-    top: 20%;
+    top: 30%;
     left: 100px;
 }
 
@@ -73,7 +73,7 @@
     flex-direction: column;
     gap: 2em;
     position: absolute;
-    top: 10%;
+    top:  30%;
     right: 0;
     padding: 1em;
 }

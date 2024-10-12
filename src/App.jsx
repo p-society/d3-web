@@ -10,11 +10,13 @@ import Register from './components/Register';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import './App.css'
+import Announcement from './components/Announcement';
 const Events = EventPage
 
 function App() {
   return (
     <>
+    <Announcement/>
       <ToastContainer />
       <Navbar />
       <Landing />
