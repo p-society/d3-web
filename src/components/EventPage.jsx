@@ -23,10 +23,10 @@ function EventPage() {
           <h2 className="sub-title">
             Welcome to D3 Fest - Where Technology Meets Innovation!
             <br />
-            Get ready to fuel your passion and amplify your skills at D, the
+            Get ready to fuel your passion and amplify your skills at D3, the
             electrifying Techno-Management Fest of IIIT Bhubaneswar! Organized
             by the Tech Society of IIIT Bhubaneswar, in collaboration with the
-            dynamic Automation and Robotics Society and RIPIT Company, D
+            dynamic Automation and Robotics Society (TARS) and E-Cell, D
             Fest promises an exciting blend of tech-centric competitions, mind-
             bending challenges, and management feats that will test your
             strategic prowess.

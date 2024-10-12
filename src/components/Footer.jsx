@@ -8,6 +8,7 @@ import techImage from '../assets/images/tech.png';
 import xImage from '../assets/images/X.png';
 import tarsImage from '../assets/images/tars.png';
 import steveImage from '../assets/images/steve.png';
+import EcellImage from '../assets/images/v1/ecell.png'
 import { toast } from 'react-toastify';
 
 const Tooltip = ({ text, position }) => {
@@ -86,6 +87,8 @@ function Footer() {
           <img src={techImage} alt="Tech Logo" />
           <img src={xImage} alt="X Logo" />
           <img src={tarsImage} alt="TARS Logo" />
+          <img src={xImage} alt="X Logo" />
+          <img src={EcellImage} alt="E-Cell Logo" />
         </div>
 
         <div className='footer-links'>
