@@ -1,39 +1,12 @@
-<h1 align="center">
-      D3 Client Source Tree
-	<br>
-</h1>
+# React + Vite
 
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-<div align="center">
-Client Source Tree for D3 Techno-Management event by the Tech society IIIT-Bh.
+Currently, two official plugins are available:
 
-<h3>P-Society Handles</h3>
-<h3 align="center">
-	<a href="https://dev-psoc.netlify.app/">Website</a>
-	<span> | </span>
-	<a href="https://discord.gg/UhmKJGMnan">Community Discord</a>
-	<span> | </span>
-	<a href="https://github.com/p-society/gc-server/blob/main/docs/CONTRIBUTING.md">Contribute</a>
-</h3>
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-</div>
+## Expanding the ESLint configuration
 
-----------------------------------------
-
-<div align="center">
-<br/>
-<img src='https://skillicons.dev/icons?i=react,js,tailwind' ></img>
-</div>
-<br/>
-
-
-### Current contributors <a name="Current contributors"></a>
-
-<a href="https://github.com/p-society/d3-web/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=p-society/d3-web" />
-</a>
-
-Made with [contributors-img](https://contributors-img.web.app).
-
-# License <a name="License"></a>
-D3-Web is licensed under [Apache License](https://github.com/p-society/d3-web/blob/master/LICENSE)
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
