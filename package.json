@@ -4,15 +4,18 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "husky",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "preview": "vite preview"
   },
-    "engines": {
-      "pnpm": ">=8.0.0"
-    },
-    "preinstall": "npx only-allow pnpm",
+  "engines": {
+    "pnpm": ">=8.0.0"
+  },
   "dependencies": {
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
@@ -23,9 +26,21 @@
     "@types/react-dom": "^19.1.7",
     "@vitejs/plugin-react": "^5.0.0",
     "eslint": "^9.33.0",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.3.0",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3",
     "vite": "^7.1.2"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --cache --fix"
+    ],
+    "*.{js,jsx,css,md,json}": [
+      "prettier --write"
+    ]
   }
 }
