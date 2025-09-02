@@ -2,14 +2,29 @@ name: Check All
 
 on:
   push:
-    branches: [main]
+    branches: [main, 2k25]
   pull_request:
-    branches: [main]
+    types: [opened, synchronize, reopened, edited]
 
 jobs:
+  guard:
+    name: Validate PR base branch (must be 2k25)
+    if: ${{ github.event_name == 'pull_request' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check base branch is 2k25
+        run: |
+          echo "Base branch: ${{ github.event.pull_request.base.ref }}"
+          if [ "${{ github.event.pull_request.base.ref }}" != "2k25" ]; then
+            echo "::error title=Invalid base branch::Pull requests must target '2k25'. Current: ${{ github.event.pull_request.base.ref }}";
+            exit 1;
+          fi
+          echo "Pull request targets required branch '2k25'"
+
   check:
     runs-on: ubuntu-latest
-
+    needs: [guard]
+    if: ${{ github.event_name != 'pull_request' || (github.event_name == 'pull_request' && github.event.pull_request.base.ref == '2k25') }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
