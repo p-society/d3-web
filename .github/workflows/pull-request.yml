@@ -25,5 +25,5 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Run pnpm check:all
-        run: pnpm check:all
+      - name: Run pnpm lint-staged
+        run: pnpm lint-staged
