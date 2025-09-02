@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# ESLint cache (explicitly ignored if generated locally)
+.eslintcache
