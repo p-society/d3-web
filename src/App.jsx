@@ -6,7 +6,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <main className="min-h-screen w-full flex flex-col items-center justify-center gap-6 bg-gray-600 text-gray-100 p-6">
+    <main className="min-h-screen w-full flex flex-col items-center justify-center gap-6 bg-gradient-to-br from-gray-950 via-gray-900 to-gray-800 text-gray-100 p-6">
       <div className="text-center space-y-3">
         <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight">
           Tailwind <span className="text-indigo-500">Ready</span>
