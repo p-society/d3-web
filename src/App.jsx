@@ -1,11 +1,12 @@
 import { useState } from 'react'
 import './App.css'
+import Buttons from './components/Buttons'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <main className="min-h-screen w-full flex flex-col items-center justify-center gap-6 bg-gradient-to-br from-gray-950 via-gray-900 to-gray-800 text-gray-100 p-6">
+    <main className="min-h-screen w-full flex flex-col items-center justify-center gap-6 bg-gray-600 text-gray-100 p-6">
       <div className="text-center space-y-3">
         <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight">
           Tailwind <span className="text-indigo-500">Ready</span>
@@ -16,12 +17,10 @@ function App() {
           building.
         </p>
       </div>
-      <button
-        onClick={() => setCount(c => c + 1)}
-        className="px-5 py-2.5 rounded-md bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700 transition-colors font-medium shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400"
-      >
-        Count: {count}
-      </button>
+      <div className="w-44 h-16">
+        <Buttons text="explore" />
+      </div>
+      
       <p className="text-sm text-gray-500">Remove or modify this sample UI as you like.</p>
     </main>
   )
