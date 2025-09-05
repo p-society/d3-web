@@ -40,3 +40,13 @@
 .read-the-docs {
   color: #888;
 }
+@font-face {
+  font-family: "AlfaSlabOne-Regular";
+  src: url("\public\fonts\AlfaSlabOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "AlfaSlabOne-Regular", sans-serif;
+}

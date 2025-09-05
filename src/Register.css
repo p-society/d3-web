@@ -1,0 +1,51 @@
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@font-face {
+  font-family: "AlfaSlabOne-Regular";
+  src: url("../public/fonts/AlfaSlabOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.marquee {
+  display: inline-flex;
+  animation: marquee 20s linear infinite;
+}
+
+.Router-box {
+  width: 1540.863px;
+  height: 126.647px;
+  background: #c6f806;
+  position:sticky;
+  top:720.95px;
+  left:-34.52px;
+  transform: rotate(-5deg);
+  padding:39px 2.25px 39px 2.25px;
+}
+.Rinner-box{
+  color: #000;
+  font-family: "AlfaSlabOne-Regular";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: bolder;
+  line-height: 131%; /* 78.6px */
+  
+}
+
+.Rinner-box span {
+  /* width: 38.364px; */
+  height: 36.897px;
+  transform: rotate(-0.557deg);
+  flex-shrink: 0;
+  stroke-width: 4.607px;
+  stroke: #000;
+  margin-top:31.66px;
+}
+
+
