@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -66,3 +70,6 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* Example utility overrides / custom classes (optional) */
+/* .btn-primary { @apply px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white font-medium rounded; } */
