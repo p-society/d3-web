@@ -4,6 +4,9 @@ import Buttons from './components/Buttons'
 
 function App() {
   const [count, setCount] = useState(0)
+  const handleclick=()=>{
+    console.log("Clicked")
+  }
 
   return (
     <main className="min-h-screen w-full flex flex-col items-center justify-center gap-6 bg-gradient-to-br from-gray-950 via-gray-900 to-gray-800 text-gray-100 p-6">
@@ -18,7 +21,7 @@ function App() {
         </p>
       </div>
       <div className="w-44 h-16">
-        <Buttons text="explore" />
+        <Buttons text="explore" onClick={handleclick}/>
       </div>
       
       <p className="text-sm text-gray-500">Remove or modify this sample UI as you like.</p>
