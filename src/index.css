@@ -1,12 +1,4 @@
 @import 'tailwindcss';
-
-:root {
-}
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 /* Custom color variables */
 :root {
   --color-main-orange: #ff8c34;
