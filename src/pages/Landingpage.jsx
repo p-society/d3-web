@@ -6,14 +6,14 @@ import Grid from '../components/landingpage/grid'
 
 const Landingpage = () => {
   return (
-    <div className="min-h-screen relative overflow-hidden">
+    <div className="min-h-screen bg-[#ffeabb] w-screen relative overflow-hidden">
       <Sidebar />
-      <Grid />
-      <div className="ml-42">
+      {/* <Grid /> */}
+      <Hero />
+      <div className="flex justify-center">
         {' '}
-        {/* Offset for sidebar */}
+        {/* Proper offset for sidebar */}
         <Navbar />
-        <Hero />
       </div>
     </div>
   )
