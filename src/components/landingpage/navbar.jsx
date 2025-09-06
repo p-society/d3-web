@@ -1,6 +1,6 @@
 
-
-export default function Navbar({ arr }) {
+let arr = ["HOME", "EVENTS", "MERCH", "CONTACT US"];
+export default function Navbar() {
   return (
     <div className="w-[1440px] h-[935.238px] bg-[#ffeabb] flex justify-center items-center">
       <div className="inline-flex p-2 items-center gap-9 rounded-2xl border border-[#F06]">
