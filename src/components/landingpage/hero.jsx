@@ -4,22 +4,6 @@ import Button from '../buttons'
 const Hero = () => {
   return (
     <div className="min-h-screen w-full overflow-hidden z-20">
-      {/* Grid background pattern - centered and more prominent */}
-      {/* <div className="absolute inset-0 flex items-center justify-center">
-        <div className="w-[800px] h-[600px] opacity-60">
-          <div
-            className="w-full h-full"
-            style={{
-              backgroundImage: `
-                linear-gradient(rgba(0,0,0,0.3) 2px, transparent 2px),
-                linear-gradient(90deg, rgba(0,0,0,0.3) 2px, transparent 2px)
-              `,
-              backgroundSize: '60px 60px',
-            }}
-          ></div>
-        </div>
-      </div> */}
-
       {/* Orange section */}
       <div className="absolute bottom-25 w-full h-1/2 bg-[#ff8c34]">
         <div className="flex justify-left  px-4 lg:px-16 pt-20 lg:pt-0">
@@ -48,28 +32,13 @@ const Hero = () => {
 
         {/* Right side - Computer and content */}
         <div className="flex-1 flex flex-col justify-center items-center px-4 lg:px-8 relative">
-          {/* Computer image with decorative elements */}
-          <div className="mb-8 relative z-20">
-            {/* <img
-              src="http://localhost:3845/assets/c2fe34a06c3026edfea2fb1e0d7ddb8a31607e96.png"
-              alt="Vintage Computer"
-              className="w-full max-w-sm lg:max-w-md xl:max-w-lg"
-            /> */}
-            {/* Decorative grid background for computer */}
-            {/* <img
-              src="http://localhost:3845/assets/f602e6b9b200b2ee1f344cebb3dde891b67e1072.svg"
-              alt="Grid Background"
-              className="absolute inset-0 w-full h-full object-cover z-[-1]"
-            /> */}
-          </div>
-
           {/* Description text */}
-          {/* <div className="mb-8 max-w-lg text-center">
+          <div className="mb-8 max-w-lg text-left">
             <p className="text-white text-sm md:text-base font-mono lowercase">
               lorem ipsum dolor sit amet, consectetur adipiscing elit. ut et massa mi. aliquam in
               hendrerit urna. pellentesque sit amet
             </p>
-          </div> */}
+          </div>
 
           {/* Buttons */}
           {/* <div className="flex flex-col sm:flex-row gap-4 mb-8">

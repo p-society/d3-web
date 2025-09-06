@@ -8,11 +8,9 @@ const Landingpage = () => {
   return (
     <div className="min-h-screen bg-[#ffeabb] w-screen relative overflow-hidden">
       <Sidebar />
-      {/* <Grid /> */}
+      <Grid />
       <Hero />
       <div className="flex justify-center">
-        {' '}
-        {/* Proper offset for sidebar */}
         <Navbar />
       </div>
     </div>
