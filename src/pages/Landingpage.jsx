@@ -4,6 +4,7 @@ import { FaInstagram, FaLinkedin, FaXTwitter, FaLink } from 'react-icons/fa6' //
 import Navbar from '../components/landingpage/navbar'
 import Hero from '../components/landingpage/hero'
 import Sidebar from '../components/landingpage/sidebar'
+import Event from './Event'
 import Grid from '../components/landingpage/grid'
 import d3Logo from '../assets/d3-.png'
 import vectorTop from '../assets/top-vector.svg'
@@ -43,6 +44,7 @@ const Landingpage = () => {
       <div className="absolute top-6/7 left-16 z-30">
         <img src={d3Logo} alt="D3 Logo" className="w-64" />
       </div>
+      {/* <Event /> */}
     </div>
   )
 }
