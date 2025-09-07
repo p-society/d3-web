@@ -1,4 +1,6 @@
 import React from 'react'
+import { FaInstagram, FaLinkedin, FaXTwitter, FaLink } from 'react-icons/fa6' // FaLink used for Unstop placeholder
+// import your assets as already done
 import Navbar from '../components/landingpage/navbar'
 import Hero from '../components/landingpage/hero'
 import Sidebar from '../components/landingpage/sidebar'
@@ -15,6 +17,22 @@ const Landingpage = () => {
       <Sidebar />
       <Grid />
       <Hero />
+
+      {/* Social Icons - bottom right */}
+      <div className="absolute bottom-8 right-10 z-30 flex gap-6">
+        <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">
+          <FaInstagram className="text-[#000000] w-8 h-8 hover:scale-110 transition" />
+        </a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
+          <FaLinkedin className="text-[#000000] w-8 h-8 hover:scale-110 transition" />
+        </a>
+        <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
+          <FaXTwitter className="text-black w-8 h-8 hover:scale-110 transition" />
+        </a>
+        <a href="https://unstop.com/" target="_blank" rel="noopener noreferrer">
+          <FaLink className="text-[#000000] w-8 h-8 hover:scale-110 transition" />
+        </a>
+      </div>
 
       {/* Vector Top in top right corner */}
       <div className="absolute top-1 right-1 z-30">
