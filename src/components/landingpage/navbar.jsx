@@ -17,6 +17,9 @@ const Navbar = () => {
           <button className="text-[#e30f70] px-4 py-2 font-bold rounded-lg uppercase text-xl tracking-wide hover:bg-[#e30560] hover:text-[#ffffff] transition-colors">
             CONTACT US
           </button>
+          <button className="text-[#e30f70] px-4 py-2 font-bold rounded-lg uppercase text-xl tracking-wide hover:bg-[#e30560] hover:text-[#ffffff] transition-colors">
+            ABOUT US
+          </button>
         </div>
       </div>
     </nav>

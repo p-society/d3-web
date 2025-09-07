@@ -1,11 +1,12 @@
 import React from 'react'
 import Button from '../buttons'
+import computerImage from '../../assets/computer.png' // Ensure this path is correct
 
 const Hero = () => {
   return (
     <div className="min-h-screen w-full overflow-hidden z-20">
       {/* Orange section */}
-      <div className="absolute bottom-25 w-full h-1/2 bg-[#ff8c34]">
+      <div className="absolute bottom-25 w-full h-5/9 bg-[#ff8c34]">
         <div className="flex justify-left  px-4 lg:px-16 pt-20 lg:pt-0">
           <div className="mb-8 lg:mb-16 flex flex-col h-full">
             <h1
@@ -27,13 +28,20 @@ const Hero = () => {
       </div>
 
       {/* Main content container */}
-      <div className="relative z-10 flex flex-col lg:flex-row min-h-screen ">
+      <div className="relative left-60  z-10 flex flex-col lg:flex-row min-h-screen ">
         {/* Left side - Text */}
 
         {/* Right side - Computer and content */}
         <div className="flex-1 flex flex-col justify-center items-center px-4 lg:px-8 relative">
           {/* Description text */}
-          <div className="mb-8 max-w-lg text-left">
+          <div className="mb-6 right-10 relative z-30">
+            <img
+              src={computerImage}
+              alt="Vintage Computer"
+              className="w-full max-w-sm lg:max-w-md"
+            />
+          </div>
+          <div className="mb-1 max-w-lg text-left">
             <p className="text-white text-sm md:text-base font-mono lowercase">
               lorem ipsum dolor sit amet, consectetur adipiscing elit. ut et massa mi. aliquam in
               hendrerit urna. pellentesque sit amet
@@ -41,12 +49,12 @@ const Hero = () => {
           </div>
 
           {/* Buttons */}
-          {/* <div className="flex flex-col sm:flex-row gap-4 mb-8">
+          <div className="flex flex-col sm:flex-row gap-4 mb-8">
             <Button onClick={() => console.log('Explore clicked')}>explore</Button>
             <Button onClick={() => console.log('Download Brochure clicked')}>
               download brochure
             </Button>
-          </div> */}
+          </div>
         </div>
       </div>
     </div>
