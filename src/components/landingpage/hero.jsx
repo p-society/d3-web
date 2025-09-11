@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from '../buttons'
 import computerImage from '../../assets/computer.png' // Ensure this path is correct
+import './hero.css' // Import the CSS file with LemonSmash font
 
 const Hero = () => {
   return (
@@ -9,10 +10,7 @@ const Hero = () => {
       <div className="absolute bottom-25 w-full h-1/2 bg-[#ff8c34]">
         <div className="flex justify-left px-4 lg:px-16 pt-20 lg:pt-0">
           <div className="ml-10 lg:mb-16 flex flex-col h-full">
-            <h1
-              className="text-white font-bold leading-none flex-1 flex flex-col"
-              style={{ fontFamily: 'Lemon Smash' }}
-            >
+            <h1 className="text-white font-bold leading-none flex-1 flex flex-col lemon-smash-font">
               <div className="text-5xl md:text-6xl lg:text-7xl xl:text-[125px] flex items-center -mb-4 lg:-mb-6">
                 dare
               </div>

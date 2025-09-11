@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'LemonSmash';
+  src: url('../../assets/LemonSmash.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.lemon-smash-font {
+  font-family: 'LemonSmash', sans-serif;
+}
