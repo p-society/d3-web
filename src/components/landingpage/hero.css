@@ -8,3 +8,17 @@
 .lemon-smash-font {
   font-family: 'LemonSmash', sans-serif;
 }
+
+/* Static effect styles */
+.static-effect {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  box-shadow:
+    inset 0 0 20px rgba(0, 255, 0, 0.1),
+    0 0 20px rgba(0, 255, 0, 0.05);
+}
+
+/* Add a subtle glow effect to the computer container */
+.computer-container {
+  filter: drop-shadow(0 0 10px rgba(0, 255, 0, 0.2));
+}

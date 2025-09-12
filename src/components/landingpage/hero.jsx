@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from '../buttons'
 import computerImage from '../../assets/computer.png' // Ensure this path is correct
+import StaticEffect from '../StaticEffect'
 import './hero.css' // Import the CSS file with LemonSmash font
 
 const Hero = () => {
@@ -31,12 +32,17 @@ const Hero = () => {
 
         {/* Right side - Computer and content */}
         <div className="flex-1 flex flex-col justify-center items-center px-4 lg:px-8 relative">
-          {/* Computer image */}
-          <div className="mb-6 right-10 relative z-30">
+          {/* Computer image with static effect */}
+          <div className="mb-6 right-10 relative z-30 computer-container">
+            {/* Static effect background */}
+            <div className="absolute inset-0 flex items-center justify-center z-10">
+              <StaticEffect width={320} height={240} className="rounded-lg" />
+            </div>
+            {/* Computer image */}
             <img
               src={computerImage}
               alt="Vintage Computer"
-              className="w-full max-w-sm lg:max-w-md"
+              className="w-full max-w-sm lg:max-w-md relative z-20"
             />
           </div>
 
