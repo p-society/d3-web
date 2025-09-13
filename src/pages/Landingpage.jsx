@@ -1,6 +1,5 @@
 import React from 'react'
-import { FaInstagram, FaLinkedin, FaXTwitter, FaLink } from 'react-icons/fa6' // FaLink used for Unstop placeholder
-// import your assets as already done
+import { FaInstagram, FaLinkedin, FaXTwitter, FaLink } from 'react-icons/fa6'
 import Navbar from '../components/landingpage/navbar'
 import Hero from '../components/landingpage/hero'
 import Sidebar from '../components/landingpage/sidebar'
@@ -11,14 +10,12 @@ import vectorTop from '../assets/top-vector.svg'
 
 const Landingpage = () => {
   return (
-    <div className="min-h-screen bg-[#ffeabb] relative overflow-hidden">
+    <div className="min-h-screen bg-[#ffeabb] relative overflow-hidden top-0">
       {/* Centered container wrapper */}
       <div className="max-w-screen-2xl mx-auto relative min-h-screen">
         <div className="w-full flex mt-2 justify-center">
           <Navbar />
         </div>
-        <Sidebar />
-        <Grid />
         <Hero />
 
         {/* Social Icons - bottom right */}
