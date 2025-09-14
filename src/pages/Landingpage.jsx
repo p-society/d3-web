@@ -6,42 +6,57 @@ import Sidebar from '../components/landingpage/sidebar'
 import Event from './Event'
 import Grid from '../components/landingpage/grid'
 import d3Logo from '../assets/d3-.png'
+import decorLogo from '../assets/decorBottom.png'
 import vectorTop from '../assets/top-vector.svg'
 
 const Landingpage = () => {
   return (
-    <div className="min-h-screen bg-[#ffeabb] relative overflow-hidden top-0">
+    <div className="min-h-screen sm:h-screen bg-[#ffeabb] relative overflow-x-hidden sm:overflow-hidden">
       {/* Centered container wrapper */}
-      <div className="max-w-screen-2xl mx-auto relative min-h-screen">
-        <div className="w-full flex mt-2 justify-center">
+      <div className="max-w-screen-2xl mx-auto relative min-h-full sm:h-full">
+        <div className="w-full flex justify-center">
           <Navbar />
         </div>
         <Hero />
 
-        {/* Social Icons - bottom right */}
-        <div className="absolute bottom-8 right-10 z-30 flex gap-6">
-          <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">
-            <FaInstagram className="text-[#000000] w-8 h-8 hover:scale-110 transition" />
-          </a>
-          <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
-            <FaLinkedin className="text-[#000000] w-8 h-8 hover:scale-110 transition" />
-          </a>
-          <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
-            <FaXTwitter className="text-black w-8 h-8 hover:scale-110 transition" />
-          </a>
-          <a href="https://unstop.com/" target="_blank" rel="noopener noreferrer">
-            <FaLink className="text-[#000000] w-8 h-8 hover:scale-110 transition" />
-          </a>
-        </div>
-
         {/* Vector Top in top right corner */}
         <div className="absolute top-1 right-1 z-30">
-          <img src={vectorTop} alt="Vector Top" className="w-52 h-auto" />
+          <img
+            src={vectorTop}
+            alt="Vector Top"
+            className="hidden sm:block w-20 phone:w-24 md:w-32 lg:w-32 xl:w-52 2xl:w-60 h-auto"
+          />
         </div>
 
-        {/* D3 Logo in bottom left */}
-        <div className="absolute top-6/7 left-16 z-30">
-          <img src={d3Logo} alt="D3 Logo" className="w-64" />
+        {/* Floating Footer */}
+        <div className="absolute bottom-0 left-0 right-0 z-30 px-2 phone:px-4 sm:px-8 pb-2 phone:pb-4 sm:pb-6">
+          <div className="flex justify-between items-end">
+            {/* D3 Logo section - left side */}
+            <div className="flex flex-col">
+              <img src={d3Logo} alt="D3 Logo" className="w-32 phone:w-40 sm:w-48 md:w-64" />
+              <img
+                src={decorLogo}
+                alt="Decorative Bottom"
+                className="w-32 phone:w-40 sm:w-48 md:w-64"
+              />
+            </div>
+
+            {/* Social Icons - right side */}
+            <div className="flex gap-2 phone:gap-3 sm:gap-6 pb-1 phone:pb-2 sm:pb-4">
+              <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">
+                <FaInstagram className="text-[#000000] w-5 h-5 phone:w-6 phone:h-6 sm:w-8 sm:h-8 hover:scale-110 transition" />
+              </a>
+              <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
+                <FaLinkedin className="text-[#000000] w-5 h-5 phone:w-6 phone:h-6 sm:w-8 sm:h-8 hover:scale-110 transition" />
+              </a>
+              <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
+                <FaXTwitter className="text-black w-5 h-5 phone:w-6 phone:h-6 sm:w-8 sm:h-8 hover:scale-110 transition" />
+              </a>
+              <a href="https://unstop.com/" target="_blank" rel="noopener noreferrer">
+                <FaLink className="text-[#000000] w-5 h-5 phone:w-6 phone:h-6 sm:w-8 sm:h-8 hover:scale-110 transition" />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
       {/* <Event /> */}

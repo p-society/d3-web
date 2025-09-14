@@ -1,5 +1,9 @@
 @import 'tailwindcss';
 
+body {
+  /* This is the smallest width your design will support before scrolling */
+  min-width: 375px;
+}
 /* Font imports */
 @font-face {
   font-family: 'Alfa Slab One';
