@@ -26,5 +26,12 @@ body {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'CascadiaCode';
+  src: url('./assets/CascadiaCode-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Example utility overrides / custom classes (optional) */
 /* .btn-primary { @apply px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white font-medium rounded; } */
