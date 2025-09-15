@@ -14,7 +14,7 @@ const Landingpage = () => {
     <div className="min-h-screen sm:h-screen bg-[#ffeabb] relative overflow-x-hidden sm:overflow-hidden">
       {/* Centered container wrapper */}
       <div className="max-w-screen-2xl mx-auto relative min-h-full sm:h-full">
-        <div className="w-full flex justify-center">
+        <div className="w-full flex justify-center pt-2">
           <Navbar />
         </div>
         <Hero />
