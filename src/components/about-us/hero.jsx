@@ -8,22 +8,22 @@ import FrameImage from '../../assets/Frame.png'
 const AboutUsHero = ({ isLoaded }) => {
   return (
     <div
-      className={`relative px-8 py-16 overflow-hidden transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
+      className={`relative min-h-screen h-full px-8 py-16 overflow-hidden transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
       style={{ transitionDelay: '300ms' }}
     >
       {/* Background*/}
-      <div className="absolute inset-0 bg-[#3366FF] w-screen opacity-90"></div>
+      <div className="absolute inset-0 h-full bg-[#3366FF] opacity-90"></div>
 
       {/* Main content container */}
       <div className="relative z-10 max-w-6xl mx-auto">
-        {/* Two column layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+        {/* Responsive layout: single column for mobile/sm, two columns for md and above */}
+        <div className="flex flex-col md:grid md:grid-cols-2 gap-8 mb-8 md:mb-16">
           {/* Left column - Hero title and Stacked Card */}
           <div className="space-y-8">
             {/* Hero title section */}
-            <div className="text-center lg:text-left relative">
+            <div className="text-center md:text-left relative">
               <h1
-                className="text-4xl lg:text-6xl mb-6 leading-tight"
+                className="text-4xl md:text-5xl lg:text-6xl mb-6 leading-tight"
                 style={{ fontFamily: 'Alfa Slab One', color: '#FFEABB' }}
               >
                 Unleash
@@ -31,8 +31,8 @@ const AboutUsHero = ({ isLoaded }) => {
                 <span>Your Potential.</span>
               </h1>
 
-              {/* Registrations Banner - positioned at top right */}
-              <div className="absolute -top-12 -right-18 lg:-right-60 lg:top-3">
+              {/* Registrations Banner - positioned at top right for md+, below title for mobile */}
+              <div className="md:absolute md:-top-12 md:-right-18 lg:-right-60 md:top-3 flex justify-center md:block mt-4 md:mt-0">
                 <div className="transform rotate-[7deg]">
                   <RegistrationsBanner />
                 </div>
@@ -40,7 +40,7 @@ const AboutUsHero = ({ isLoaded }) => {
             </div>
 
             {/* Stacked Card section */}
-            <div className="flex justify-center lg:justify-start">
+            <div className="flex justify-center md:justify-start">
               <StackedCard
                 title="D3 TECH FEST"
                 description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, ut at massa mi, aliquam in hendrerit urna, pellentesque sit amet elit, ut et massa mi, aliquam in hendrerit urna, pellentesque sit amet"
@@ -49,9 +49,14 @@ const AboutUsHero = ({ isLoaded }) => {
                 onRegisterClick={() => console.log('Register clicked')}
               />
             </div>
+
+            {/* Register component for mobile/sm: show below stacked card, hide on md+ */}
+            <div className="flex justify-center md:hidden">
+              <Register />
+            </div>
           </div>
-          {/* Right column - Empty for now */}
-          <div className="hidden lg:block flex flex-col items-center w-full ml-auto relative">
+          {/* Right column - Only visible on md and above */}
+          <div className="hidden md:flex flex-col items-center w-full ml-auto relative">
             {/* Group image at the top of the right column */}
             <img
               src={GroupImage}
@@ -84,11 +89,11 @@ const AboutUsHero = ({ isLoaded }) => {
               />
             </div>
             {/* Right column content can be added here */}
-          </div>{' '}
+          </div>
         </div>
 
-        {/* Register component below columns */}
-        <div className="flex justify-center">
+        {/* Register component for md and above: below columns */}
+        <div className="hidden md:flex justify-center">
           <Register />
         </div>
       </div>

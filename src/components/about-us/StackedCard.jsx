@@ -15,7 +15,7 @@ const StackedCard = ({
       <img
         src={arrowImage}
         alt="Arrow decoration"
-        className="absolute -top-22 -right-36 w-16 h-16 lg:w-20 lg:h-30 z-20 pointer-events-none select-none"
+        className="absolute -top-22 -right-36 w-16 h-16 lg:w-24 lg:h-34 z-20 pointer-events-none select-none"
         style={{}}
       />
 
