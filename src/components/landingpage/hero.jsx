@@ -6,13 +6,16 @@ import Sidebar from './sidebar'
 import Grid from './grid'
 import './hero.css' // Import the CSS file with LemonSmash font
 
-const Hero = () => {
+const Hero = ({ isLoaded }) => {
   return (
-    <div className="min-h-screen w-full overflow-hidden z-20 ">
-      <Sidebar />
-      <Grid />
+    <div className={`min-h-screen w-full overflow-hidden z-20`}>
+      <Sidebar isLoaded={isLoaded} />
+      <Grid isLoaded={isLoaded} />
       {/* Orange section */}
-      <div className="absolute w-full bg-[#ff8c34] top-[50vh]">
+      <div
+        className={`absolute w-full bg-[#ff8c34] top-[50vh] transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
+        style={{ transitionDelay: '300ms' }}
+      >
         <div className="flex justify-between px-2 phone:px-3 sm:px-4 lg:px-16 pt-4 phone:pt-6 sm:pt-8 lg:pt-2">
           <div className="ml-2 phone:ml-4 sm:ml-10 lg:mb-4 flex flex-col h-full pt-2 phone:pt-3 sm:pt-4">
             <h1 className="text-white font-bold leading-none flex-1 flex flex-col lemon-smash-font">

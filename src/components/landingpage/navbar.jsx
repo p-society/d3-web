@@ -1,8 +1,19 @@
-import React, { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
+  const [animateItems, setAnimateItems] = useState(false)
+
+  // Control menu item animations
+  useEffect(() => {
+    if (isOpen) {
+      // Delay menu items animation to start after sidebar opens
+      setTimeout(() => setAnimateItems(true), 300)
+    } else {
+      setAnimateItems(false)
+    }
+  }, [isOpen])
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen)
@@ -18,7 +29,7 @@ const Navbar = () => {
       <div className="lg:hidden z-50 fixed top-4 right-4">
         <button
           onClick={toggleSidebar}
-          className="bg-[#e30f70] text-white p-2 rounded-lg focus:outline-none hover:bg-[#e30560] transition-colors"
+          className={`bg-[#e30f70] text-white p-2 rounded-lg focus:outline-none hover:bg-[#e30560] transition-all duration-300 ${isOpen ? 'rotate-[360deg] scale-110' : ''}`}
         >
           <div className="w-6 h-6 flex flex-col justify-center items-center">
             <span
@@ -35,45 +46,56 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Sidebar - visible on sm and md only */}
-      <div className={`lg:hidden fixed inset-0 z-40 ${isOpen ? 'block' : 'hidden'}`}>
+      <div
+        className={`lg:hidden fixed inset-0 z-40 transition-opacity duration-300 ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+      >
         {/* Backdrop */}
-        <div className="fixed inset-0 bg-black bg-opacity-50" onClick={closeSidebar}></div>
+        <div
+          className={`fixed inset-0 bg-black transition-opacity duration-300 ${isOpen ? 'bg-opacity-50' : 'bg-opacity-0'}`}
+          onClick={closeSidebar}
+        ></div>
 
         {/* Sidebar */}
         <div
-          className={`fixed top-0 right-0 h-full w-64 bg-[#ffeabb] border-l-2 border-[#ff0066] transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}
+          className={`fixed top-0 right-0 h-full w-64 bg-[#ffeabb] border-l-2 border-[#ff0066] transform transition-transform duration-300 ease-out ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}
         >
           <div className="flex flex-col pt-16 px-4">
+            {/* Menu items with staggered animation */}
             <Link
               to="/"
               onClick={closeSidebar}
-              className="text-[#e30f70] px-4 py-3 mb-2 rounded-lg font-bold uppercase text-xl tracking-wide hover:bg-[#e30560] hover:text-[#ffffff] transition-colors"
+              className={`text-[#e30f70] px-4 py-3 mb-2 rounded-lg font-bold uppercase text-xl tracking-wide hover:bg-[#e30560] hover:text-[#ffffff] transition-all duration-300 transform ${animateItems ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}`}
+              style={{ transitionDelay: '50ms' }}
             >
               HOME
             </Link>
             <Link
               to="/events"
               onClick={closeSidebar}
-              className="text-[#e30f70] px-4 py-3 mb-2 font-bold rounded-lg uppercase text-xl tracking-wide hover:bg-[#e30560] hover:text-[#ffffff] transition-colors"
+              className={`text-[#e30f70] px-4 py-3 mb-2 font-bold rounded-lg uppercase text-xl tracking-wide hover:bg-[#e30560] hover:text-[#ffffff] transition-all duration-300 transform ${animateItems ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}`}
+              style={{ transitionDelay: '100ms' }}
             >
               EVENTS
             </Link>
             <button
               onClick={closeSidebar}
-              className="text-[#e30f70] px-4 py-3 mb-2 font-bold rounded-lg uppercase text-xl tracking-wide hover:bg-[#e30560] hover:text-[#ffffff] transition-colors text-left"
+              className={`text-[#e30f70] px-4 py-3 mb-2 font-bold rounded-lg uppercase text-xl tracking-wide hover:bg-[#e30560] hover:text-[#ffffff] transition-all duration-300 transform ${animateItems ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'} text-left`}
+              style={{ transitionDelay: '150ms' }}
             >
               MERCH
             </button>
             <button
               onClick={closeSidebar}
-              className="text-[#e30f70] px-4 py-3 mb-2 font-bold rounded-lg uppercase text-xl tracking-wide hover:bg-[#e30560] hover:text-[#ffffff] transition-colors text-left"
+              className={`text-[#e30f70] px-4 py-3 mb-2 font-bold rounded-lg uppercase text-xl tracking-wide hover:bg-[#e30560] hover:text-[#ffffff] transition-all duration-300 transform ${animateItems ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'} text-left`}
+              style={{ transitionDelay: '200ms' }}
             >
               CONTACT US
             </button>
             <Link
               to="/about-us"
               onClick={closeSidebar}
-              className="text-[#e30f70] px-4 py-3 mb-2 font-bold rounded-lg uppercase text-xl tracking-wide hover:bg-[#e30560] hover:text-[#ffffff] transition-colors"
+              className={`text-[#e30f70] px-4 py-3 mb-2 font-bold rounded-lg uppercase text-xl tracking-wide hover:bg-[#e30560] hover:text-[#ffffff] transition-all duration-300 transform ${animateItems ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}`}
+              style={{ transitionDelay: '250ms' }}
             >
               ABOUT US
             </Link>

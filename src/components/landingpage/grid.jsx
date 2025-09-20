@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Grid = ({ rows = 10, cols = 13, cellSize = '1.2rem' }) => {
+const Grid = ({ rows = 10, cols = 13, cellSize = '1.2rem', isLoaded }) => {
   return (
     <div
-      className="absolute inset-0 flex top-[52vh] h-1/20 items-center pointer-events-none z-0"
-      style={{ transform: 'translateX(19rem)' }}
+      className={`absolute inset-0 flex top-[52vh] h-1/20 items-center pointer-events-none z-0 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
+      style={{ transform: 'translateX(19rem)', transitionDelay: '400ms' }}
     >
       <div
         className="grid gap-0"
