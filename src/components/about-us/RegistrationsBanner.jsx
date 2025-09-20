@@ -17,7 +17,7 @@ const RegistrationsBanner = ({ text = 'REGISTRATIONS OPEN', icon = '', className
         </span>
         {/* D2 Image in top right corner of the banner */}
         <div className="absolute -top-4 -right-4 z-20">
-          <img src={D2Image} alt="D2" className="w-8 h-8 lg:w-15 lg:h-15 object-contain" />
+          <img src={D2Image} alt="D2" className="w-8 h-8 lg:w-10 lg:h-10 object-contain" />
         </div>
       </div>
       {/* Optional shadow/depth effect */}

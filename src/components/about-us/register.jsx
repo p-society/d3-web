@@ -25,7 +25,7 @@ export default function Register() {
   )
 
   return (
-    <div className="bg-gray-900 py-3 overflow-hidden Router-box">
+    <div className="bg-gray-900 py-3 overflow-hidden w-screen Router-box">
       <div className="marquee whitespace-nowrap flex items-center text-white text-xl font-bold Rinner-box">
         {/* First set of 3 */}
         <React.Fragment key="set1">
