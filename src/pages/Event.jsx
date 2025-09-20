@@ -1,8 +1,16 @@
-import React from 'react'
 import BgcardStack from '../components/events/Bgcard-stack'
 import ForegroundCard from '../components/events/Foreground-card'
 import Navbar from '../components/landingpage/navbar'
+import useRouteAnimation from '../utils/animatie'
 export default function Event() {
+  // const [isLoaded, setIsLoaded] = useState(false)
+
+  //   useEffect(() => {
+  //     setIsLoaded(true)
+  //   }, [])
+
+  const isLoaded = useRouteAnimation()
+
   return (
     <div className="page-wrapper">
       <div className="min-h-screen bg-[#ffeabb] w-full relative overflow-x-hidden">
@@ -11,6 +19,7 @@ export default function Event() {
         </div>
         <div>
           <BgcardStack
+            isLoaded={isLoaded}
             prop={{ isright: false, color: '#4271FF' }}
             ComponentToRender={ForegroundCard}
             componentProps={{
@@ -21,6 +30,7 @@ export default function Event() {
             }}
           />
           <BgcardStack
+            isLoaded={isLoaded}
             prop={{ isright: true, color: '#FFEABB' }}
             ComponentToRender={ForegroundCard}
             componentProps={{

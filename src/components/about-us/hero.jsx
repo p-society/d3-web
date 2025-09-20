@@ -5,11 +5,14 @@ import RegistrationsBanner from './RegistrationsBanner'
 import GroupImage from '../../assets/Group.png'
 import FrameImage from '../../assets/Frame.png'
 
-const AboutUsHero = () => {
+const AboutUsHero = ({ isLoaded }) => {
   return (
-    <div className="relative px-8 py-16 overflow-hidden">
+    <div
+      className={`relative px-8 py-16 overflow-hidden transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
+      style={{ transitionDelay: '300ms' }}
+    >
       {/* Background*/}
-      <div className="absolute inset-0 bg-[#3366FF] opacity-90"></div>
+      <div className="absolute inset-0 bg-[#3366FF] w-screen opacity-90"></div>
 
       {/* Main content container */}
       <div className="relative z-10 max-w-6xl mx-auto">

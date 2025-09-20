@@ -1,10 +1,13 @@
 import React from 'react'
 
-const BgcardStack = ({ prop, ComponentToRender, componentProps }) => {
+const BgcardStack = ({ prop, ComponentToRender, componentProps, isLoaded }) => {
   const left = prop.isright ? -14.96 : 14.96
 
   return (
-    <div className="relative mx-auto my-8" style={{ width: '1211.38px', height: '387.90px' }}>
+    <div
+      className={`relative mx-auto my-8 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
+      style={{ width: '1211.38px', height: '387.90px', transitionDelay: '300ms' }}
+    >
       {/* Bottom offset layer */}
       <div
         className="absolute bg-lime-300 rounded-[31.78px] border-black"

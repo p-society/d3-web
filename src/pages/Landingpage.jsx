@@ -1,17 +1,14 @@
-import React, { useEffect, useState } from 'react'
+// import React, { useEffect, useState } from 'react'
 import { FaInstagram, FaLinkedin, FaXTwitter, FaLink } from 'react-icons/fa6'
 import Navbar from '../components/landingpage/navbar'
 import Hero from '../components/landingpage/hero'
 import d3Logo from '../assets/d3-.png'
 import decorLogo from '../assets/decorBottom.png'
 import vectorTop from '../assets/top-vector.svg'
+import useRouteAnimation from '../utils/animatie'
 
 const Landingpage = () => {
-  const [isLoaded, setIsLoaded] = useState(false)
-
-  useEffect(() => {
-    setIsLoaded(true)
-  }, [])
+  const isLoaded = useRouteAnimation()
 
   return (
     <div className="min-h-screen sm:h-screen bg-[#ffeabb] relative overflow-x-hidden sm:overflow-hidden">
