@@ -8,7 +8,7 @@ import FrameImage from '../../assets/Frame.png'
 const AboutUsHero = ({ isLoaded }) => {
   return (
     <div
-      className={`relative min-h-screen h-full px-8 py-16 overflow-hidden transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
+      className={`relative min-h-screen h-full px-8 py-16 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
       style={{ transitionDelay: '300ms' }}
     >
       {/* Background*/}
@@ -57,7 +57,7 @@ const AboutUsHero = ({ isLoaded }) => {
               <img
                 src={GroupImage}
                 alt="Group"
-                className="w-34 max-w-full -mt-4 mb-37 object-contain ml-auto"
+                className="w-34 max-w-full -mt-4 mb-37 object-contain ml-auto hidden md:block"
                 style={{ display: 'block' }}
               />
               {/* Large circular container for future images */}
@@ -87,12 +87,15 @@ const AboutUsHero = ({ isLoaded }) => {
             </div>
 
             {/* Register component for mobile/sm: show below right column content, hide on md+ */}
-            <div className="flex justify-center md:hidden">
-              <Register />
-            </div>
+            {
+              <div className="md:hidden w-screen relative left-1/2 -translate-x-1/2 mt-8">
+                <Register />
+              </div>
+            }
           </div>
           {/* Right column for md+ only */}
           <div className="hidden md:flex flex-col items-center w-full ml-auto relative order-1 md:order-2">
+            {' '}
             {/* Group image at the top of the right column */}
             <img
               src={GroupImage}
@@ -128,7 +131,7 @@ const AboutUsHero = ({ isLoaded }) => {
         </div>
 
         {/* Register component for md and above: below columns */}
-        <div className="hidden md:flex justify-center">
+        <div className="hidden md:flex justify-center w-screen relative left-1/2 -translate-x-1/2">
           <Register />
         </div>
       </div>

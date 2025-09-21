@@ -8,7 +8,7 @@ const AboutUs = () => {
   const isLoaded = useRouteAnimation()
   return (
     <div className="page-wrapper">
-      <div className="min-h-screen bg-[#ffeabb] w-full relative overflow-x-hidden flex flex-col items-center justify-center">
+      <div className="min-h-screen bg-[#ffeabb] w-full relative flex flex-col justify-center">
         <div className="w-full flex justify-center">{/* <Navbar /> */}</div>
         <AboutUsHero isLoaded={isLoaded} />
       </div>

@@ -20,15 +20,22 @@
   will-change: transform;
 }
 
+/* .Router-box { */
+/*   width: 1540.863px; */
+/*   height: 126.647px; */
+/*   background: #c6f806; */
+/*   position: sticky; */
+/*   top: 720.95px; */
+/*   left: -34.52px; */
+/*   transform: rotate(-5deg); */
+/*   padding: 39px 2.25px 39px 2.25px; */
+/*   display: flex; */
+/*   align-items: center; */
+/* } */
 .Router-box {
-  width: 1540.863px;
-  height: 126.647px;
   background: #c6f806;
-  position: sticky;
-  top: 720.95px;
-  left: -34.52px;
-  transform: rotate(-5deg);
-  padding: 39px 2.25px 39px 2.25px;
+  transform: rotate(-5deg) scale(1.05);
+  padding: 39px 2.25px; /* Simplified padding */
   display: flex;
   align-items: center;
 }
