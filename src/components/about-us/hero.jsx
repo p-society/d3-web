@@ -53,15 +53,8 @@ const AboutUsHero = ({ isLoaded }) => {
 
             {/* Right column content for mobile: show below StackedCard, hide on md+ */}
             <div className="flex flex-col items-center w-full ml-auto relative md:hidden">
-              {/* Group image at the top of the right column */}
-              <img
-                src={GroupImage}
-                alt="Group"
-                className="w-34 max-w-full -mt-4 mb-37 object-contain ml-auto hidden md:block"
-                style={{ display: 'block' }}
-              />
               {/* Large circular container for future images */}
-              <div className="mx-auto -mt-62 md:-mt-8 rounded-full bg-white/80 w-95 h-95 lg:w-100 lg:h-100 flex items-center justify-center shadow-xl relative">
+              <div className="mx-auto mt-10 md:-mt-8 rounded-full bg-white/80 w-95 h-95 lg:w-100 lg:h-100 flex items-center justify-center shadow-xl relative">
                 {/* Top left circle (dashed border) */}
                 <div
                   className="absolute top-2 left-6 w-14 h-14 rounded-full border-2 border-black border-dashed flex items-center justify-center z-20"
