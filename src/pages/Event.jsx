@@ -46,18 +46,17 @@ export default function Event() {
         <EventHero />
 
         {/* === Existing Event Cards Section === */}
-        <div className="py-16 -mt-25 space-y-24">
+        <div className="py-16 -mt-25 space-y-0 px-4 md:px-8">
           {eventsData.map((event, index) => {
             const isEven = (index + 1) % 2 === 0
             return (
-              // This wrapper now uses absolute positioning to place the card
-              <div key={index} className="relative h-[388px] w-full">
-                <div
-                  className={`absolute top-0 ${isEven ? 'right-0 md:right-5' : 'left-0 md:left-5'}`}
-                >
+              <div
+                key={index}
+                className={`flex w-full ${isEven ? 'justify-end' : 'justify-start'}`}
+              >
+                <div className="w-full  md:w-auto">
                   <BgcardStack
                     isLoaded={isLoaded}
-                    // The isright prop now only controls the internal look of the card
                     prop={{ isright: isEven, color: event.color }}
                     ComponentToRender={ForegroundCard}
                     componentProps={{
