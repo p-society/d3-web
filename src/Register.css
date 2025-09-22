@@ -3,7 +3,7 @@
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-40%);
   }
 }
 
@@ -34,8 +34,8 @@
 /* } */
 .Router-box {
   background: #c6f806;
-  transform: rotate(-5deg) scale(1.05);
-  padding: 39px 2.25px; /* Simplified padding */
+  transform: rotate(-3.2deg) scale(1);
+  padding: 29px 2px; /* Simplified padding */
   display: flex;
   align-items: center;
 }
@@ -43,7 +43,7 @@
 .Rinner-box {
   color: #000;
   font-family: 'AlfaSlabOne-Regular';
-  font-size: 60px;
+  font-size: 52px;
   font-style: normal;
   font-weight: bolder;
   line-height: 131%; /* 78.6px */

@@ -9,12 +9,9 @@ import Navbar from '../landingpage/navbar' // added
 const AboutUsHero = ({ isLoaded }) => {
   return (
     <div
-      className={`relative min-h-screen h-full px-8 pt-6 pb-16 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
+      className={`bg-[#3366FF] opacity-90 min-h-screen px-1 pt-7 pb-14 transition-all duration-700 ease-out ${isLoaded ? 'opacity-90 translate-y-0' : 'opacity-0 translate-y-3'}`}
       style={{ transitionDelay: '300ms' }}
     >
-      {/* Background*/}
-      <div className="absolute inset-0 h-full bg-[#3366FF] opacity-90"></div>
-
       {/* Navbar (on top, centered) */}
       <div className="w-full flex justify-center relative z-20">
         <Navbar
@@ -23,12 +20,12 @@ const AboutUsHero = ({ isLoaded }) => {
           borderColor="#FFEAAB"
           sidebarBg="#fff3d4"
           hoverTextColor="#000000"
-          mobileTextColor="#000000" // Add this line
+          mobileTextColor="#000000"
         />
       </div>
 
       {/* Main content container */}
-      <div className="relative z-10 max-w-6xl mx-auto mt-10">
+      <div className="relative z-10 max-w-6xl mx-auto mt-8">
         {/* Responsive layout: single column for mobile/sm, two columns for md and above */}
         {/* Responsive: single column for <md, two columns for md+ */}
         <div className="flex flex-col md:grid md:grid-cols-2 gap-8 mb-8 md:mb-16">
@@ -106,7 +103,7 @@ const AboutUsHero = ({ isLoaded }) => {
             <img
               src={GroupImage}
               alt="Group"
-              className="hidden md:block w-34 max-w-full -mt-4 mb-37 object-contain ml-auto"
+              className="hidden md:block w-34 max-w-full -mt-8 mb-20 object-contain ml-auto"
               style={{ display: 'block' }}
             />
             {/* Large circular container for future images */}
@@ -135,11 +132,10 @@ const AboutUsHero = ({ isLoaded }) => {
             </div>
           </div>
         </div>
-
         {/* Register component for md and above: below columns */}
-        <div className="hidden md:flex justify-center w-screen relative left-1/2 -translate-x-1/2">
-          <Register />
-        </div>
+      </div>
+      <div className="hidden md:flex justify-center relative left-1/2 -translate-x-1/2">
+        <Register />
       </div>
     </div>
   )
