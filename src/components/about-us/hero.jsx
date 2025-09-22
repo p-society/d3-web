@@ -4,18 +4,31 @@ import StackedCard from './StackedCard'
 import RegistrationsBanner from './RegistrationsBanner'
 import GroupImage from '../../assets/Group.png'
 import FrameImage from '../../assets/Frame.png'
+import Navbar from '../landingpage/navbar' // added
 
 const AboutUsHero = ({ isLoaded }) => {
   return (
     <div
-      className={`relative min-h-screen h-full px-8 py-16 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
+      className={`relative min-h-screen h-full px-8 pt-6 pb-16 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
       style={{ transitionDelay: '300ms' }}
     >
       {/* Background*/}
       <div className="absolute inset-0 h-full bg-[#3366FF] opacity-90"></div>
 
+      {/* Navbar (on top, centered) */}
+      <div className="w-full flex justify-center relative z-20">
+        <Navbar
+          color="#FFEAAB"
+          hoverColor="#FFEAAB"
+          borderColor="#FFEAAB"
+          sidebarBg="#fff3d4"
+          hoverTextColor="#000000"
+          mobileTextColor="#000000" // Add this line
+        />
+      </div>
+
       {/* Main content container */}
-      <div className="relative z-10 max-w-6xl mx-auto">
+      <div className="relative z-10 max-w-6xl mx-auto mt-10">
         {/* Responsive layout: single column for mobile/sm, two columns for md and above */}
         {/* Responsive: single column for <md, two columns for md+ */}
         <div className="flex flex-col md:grid md:grid-cols-2 gap-8 mb-8 md:mb-16">

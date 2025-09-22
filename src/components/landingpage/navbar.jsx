@@ -1,7 +1,15 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
-const Navbar = () => {
+const Navbar = ({
+  // New optional props with safe defaults to preserve current production look
+  color = '#e30f70', // link text color + hamburger bg
+  hoverColor = '#e30560', // hover background color
+  hoverTextColor = '#ffffff', // hover text color
+  borderColor = '#ff0066', // borders (desktop frame + mobile sidebar border)
+  sidebarBg = '#ffeabb', // mobile sidebar background
+  mobileTextColor, // NEW: mobile sidebar text color
+}) => {
   const [isOpen, setIsOpen] = useState(false)
   const [animateItems, setAnimateItems] = useState(false)
 
@@ -24,12 +32,35 @@ const Navbar = () => {
   }
 
   return (
-    <>
+    // Provide CSS variables for all child elements
+    <div
+      style={{
+        ['--nav-color']: color,
+        ['--nav-hover']: hoverColor,
+        ['--nav-hover-text']: hoverTextColor,
+        ['--nav-border']: borderColor,
+        ['--nav-sidebar-bg']: sidebarBg,
+        // Use mobileTextColor if provided, otherwise fall back to the main color
+        ['--nav-mobile-text']: mobileTextColor || color,
+      }}
+    >
+      {/* Local styles to hook into CSS variables without changing layout classes */}
+      <style>{`
+        .nav-link-desktop { color: var(--nav-color); }
+        .nav-link-desktop:hover { background-color: var(--nav-hover); color: var(--nav-hover-text); }
+        .nav-link-mobile { color: var(--nav-mobile-text); }
+        .nav-link-mobile:hover { background-color: var(--nav-hover); color: var(--nav-hover-text); }
+        .nav-hamburger { background-color: var(--nav-color); }
+        .nav-hamburger:hover { background-color: var(--nav-hover); }
+        .nav-border { border-color: var(--nav-border) !important; }
+        .nav-sidebar { background-color: var(--nav-sidebar-bg); }
+      `}</style>
+
       {/* Hamburger Menu Button - visible on sm and md only */}
       <div className="lg:hidden z-50 fixed top-4 right-4">
         <button
           onClick={toggleSidebar}
-          className={`bg-[#e30f70] text-white p-2 rounded-lg focus:outline-none hover:bg-[#e30560] transition-all duration-300 ${isOpen ? 'rotate-[360deg] scale-110' : ''}`}
+          className={`nav-hamburger text-white p-2 rounded-lg focus:outline-none transition-all duration-300 ${isOpen ? 'rotate-[360deg] scale-110' : ''}`}
         >
           <div className="w-6 h-6 flex flex-col justify-center items-center">
             <span
@@ -57,14 +88,14 @@ const Navbar = () => {
 
         {/* Sidebar */}
         <div
-          className={`fixed top-0 right-0 h-full w-64 bg-[#ffeabb] border-l-2 border-[#ff0066] transform transition-transform duration-300 ease-out ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}
+          className={`fixed top-0 right-0 h-full w-64 nav-sidebar border-l-2 nav-border transform transition-transform duration-300 ease-out ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}
         >
           <div className="flex flex-col pt-16 px-4">
             {/* Menu items with staggered animation */}
             <Link
               to="/"
               onClick={closeSidebar}
-              className={`text-[#e30f70] px-4 py-3 mb-2 rounded-lg font-bold uppercase text-xl tracking-wide hover:bg-[#e30560] hover:text-[#ffffff] transition-all duration-300 transform ${animateItems ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}`}
+              className={`nav-link-mobile px-4 py-3 mb-2 rounded-lg font-bold uppercase text-xl tracking-wide transition-all duration-300 transform ${animateItems ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}`}
               style={{ transitionDelay: '50ms' }}
             >
               HOME
@@ -72,21 +103,21 @@ const Navbar = () => {
             <Link
               to="/events"
               onClick={closeSidebar}
-              className={`text-[#e30f70] px-4 py-3 mb-2 font-bold rounded-lg uppercase text-xl tracking-wide hover:bg-[#e30560] hover:text-[#ffffff] transition-all duration-300 transform ${animateItems ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}`}
+              className={`nav-link-mobile px-4 py-3 mb-2 font-bold rounded-lg uppercase text-xl tracking-wide transition-all duration-300 transform ${animateItems ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}`}
               style={{ transitionDelay: '100ms' }}
             >
               EVENTS
             </Link>
-            <button
+            {/* <button
               onClick={closeSidebar}
-              className={`text-[#e30f70] px-4 py-3 mb-2 font-bold rounded-lg uppercase text-xl tracking-wide hover:bg-[#e30560] hover:text-[#ffffff] transition-all duration-300 transform ${animateItems ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'} text-left`}
+              className={`nav-link-mobile px-4 py-3 mb-2 font-bold rounded-lg uppercase text-xl tracking-wide transition-all duration-300 transform ${animateItems ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'} text-left`}
               style={{ transitionDelay: '150ms' }}
             >
               MERCH
-            </button>
+            </button> */}
             <button
               onClick={closeSidebar}
-              className={`text-[#e30f70] px-4 py-3 mb-2 font-bold rounded-lg uppercase text-xl tracking-wide hover:bg-[#e30560] hover:text-[#ffffff] transition-all duration-300 transform ${animateItems ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'} text-left`}
+              className={`nav-link-mobile px-4 py-3 mb-2 font-bold rounded-lg uppercase text-xl tracking-wide transition-all duration-300 transform ${animateItems ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'} text-left`}
               style={{ transitionDelay: '200ms' }}
             >
               CONTACT US
@@ -94,10 +125,10 @@ const Navbar = () => {
             <Link
               to="/about-us"
               onClick={closeSidebar}
-              className={`text-[#e30f70] px-4 py-3 mb-2 font-bold rounded-lg uppercase text-xl tracking-wide hover:bg-[#e30560] hover:text-[#ffffff] transition-all duration-300 transform ${animateItems ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}`}
+              className={`nav-link-mobile px-4 py-3 mb-2 font-bold rounded-lg uppercase text-xl tracking-wide transition-all duration-300 transform ${animateItems ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}`}
               style={{ transitionDelay: '250ms' }}
             >
-              ABOUT US
+              REGISTER
             </Link>
           </div>
         </div>
@@ -105,36 +136,36 @@ const Navbar = () => {
 
       {/* Desktop Navbar - visible on lg and above only */}
       <nav className="hidden lg:block z-20">
-        <div className="bg-transparent border-2 border-[#ff0066] rounded-2xl p-2 backdrop-blur-sm">
+        <div className="bg-transparent border-2 nav-border rounded-2xl p-2 backdrop-blur-sm">
           <div className="flex gap-8 items-center justify-center px-2">
             <Link
               to="/"
-              className="text-[#e30f70] px-4 py-2 rounded-lg font-bold uppercase text-xl tracking-wide hover:bg-[#e30560] hover:text-[#ffffff] transition-colors"
+              className="nav-link-desktop px-4 py-2 rounded-lg font-bold uppercase text-xl tracking-wide transition-colors"
             >
               HOME
             </Link>
             <Link
               to="/events"
-              className="text-[#e30f70] px-4 py-2 font-bold rounded-lg uppercase text-xl tracking-wide hover:bg-[#e30560] hover:text-[#ffffff] transition-colors"
+              className="nav-link-desktop px-4 py-2 font-bold rounded-lg uppercase text-xl tracking-wide transition-colors"
             >
               EVENTS
             </Link>
-            <button className="text-[#e30f70] px-4 py-2 font-bold rounded-lg uppercase text-xl tracking-wide hover:bg-[#e30560] hover:text-[#ffffff] transition-colors">
+            {/* <button className="nav-link-desktop px-4 py-2 font-bold rounded-lg uppercase text-xl tracking-wide transition-colors">
               MERCH
-            </button>
-            <button className="text-[#e30f70] px-4 py-2 font-bold rounded-lg uppercase text-xl tracking-wide hover:bg-[#e30560] hover:text-[#ffffff] transition-colors">
+            </button> */}
+            <button className="nav-link-desktop px-4 py-2 font-bold rounded-lg uppercase text-xl tracking-wide transition-colors">
               CONTACT US
             </button>
             <Link
               to="/about-us"
-              className="text-[#e30f70] px-4 py-2 font-bold rounded-lg uppercase text-xl tracking-wide hover:bg-[#e30560] hover:text-[#ffffff] transition-colors"
+              className="nav-link-desktop px-4 py-2 font-bold rounded-lg uppercase text-xl tracking-wide transition-colors"
             >
-              ABOUT US
+              REGISTER
             </Link>
           </div>
         </div>
       </nav>
-    </>
+    </div>
   )
 }
 
