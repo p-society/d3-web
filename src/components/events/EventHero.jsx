@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from '../buttons'
 
 const EventHero = () => {
   return (
@@ -22,12 +23,12 @@ const EventHero = () => {
             Explore a series of engaging and innovative events designed to challenge and inspire.
             Join us to learn, create, and connect.
           </p>
-          <a
-            href="#register"
-            className="relative inline-flex items-center justify-center px-8 py-4 rounded-full bg-lime-400 font-['Aclonica'] text-lg text-black outline outline-2 outline-black shadow-[0px_7px_0px_0px_rgba(0,0,0,1)] transition-transform transform hover:scale-105"
+          <Button
+            onClick={() => console.log('Register Now clicked')}
+            className="w-auto" // Keeps the button from being full-width
           >
-            Register Now
-          </a>
+            REGISTER NOW
+          </Button>
         </div>
       </div>
     </div>

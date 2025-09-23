@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from '../buttons'
 
 const ForegroundCard = ({
   eventName,
@@ -70,14 +71,9 @@ const ForegroundCard = ({
         </p>
 
         {/* Apply Button */}
-        <a
-          href={applyLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="relative inline-flex items-center justify-center px-6 py-3 rounded-full bg-lime-400 font-['Aclonica'] text-lg text-black outline outline-2 outline-black shadow-[0px_7px_0px_0px_rgba(0,0,0,1)]"
-        >
-          Apply Now
-        </a>
+        <Button href={applyLink} className="w-full md:w-auto">
+          APPLY NOW
+        </Button>
       </div>
     </div>
   )

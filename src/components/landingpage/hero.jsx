@@ -52,9 +52,9 @@ const Hero = ({ isLoaded }) => {
 
             {/* Buttons */}
             <div className="flex flex-col gap-2 phone:gap-3 sm:flex-row sm:gap-4 mb-4 phone:mb-6 sm:mb-8 max-w-xs phone:max-w-sm sm:max-w-lg w-full">
-              <Button onClick={() => console.log('Explore clicked')}>explore</Button>
+              <Button onClick={() => console.log('Explore clicked')}>Explore</Button>
               <Button onClick={() => console.log('Download Brochure clicked')}>
-                download brochure
+                Download Brochure
               </Button>
             </div>
           </div>

@@ -3,6 +3,7 @@ import ForegroundCard from '../components/events/Foreground-card'
 import Navbar from '../components/landingpage/navbar'
 import useRouteAnimation from '../utils/animatie'
 import EventHero from '../components/events/EventHero' // Import the new component
+import Footer from '../components/landingpage/footer'
 
 // Sample data for events
 const eventsData = [
@@ -71,6 +72,7 @@ export default function Event() {
             )
           })}
         </div>
+        <Footer isLoaded={isLoaded} />
       </div>
     </div>
   )
