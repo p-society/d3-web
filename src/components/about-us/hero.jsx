@@ -4,12 +4,13 @@ import StackedCard from './StackedCard'
 import RegistrationsBanner from './RegistrationsBanner'
 import GroupImage from '../../assets/Group.png'
 import FrameImage from '../../assets/Frame.png'
-import Navbar from '../landingpage/navbar' // added
+import Navbar from '../landingpage/navbar'
+import Footer from '../landingpage/footer'
 
 const AboutUsHero = ({ isLoaded }) => {
   return (
     <div
-      className={`bg-[#3366FF] opacity-90 min-h-screen px-1 pt-7 pb-14 transition-all duration-700 ease-out ${isLoaded ? 'opacity-90 translate-y-0' : 'opacity-0 translate-y-3'}`}
+      className={`bg-[#3366FF] min-h-screen overflow-x-hidden pt-7 pb-14 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
       style={{ transitionDelay: '300ms' }}
     >
       {/* Navbar (on top, centered) */}
@@ -139,6 +140,7 @@ const AboutUsHero = ({ isLoaded }) => {
       <div className="hidden md:flex justify-center relative left-1/2 -translate-x-1/2">
         <Register />
       </div>
+      <Footer isLoaded={isLoaded} />
     </div>
   )
 }
