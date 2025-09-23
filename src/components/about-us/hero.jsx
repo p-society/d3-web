@@ -10,11 +10,11 @@ import Footer from '../landingpage/footer'
 const AboutUsHero = ({ isLoaded }) => {
   return (
     <div
-      className={`bg-[#3366FF] min-h-screen overflow-x-hidden pt-7 pb-14 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
+      className={`bg-[#3366FF] min-h-screen overflow-x-hidden pb-14 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
       style={{ transitionDelay: '300ms' }}
     >
       {/* Navbar (on top, centered) */}
-      <div className="w-full flex justify-center relative z-20">
+      <div className="w-full flex justify-center relative z-20 pt-2">
         <Navbar
           isLoaded={isLoaded}
           hamburgerColor="#3366FF"
