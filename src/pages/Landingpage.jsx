@@ -14,10 +14,8 @@ const Landingpage = () => {
     <div className="min-h-screen sm:h-screen bg-[#ffeabb] relative overflow-x-hidden sm:overflow-hidden">
       {/* Centered container wrapper */}
       <div className="max-w-screen-2xl mx-auto relative min-h-full sm:h-full">
-        <div
-          className={`w-full flex justify-center pt-2 transition-opacity duration-700 ease-out ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
-        >
-          <Navbar />
+        <div className="w-full flex justify-center pt-2">
+          <Navbar isLoaded={isLoaded} />
         </div>
         <Hero isLoaded={isLoaded} />
 

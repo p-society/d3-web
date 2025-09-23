@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 const Navbar = ({
+  isLoaded,
   // New optional props with safe defaults to preserve current production look
   color = '#e30f70', // link text color + hamburger bg
   hoverColor = '#e30560', // hover background color
@@ -135,7 +136,10 @@ const Navbar = ({
       </div>
 
       {/* Desktop Navbar - visible on lg and above only */}
-      <nav className="hidden lg:block z-20">
+      <nav
+        className={`hidden lg:block z-20 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
+        style={{ transitionDelay: '100ms' }}
+      >
         <div className="bg-transparent border-2 nav-border rounded-2xl p-2 backdrop-blur-sm">
           <div className="flex gap-8 items-center justify-center px-2">
             <Link
