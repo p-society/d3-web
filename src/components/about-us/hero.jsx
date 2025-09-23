@@ -16,6 +16,7 @@ const AboutUsHero = ({ isLoaded }) => {
       <div className="w-full flex justify-center relative z-20">
         <Navbar
           isLoaded={isLoaded}
+          hamburgerColor="#3366FF"
           color="#FFEAAB"
           hoverColor="#FFEAAB"
           borderColor="#FFEAAB"

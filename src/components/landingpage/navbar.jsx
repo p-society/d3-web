@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Navbar = ({
   isLoaded,
+  hamburgerColor = 'white',
   // New optional props with safe defaults to preserve current production look
   color = '#e30f70', // link text color + hamburger bg
   hoverColor = '#e30560', // hover background color
@@ -66,12 +67,15 @@ const Navbar = ({
           <div className="w-6 h-6 flex flex-col justify-center items-center">
             <span
               className={`bg-white block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}
+              style={{ backgroundColor: hamburgerColor }}
             ></span>
             <span
               className={`bg-white block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? 'opacity-0' : 'opacity-100'}`}
+              style={{ backgroundColor: hamburgerColor }}
             ></span>
             <span
               className={`bg-white block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`}
+              style={{ backgroundColor: hamburgerColor }}
             ></span>
           </div>
         </button>
