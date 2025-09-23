@@ -15,8 +15,7 @@ const Landingpage = () => {
       {/* Centered container wrapper */}
       <div className="max-w-screen-2xl mx-auto relative min-h-full sm:h-full">
         <div
-          className={`w-full flex justify-center pt-2 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
-          style={{ transitionDelay: '100ms' }}
+          className={`w-full flex justify-center pt-2 transition-opacity duration-700 ease-out ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
         >
           <Navbar />
         </div>
