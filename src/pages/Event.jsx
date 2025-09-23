@@ -44,7 +44,7 @@ export default function Event() {
         </div>
 
         {/* === New Hero Section === */}
-        <EventHero />
+        <EventHero isLoaded={isLoaded} />
 
         {/* === Existing Event Cards Section === */}
         <div className="py-16 -mt-25 space-y-0 px-4 md:px-8">
@@ -58,6 +58,7 @@ export default function Event() {
                 <div className="w-full  md:w-auto">
                   <BgcardStack
                     isLoaded={isLoaded}
+                    animationDelay={`${800 + index * 150}ms`}
                     prop={{ isright: isEven, color: event.color }}
                     ComponentToRender={ForegroundCard}
                     componentProps={{

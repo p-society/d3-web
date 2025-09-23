@@ -11,7 +11,7 @@ const AboutUsHero = ({ isLoaded }) => {
   return (
     <div
       className={`bg-[#3366FF] min-h-screen overflow-x-hidden pb-14 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
-      style={{ transitionDelay: '300ms' }}
+      style={{ transitionDelay: '100ms' }}
     >
       {/* Navbar (on top, centered) */}
       <div className="w-full flex justify-center relative z-20 pt-2">
@@ -35,7 +35,10 @@ const AboutUsHero = ({ isLoaded }) => {
           {/* Left column for md+, main column for mobile */}
           <div className="space-y-8 order-2 md:order-1">
             {/* Hero title section */}
-            <div className="text-center md:text-left relative">
+            <div
+              className={`text-center md:text-left relative transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
+              style={{ transitionDelay: '300ms' }}
+            >
               <h1
                 className="text-4xl md:text-5xl lg:text-6xl mb-6 leading-tight"
                 style={{ fontFamily: 'Alfa Slab One', color: '#FFEABB' }}
@@ -54,7 +57,10 @@ const AboutUsHero = ({ isLoaded }) => {
             </div>
 
             {/* Stacked Card section */}
-            <div className="flex justify-center md:justify-start">
+            <div
+              className={`flex justify-center md:justify-start transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
+              style={{ transitionDelay: '500ms' }}
+            >
               <StackedCard
                 title="D3 TECH FEST"
                 description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, ut at massa mi, aliquam in hendrerit urna, pellentesque sit amet elit, ut et massa mi, aliquam in hendrerit urna, pellentesque sit amet"
@@ -137,7 +143,10 @@ const AboutUsHero = ({ isLoaded }) => {
         </div>
         {/* Register component for md and above: below columns */}
       </div>
-      <div className="hidden md:flex justify-center relative left-1/2 -translate-x-1/2">
+      <div
+        className={`hidden md:flex justify-center relative left-1/2 -translate-x-1/2 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
+        style={{ transitionDelay: '800ms' }}
+      >
         <Register />
       </div>
       <Footer isLoaded={isLoaded} />
