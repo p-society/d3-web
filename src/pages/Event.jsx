@@ -23,13 +23,13 @@ const eventsData = [
     eventName: 'Sample Event 3',
     eventDescription: 'This is a sample event description for the third event.',
     applyLink: 'https://example.com/apply3',
-    color: '#4271FF',
+    color: '#ff8c34',
   },
   {
     eventName: 'Sample Event 4',
     eventDescription: 'This is a sample event description for the fourth event.',
     applyLink: 'https://example.com/apply4',
-    color: '#FFEABB',
+    color: '#4271FF',
   },
 ]
 
@@ -40,7 +40,15 @@ export default function Event() {
     <div className="page-wrapper">
       <div className="min-h-screen bg-[#ffeabb] w-full relative overflow-x-hidden">
         <div className="w-full flex mt-2 justify-center">
-          <Navbar isLoaded={isLoaded} />
+          <Navbar
+            isLoaded={isLoaded}
+            color="#ff8c34"
+            borderColor="#ff8c34"
+            hoverColor="#e67e2e"
+            sidebarBg="#fff3d4"
+            hoverTextColor="#ffffff"
+            mobileTextColor="#ff8c34"
+          />
         </div>
 
         {/* === New Hero Section === */}

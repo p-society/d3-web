@@ -17,13 +17,13 @@ const AboutUsHero = ({ isLoaded }) => {
       <div className="w-full flex justify-center relative z-20 pt-2">
         <Navbar
           isLoaded={isLoaded}
-          hamburgerColor="#3366FF"
-          color="#FFEAAB"
-          hoverColor="#FFEAAB"
-          borderColor="#FFEAAB"
-          sidebarBg="#fff3d4"
-          hoverTextColor="#000000"
-          mobileTextColor="#000000"
+          color="#FFEAAB" // Desktop link text color (light yellow)
+          borderColor="#FFEAAB" // Desktop border color (light yellow)
+          hoverColor="#FFEAAB" // Hover background for both desktop and mobile (light yellow)
+          hoverTextColor="#000000" // Hover text color for both (black)
+          sidebarBg="#3366FF" // Mobile sidebar background (blue)
+          mobileTextColor="#FFFFFF" // Mobile sidebar text color (white, for contrast)
+          hamburgerColor="#3366FF" // Hamburger lines color (blue on the yellow button)
         />
       </div>
 
