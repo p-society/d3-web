@@ -39,7 +39,7 @@ export default function Event() {
     <div className="page-wrapper">
       <div className="min-h-screen bg-[#ffeabb] w-full relative overflow-x-hidden">
         <div className="w-full flex mt-2 justify-center">
-          <Navbar />{' '}
+          <Navbar isLoaded={isLoaded} />
         </div>
 
         {/* === New Hero Section === */}
