@@ -42,10 +42,10 @@ export default function Event() {
         <div className="w-full flex mt-2 justify-center">
           <Navbar
             isLoaded={isLoaded}
-            color="#000000"
+            color="#FFEAAB"
             borderColor="#000000"
-            hoverColor="#E5E5E5"
-            sidebarBg="#F5F5F5"
+            hoverColor="#3366FF"
+            sidebarBg="#ff8c34"
             hoverTextColor="#000000"
             mobileTextColor="#000000"
             hamburgerColor="#000000"
