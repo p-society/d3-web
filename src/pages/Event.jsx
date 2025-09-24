@@ -23,13 +23,13 @@ const eventsData = [
     eventName: 'Sample Event 3',
     eventDescription: 'This is a sample event description for the third event.',
     applyLink: 'https://example.com/apply3',
-    color: '#ff8c34',
+    color: '#4271FF',
   },
   {
     eventName: 'Sample Event 4',
     eventDescription: 'This is a sample event description for the fourth event.',
     applyLink: 'https://example.com/apply4',
-    color: '#4271FF',
+    color: '#FFEABB',
   },
 ]
 
@@ -38,16 +38,17 @@ export default function Event() {
 
   return (
     <div className="page-wrapper">
-      <div className="min-h-screen bg-[#ffeabb] w-full relative overflow-x-hidden">
+      <div className="min-h-screen bg-[#ff8c34] w-full relative overflow-x-hidden">
         <div className="w-full flex mt-2 justify-center">
           <Navbar
             isLoaded={isLoaded}
-            color="#ff8c34"
-            borderColor="#ff8c34"
-            hoverColor="#e67e2e"
-            sidebarBg="#fff3d4"
-            hoverTextColor="#ffffff"
-            mobileTextColor="#ff8c34"
+            color="#000000"
+            borderColor="#000000"
+            hoverColor="#E5E5E5"
+            sidebarBg="#F5F5F5"
+            hoverTextColor="#000000"
+            mobileTextColor="#000000"
+            hamburgerColor="#000000"
           />
         </div>
 

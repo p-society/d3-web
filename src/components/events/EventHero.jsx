@@ -3,7 +3,7 @@ import Button from '../buttons'
 
 const EventHero = ({ isLoaded }) => {
   return (
-    <div className="w-full max-w-7xl mx-auto px-8 py-16 md:py-24">
+    <div className="w-full max-w-7xl mx-auto px-8 pt-20 pb-16 md:pt-12 md:pb-24">
       <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16">
         {/* Left Side: Image Placeholder */}
         <div
