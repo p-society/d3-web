@@ -1,6 +1,12 @@
 import React from 'react'
 
-const BgcardStack = ({ prop, ComponentToRender, componentProps, isLoaded }) => {
+const BgcardStack = ({
+  prop,
+  ComponentToRender,
+  componentProps,
+  isLoaded,
+  animationDelay = '800ms',
+}) => {
   const left = prop.isright ? '-14.96px' : '14.96px'
 
   return (
@@ -8,7 +14,7 @@ const BgcardStack = ({ prop, ComponentToRender, componentProps, isLoaded }) => {
       className={`relative mx-auto my-8 transition-all duration-700 ease-out w-full max-w-[1211.38px] h-auto md:h-[387.90px] ${
         isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'
       }`}
-      style={{ transitionDelay: '300ms' }}
+      style={{ transitionDelay: animationDelay }}
     >
       {/* Bottom offset layer */}
       <div

@@ -4,23 +4,26 @@ import StackedCard from './StackedCard'
 import RegistrationsBanner from './RegistrationsBanner'
 import GroupImage from '../../assets/Group.png'
 import FrameImage from '../../assets/Frame.png'
-import Navbar from '../landingpage/navbar' // added
+import Navbar from '../landingpage/navbar'
+import Footer from '../landingpage/footer'
 
-const AboutUsHero = ({ isLoaded }) => {
+const RegisterHero = ({ isLoaded }) => {
   return (
     <div
-      className={`bg-[#3366FF] opacity-90 min-h-screen px-1 pt-7 pb-14 transition-all duration-700 ease-out ${isLoaded ? 'opacity-90 translate-y-0' : 'opacity-0 translate-y-3'}`}
-      style={{ transitionDelay: '300ms' }}
+      className={`bg-[#3366FF] min-h-screen overflow-x-hidden pb-14 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
+      style={{ transitionDelay: '100ms' }}
     >
       {/* Navbar (on top, centered) */}
-      <div className="w-full flex justify-center relative z-20">
+      <div className="w-full flex justify-center relative z-20 pt-2">
         <Navbar
-          color="#FFEAAB"
-          hoverColor="#FFEAAB"
-          borderColor="#FFEAAB"
-          sidebarBg="#fff3d4"
-          hoverTextColor="#000000"
-          mobileTextColor="#000000"
+          isLoaded={isLoaded}
+          color="#FFEAAB" // Desktop link text color (light yellow)
+          borderColor="#FFEAAB" // Desktop border color (light yellow)
+          hoverColor="#FFEAAB" // Hover background for both desktop and mobile (light yellow)
+          hoverTextColor="#000000" // Hover text color for both (black)
+          sidebarBg="#3366FF" // Mobile sidebar background (blue)
+          mobileTextColor="#FFFFFF" // Mobile sidebar text color (white, for contrast)
+          hamburgerColor="#3366FF" // Hamburger lines color (blue on the yellow button)
         />
       </div>
 
@@ -32,7 +35,10 @@ const AboutUsHero = ({ isLoaded }) => {
           {/* Left column for md+, main column for mobile */}
           <div className="space-y-8 order-2 md:order-1">
             {/* Hero title section */}
-            <div className="text-center md:text-left relative">
+            <div
+              className={`text-center md:text-left relative transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
+              style={{ transitionDelay: '300ms' }}
+            >
               <h1
                 className="text-4xl md:text-5xl lg:text-6xl mb-6 leading-tight"
                 style={{ fontFamily: 'Alfa Slab One', color: '#FFEABB' }}
@@ -51,7 +57,10 @@ const AboutUsHero = ({ isLoaded }) => {
             </div>
 
             {/* Stacked Card section */}
-            <div className="flex justify-center md:justify-start">
+            <div
+              className={`flex justify-center md:justify-start transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
+              style={{ transitionDelay: '500ms' }}
+            >
               <StackedCard
                 title="D3 TECH FEST"
                 description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, ut at massa mi, aliquam in hendrerit urna, pellentesque sit amet elit, ut et massa mi, aliquam in hendrerit urna, pellentesque sit amet"
@@ -134,11 +143,15 @@ const AboutUsHero = ({ isLoaded }) => {
         </div>
         {/* Register component for md and above: below columns */}
       </div>
-      <div className="hidden md:flex justify-center relative left-1/2 -translate-x-1/2">
+      <div
+        className={`hidden md:flex justify-center relative left-1/2 -translate-x-1/2 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
+        style={{ transitionDelay: '800ms' }}
+      >
         <Register />
       </div>
+      <Footer isLoaded={isLoaded} />
     </div>
   )
 }
 
-export default AboutUsHero
+export default RegisterHero

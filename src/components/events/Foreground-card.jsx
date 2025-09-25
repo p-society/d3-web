@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from '../buttons'
 
 const ForegroundCard = ({
   eventName,
@@ -10,12 +11,12 @@ const ForegroundCard = ({
 
   return (
     <div
-      className={`flex flex-col md:flex-row items-center gap-8 w-full max-w-[1100px] ${
+      className={`flex flex-col md:flex-row items-center gap-4 sm:gap-8 w-full max-w-[1100px] ${
         isImageLeft ? 'md:flex-row' : 'md:flex-row-reverse'
       }`}
     >
-      {/* Image Section */}
-      <div className="w-full md:w-[456px] h-80 bg-zinc-300 rounded-3xl relative flex-shrink-0">
+      {/* Image Section - Reduced height on mobile */}
+      <div className="w-full md:w-[456px] h-60 sm:h-80 bg-zinc-300 rounded-3xl relative flex-shrink-0">
         <img src="" alt={eventName} className="absolute top-0 left-0" />
 
         {/* Decorative Circles */}
@@ -44,9 +45,9 @@ const ForegroundCard = ({
         )}
       </div>
 
-      {/* Content Section */}
+      {/* Content Section - Reduced gaps and font size on mobile */}
       <div
-        className={`max-w-[630px] flex flex-col gap-9 flex-shrink-0 items-center text-center md:items-start md:text-left ${
+        className={`max-w-[630px] flex flex-col gap-4 sm:gap-9 flex-shrink-0 items-center text-center md:items-start md:text-left ${
           isImageLeft ? 'md:items-start' : 'md:items-end md:text-right'
         }`}
       >
@@ -56,7 +57,10 @@ const ForegroundCard = ({
             isImageLeft ? 'md:items-start' : 'md:items-end'
           }`}
         >
-          <h2 className={`text-black font-bold text-4xl font-['ADLaM_Display'] leading-[48px]`}>
+          {/* Reduced title font size on mobile */}
+          <h2
+            className={`text-black font-bold text-3xl sm:text-4xl font-['ADLaM_Display'] leading-tight sm:leading-[48px]`}
+          >
             {eventName}
           </h2>
           <div
@@ -64,20 +68,17 @@ const ForegroundCard = ({
           />
         </div>
 
-        {/* Description */}
-        <p className={`max-w-[610px] text-black text-xl font-['Cascadia_Code'] lowercase`}>
+        {/* Description - Reduced font size on mobile */}
+        <p
+          className={`max-w-[610px] text-black text-base sm:text-xl font-['Cascadia_Code'] lowercase`}
+        >
           {eventDescription}
         </p>
 
         {/* Apply Button */}
-        <a
-          href={applyLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="relative inline-flex items-center justify-center px-6 py-3 rounded-full bg-lime-400 font-['Aclonica'] text-lg text-black outline outline-2 outline-black shadow-[0px_7px_0px_0px_rgba(0,0,0,1)]"
-        >
-          Apply Now
-        </a>
+        <Button href={applyLink} className="w-full md:w-auto">
+          APPLY NOW
+        </Button>
       </div>
     </div>
   )

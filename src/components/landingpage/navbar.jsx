@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 const Navbar = ({
+  isLoaded,
+  hamburgerColor = 'white',
   // New optional props with safe defaults to preserve current production look
   color = '#e30f70', // link text color + hamburger bg
   hoverColor = '#e30560', // hover background color
@@ -65,12 +67,15 @@ const Navbar = ({
           <div className="w-6 h-6 flex flex-col justify-center items-center">
             <span
               className={`bg-white block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}
+              style={{ backgroundColor: hamburgerColor }}
             ></span>
             <span
               className={`bg-white block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? 'opacity-0' : 'opacity-100'}`}
+              style={{ backgroundColor: hamburgerColor }}
             ></span>
             <span
               className={`bg-white block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`}
+              style={{ backgroundColor: hamburgerColor }}
             ></span>
           </div>
         </button>
@@ -123,7 +128,7 @@ const Navbar = ({
               CONTACT US
             </button>
             <Link
-              to="/about-us"
+              to="/register"
               onClick={closeSidebar}
               className={`nav-link-mobile px-4 py-3 mb-2 font-bold rounded-lg uppercase text-xl tracking-wide transition-all duration-300 transform ${animateItems ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}`}
               style={{ transitionDelay: '250ms' }}
@@ -135,7 +140,10 @@ const Navbar = ({
       </div>
 
       {/* Desktop Navbar - visible on lg and above only */}
-      <nav className="hidden lg:block z-20">
+      <nav
+        className={`hidden lg:block z-20 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
+        style={{ transitionDelay: '100ms' }}
+      >
         <div className="bg-transparent border-2 nav-border rounded-2xl p-2 backdrop-blur-sm">
           <div className="flex gap-8 items-center justify-center px-2">
             <Link
@@ -157,7 +165,7 @@ const Navbar = ({
               CONTACT US
             </button>
             <Link
-              to="/about-us"
+              to="/register"
               className="nav-link-desktop px-4 py-2 font-bold rounded-lg uppercase text-xl tracking-wide transition-colors"
             >
               REGISTER

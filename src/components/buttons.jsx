@@ -1,19 +1,23 @@
 import React from 'react'
 
-const Button = ({ children, onClick, className = '', variant = 'primary' }) => {
+const Button = ({ children, onClick, href, className = '' }) => {
   const baseClasses =
-    'px-4 md:px-6 lg:px-8 py-2 md:py-2.5 lg:py-3 rounded-xl md:rounded-2xl font-bold text-black transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 uppercase tracking-wide text-xs md:text-sm lg:text-base'
-  const variants = {
-    primary: 'bg-[#c6f806] hover:bg-[#b5e605] focus:ring-[#c6f806] border border-black',
-    secondary: 'bg-[#c6f806] hover:bg-[#b5e605] focus:ring-[#c6f806] border border-black',
-  }
+    'font-cascadia bg-[#C6F806] text-black px-6 py-3 rounded-full font-bold text-lg transition-all duration-150 border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 active:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] active:translate-y-1'
 
+  if (href) {
+    return (
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`${baseClasses} ${className} inline-block text-center`}
+      >
+        {children}
+      </a>
+    )
+  }
   return (
-    <button
-      onClick={onClick}
-      className={`${baseClasses} ${variants[variant]} ${className}`}
-      aria-label={typeof children === 'string' ? children : 'Button'}
-    >
+    <button onClick={onClick} className={`${baseClasses} ${className}`}>
       {children}
     </button>
   )
