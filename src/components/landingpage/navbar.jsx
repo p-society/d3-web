@@ -170,6 +170,12 @@ const Navbar = ({
             >
               REGISTER
             </Link>
+            <Link
+              to="/merch"
+              className="nav-link-desktop px-4 py-2 font-bold rounded-lg uppercase text-xl tracking-wide transition-colors"
+            >
+              MERCH
+            </Link>
           </div>
         </div>
       </nav>

@@ -4,6 +4,7 @@ import Landingpage from './pages/Landingpage'
 import Event from './pages/Event'
 import Register from './pages/Register'
 import NotFound from './pages/NotFound'
+import { Merch } from './pages/Merch'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/events" element={<Event />} />
         <Route path="/register" element={<Register />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="/merch" element={<Merch />} />
       </Routes>
     </Router>
   )
