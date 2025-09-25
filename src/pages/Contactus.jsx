@@ -22,13 +22,13 @@ const Contactus = () => {
 
 
                 <ContactHeader />
-                <img src={Sparkle} alt="Decorative Sparkle" className="absolute top-65 right-15 w-16 sm:w-20 md:w-30" />
+                <img src={Sparkle} alt="Decorative Sparkle" className="absolute top-48 right-20 w-16 sm:w-18 md:w-24" />
                 <Mailer />
 
 
 
                 <div
-                    className={` bottom-0 left-0 right-0 z-30 px-2 phone:px-4 sm:px-8 pb-2 phone:pb-4 sm:pb-6 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
+                    className={` bottom-0 left-0 right-0 z-30 px-0 phone:px-4 sm:px-8 pb-2 phone:pb-4 sm:pb-6 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
                     style={{ transitionDelay: '700ms' }}
                 >
                     <div className="flex justify-between items-end">
