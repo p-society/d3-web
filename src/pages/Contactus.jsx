@@ -13,13 +13,30 @@ const Contactus = () => {
         <div className="min-h-screen bg-[#ffeabb] relative overflow-x-hidden flex flex-col">
             {/* Centered container wrapper */}
             <div className="max-w-screen-2xl mx-auto w-full flex-grow flex flex-col">
-                <div className="w-full flex justify-center pt-2">
-                    <Navbar isLoaded={true} />
+                {/* Navbar with animation */}
+                <div 
+                    className={`w-full flex justify-center pt-2 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-3'}`}
+                    style={{ transitionDelay: '100ms' }}
+                >
+                    <Navbar isLoaded={isLoaded} />
                 </div>
 
                 <div className="flex-grow flex flex-col">
-                    <ContactHeader />
-                    <Mailer />
+                    {/* ContactHeader with animation */}
+                    <div
+                        className={`z-10 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
+                        style={{ transitionDelay: '300ms' }}
+                    >
+                        <ContactHeader />
+                    </div>
+
+                    {/* Mailer with animation */}
+                    <div
+                        className={`flex-grow transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
+                        style={{ transitionDelay: '500ms' }}
+                    >
+                        <Mailer />
+                    </div>
                 </div>
 
                 {/* Footer section */}

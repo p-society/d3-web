@@ -31,14 +31,14 @@ const ContactHeader = () => {
             <div className="flex justify-start p-4 relative">
                 {/* The main heading text */}
                 <div className="text-left space-y-2 relative">
-                    <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-black">
+                    <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-black" style={{ fontFamily: 'AlfaSlabOne-Regular' }}>
                         Want To Talk To Us ?
                     </h1>
                     <div className="flex justify-start items-center gap-2 sm:gap-4 flex-wrap">
-                        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold bg-black text-[#D8FF40] rounded-full px-6 py-1">
+                        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl bg-black text-[#D8FF40] rounded-full px-6 py-1" style={{ fontFamily: 'Bowlby One SC' }}>
                             CONTACT
                         </h1>
-                        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-black">
+                        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-black" style={{ fontFamily: 'AlfaSlabOne-Regular' }}>
                             Here
                         </h1>
                     </div>
