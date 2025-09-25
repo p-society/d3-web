@@ -34,8 +34,8 @@
 /* } */
 .Router-box {
   background: #c6f806;
-  transform: rotate(-3.2deg) scale(1);
-  padding: 29px 2px; /* Simplified padding */
+  transform: rotate(2.7deg) scale(1.01);
+  padding: 27px 2px; /* Simplified padding */
   display: flex;
   align-items: center;
 }
@@ -43,7 +43,7 @@
 .Rinner-box {
   color: #000;
   font-family: 'AlfaSlabOne-Regular';
-  font-size: 52px;
+  font-size: 50px;
   font-style: normal;
   font-weight: bolder;
   line-height: 131%; /* 78.6px */
