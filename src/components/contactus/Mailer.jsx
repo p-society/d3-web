@@ -4,7 +4,7 @@ export default function App() {
   return (
     <div className="flex items-center justify-center p-4 font-sans">
       
-      <div className="bg-white w-full max-w-5xl p-8 md:p-12 rounded-[50px] shadow-[8px_8px_0px_#000000] border-[3px] border-black">
+      <div className="bg-white w-full max-w-7xl p-8 md:p-12 rounded-[50px] shadow-[8px_8px_0px_#000000] border-[3px] border-black">
         
         <form className="flex flex-col gap-6">
           
