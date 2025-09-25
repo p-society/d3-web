@@ -63,7 +63,7 @@ const SponsorsComponent = ({ isLoaded }) => {
 
   const repeatedLogos = useMemo(() => {
     const { logos } = currentTabData
-    return [...logos, ...logos, ...logos, ...logos]
+    return [...logos, ...logos]
   }, [currentTabData])
 
   const handleTabChange = useCallback(tab => {
