@@ -4,6 +4,7 @@ import Landingpage from './pages/Landingpage'
 import Event from './pages/Event'
 import Register from './pages/Register'
 import NotFound from './pages/NotFound'
+import Sponsors from './pages/Sponsors'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Landingpage />} />
         <Route path="/events" element={<Event />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/sponsors" element={<Sponsors />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
