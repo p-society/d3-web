@@ -7,7 +7,7 @@ import FrameImage from '../../assets/Frame.png'
 import Navbar from '../landingpage/navbar'
 import Footer from '../landingpage/footer'
 
-const AboutUsHero = ({ isLoaded }) => {
+const RegisterHero = ({ isLoaded }) => {
   return (
     <div
       className={`bg-[#3366FF] min-h-screen overflow-x-hidden pb-14 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
@@ -154,4 +154,4 @@ const AboutUsHero = ({ isLoaded }) => {
   )
 }
 
-export default AboutUsHero
+export default RegisterHero
