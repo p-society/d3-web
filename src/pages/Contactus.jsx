@@ -2,33 +2,29 @@ import Navbar from '../components/landingpage/navbar'
 import Mailer from '../components/contactus/Mailer.jsx'
 import ContactHeader from '../components/contactus/ContactHeader.jsx'
 import useRouteAnimation from '../utils/animatie'
-import Sparkle from '../assets/Sparkles.svg'
 import d3Logo from '../assets/d3-.png'
 import decorLogo from '../assets/decorBottom.png'
 import { FaInstagram, FaLinkedin, FaXTwitter, FaLink } from 'react-icons/fa6'
 
 const Contactus = () => {
-
-
     const isLoaded = useRouteAnimation()
+    
     return (
-        <div className="min-h-screen sm:h-screen bg-[#ffeabb] relative overflow-x-hidden">
+        <div className="min-h-screen bg-[#ffeabb] relative overflow-x-hidden flex flex-col">
             {/* Centered container wrapper */}
-            <div className="max-w-screen-2xl mx-auto relative min-h-full sm:h-full">
+            <div className="max-w-screen-2xl mx-auto w-full flex-grow flex flex-col">
                 <div className="w-full flex justify-center pt-2">
                     <Navbar isLoaded={true} />
                 </div>
 
+                <div className="flex-grow flex flex-col">
+                    <ContactHeader />
+                    <Mailer />
+                </div>
 
-
-                <ContactHeader />
-                <img src={Sparkle} alt="Decorative Sparkle" className="absolute top-48 right-20 w-16 sm:w-18 md:w-24" />
-                <Mailer />
-
-
-
+                {/* Footer section */}
                 <div
-                    className={` bottom-0 left-0 right-0 z-30 px-0 phone:px-4 sm:px-8 pb-2 phone:pb-4 sm:pb-6 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
+                    className={`w-full z-30 px-0 phone:px-4 sm:px-8 pb-2 phone:pb-4 sm:pb-6 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
                     style={{ transitionDelay: '700ms' }}
                 >
                     <div className="flex justify-between items-end">

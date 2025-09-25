@@ -1,6 +1,7 @@
 import React from 'react';
 import Arrow from '../../assets/bluearrow.svg'
 import Circle from '../../assets/circle.svg'
+import Sparkle from '../../assets/Sparkles.svg'
 
 // A component for the header section of the contact page
 const ContactHeader = () => {
@@ -13,8 +14,19 @@ const ContactHeader = () => {
                 <div className="w-3 h-3 bg-orange-400 border border-black rounded-full"></div>
             </div> */}
 
-            {/* Circle at top-right */}
-            <img src={Circle} alt="Decorative Circle" className="absolute top-12 right-18 w-16 sm:w-18 md:w-28" />
+            {/* Circle at top-right - hidden on mobile */}
+            <img 
+                src={Circle} 
+                alt="Decorative Circle" 
+                className="absolute top-12 right-18 w-16 sm:w-18 md:w-28 hidden sm:block" 
+            />
+            
+            {/* Sparkle at top-right - hidden on mobile */}
+            <img 
+                src={Sparkle} 
+                alt="Decorative Sparkle" 
+                className="absolute top-30 right-24 w-16 sm:w-18 md:w-24 hidden sm:block" 
+            />
 
             <div className="flex justify-start p-4 relative">
                 {/* The main heading text */}
@@ -31,8 +43,12 @@ const ContactHeader = () => {
                         </h1>
                     </div>
 
-                    {/* Arrow pointing to subject input */}
-                    <img src={Arrow} alt="Arrow" className="absolute top-20 left-5 w-12  sm:w-10 md:w-14 rotate-330" />
+                    {/* Arrow pointing to subject input - hidden on mobile */}
+                    <img 
+                        src={Arrow} 
+                        alt="Arrow" 
+                        className="absolute top-20 left-5 w-12 sm:w-10 md:w-14 rotate-330 hidden sm:block" 
+                    />
                 </div>
             </div>
         </div>
