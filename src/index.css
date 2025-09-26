@@ -1,6 +1,44 @@
 @import 'tailwindcss';
 
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+body {
+  /* This is the smallest width your design will support before scrolling */
+  min-width: 375px;
+}
+/* Font imports */
+@font-face {
+  font-family: 'Alfa Slab One';
+  src: url('./assets/AlfaSlabOne.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bowlby One SC';
+  src: url('./assets/BowlbyOneSC.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Krismagraph';
+  src: url('./assets/Krismagraph.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CascadiaCode';
+  src: url('./assets/CascadiaCode-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Example utility overrides / custom classes (optional) */
+/* .btn-primary { @apply px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white font-medium rounded; } */
 
