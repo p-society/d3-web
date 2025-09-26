@@ -6,6 +6,7 @@ import circle from '../assets/circle-svg.svg'
 import { MerchCard } from '../components/MerchCard'
 import Navbar from '../components/landingpage/navbar'
 import Button from '../components/buttons'
+import Footer from '../components/landingpage/footer'
 
 const BackgroundTitle = () => (
   <div className="w-full text-center">
@@ -53,9 +54,7 @@ export const Merch = () => {
 
           {/* Merch Banner */}
           <div
-            className={`absolute w-32 sm:w-36 md:w-45 lg:w-50 xl:w-55 h-16 sm:h-20 md:h-24 lg:h-28 transition-all duration-500 ease-out ${
-              isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'
-            }`}
+            className={`absolute w-32 sm:w-36 md:w-[11.25rem] lg:w-[12.5rem] xl:w-[13.75rem] h-16 sm:h-20 md:h-24 lg:h-28 transition-all duration-500 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
             style={{ transitionDelay: '400ms' }}
           >
             <div className="absolute w-full top-[4rem] xl:top-[5rem] left-[0rem] p-[0.3rem] bg-[#3366FF] rounded-[3rem] md:rounded-[3.5rem] border-2 md:border-[3px] border-black origin-top-left -rotate-6 md:-rotate-8">
@@ -127,6 +126,8 @@ export const Merch = () => {
           </div>
         </section>
       </main>
+
+      <Footer isLoaded={isLoaded} />
     </div>
   )
 }
