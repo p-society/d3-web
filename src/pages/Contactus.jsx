@@ -1,12 +1,12 @@
-import Navbar from '../components/landingpage/navbar'
+import Navbar from '../components/landingpage/navbar.jsx'
 import Mailer from '../components/contactus/Mailer.jsx'
 import ContactHeader from '../components/contactus/ContactHeader.jsx'
-import useRouteAnimation from '../utils/animatie'
+import useRouteAnimation from '../utils/animatie.jsx'
 import d3Logo from '../assets/d3-.png'
 import decorLogo from '../assets/decorBottom.png'
 import { FaInstagram, FaLinkedin, FaXTwitter, FaLink } from 'react-icons/fa6'
 
-const Contactus = () => {
+const ContactUs = () => {
     const isLoaded = useRouteAnimation()
     
     return (
@@ -104,4 +104,4 @@ const Contactus = () => {
     )
 }
 
-export default Contactus
+export default ContactUs

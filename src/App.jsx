@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Landingpage from './pages/Landingpage'
 import Event from './pages/Event'
 import Register from './pages/Register'
-import Contactus from './pages/Contactus'
+import ContactUs from './pages/ContactUs'
 import NotFound from './pages/NotFound'
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
         <Route path="/" element={<Landingpage />} />
         <Route path="/events" element={<Event />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/contact-us" element={<Contactus />} />
+        <Route path="/contact-us" element={<ContactUs />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
