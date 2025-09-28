@@ -7,7 +7,7 @@ import decorLogo from '../../assets/decorBottom.png'
 const Footer = ({ isLoaded }) => {
   return (
     <div
-      className={`absolute bottom-0 left-0 right-0 z-30 px-2 phone:px-4 sm:px-8 pb-2 phone:pb-4 sm:pb-6 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
+      className={`relative bottom-0 left-0 right-0 z-30 px-2 phone:px-4 sm:px-8 pb-2 phone:pb-4 sm:pb-6 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
       style={{ transitionDelay: '700ms' }}
     >
       <div className="flex justify-between items-end">

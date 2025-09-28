@@ -136,6 +136,22 @@ const Navbar = ({
             >
               REGISTER
             </Link>
+            <Link
+              to="/sponsors"
+              onClick={closeSidebar}
+              className={`nav-link-mobile px-4 py-3 mb-2 font-bold rounded-lg uppercase text-xl tracking-wide transition-all duration-300 transform ${animateItems ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}`}
+              style={{ transitionDelay: '300ms' }}
+            >
+              SPONSORS
+            </Link>
+            <Link
+              to="/merch"
+              onClick={closeSidebar}
+              className={`nav-link-mobile px-4 py-3 mb-2 font-bold rounded-lg uppercase text-xl tracking-wide transition-all duration-300 transform ${animateItems ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}`}
+              style={{ transitionDelay: '300ms' }}
+            >
+              MERCH
+            </Link>
           </div>
         </div>
       </div>
@@ -173,6 +189,18 @@ const Navbar = ({
               className="nav-link-desktop px-4 py-2 font-bold rounded-lg uppercase text-xl tracking-wide transition-colors"
             >
               REGISTER
+            </Link>
+            <Link
+              to="/sponsors"
+              className="nav-link-desktop px-4 py-2 font-bold rounded-lg uppercase text-xl tracking-wide transition-colors"
+            >
+              SPONSORS
+            </Link>
+            <Link
+              to="/merch"
+              className="nav-link-desktop px-4 py-2 font-bold rounded-lg uppercase text-xl tracking-wide transition-colors"
+            >
+              MERCH
             </Link>
           </div>
         </div>
