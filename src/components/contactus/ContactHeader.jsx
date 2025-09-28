@@ -1,7 +1,7 @@
 import React from 'react';
 import Arrow from '../../assets/bluearrow.svg'
 import Circle from '../../assets/circle.svg'
-import Sparkle from '../../assets/Sparkles1.svg'
+import Sparkle from '../../assets/Sparkles.svg'
 
 // A component for the header section of the contact page
 const ContactHeader = () => {
