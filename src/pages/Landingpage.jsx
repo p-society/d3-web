@@ -53,7 +53,7 @@ const Landingpage = () => {
             {/* Social Icons - right side */}
             <div className="flex gap-2 phone:gap-3 sm:gap-6 pb-1 phone:pb-2 sm:pb-4">
               <a
-                href="https://instagram.com/"
+                href="https://instagram.com/techsociiitbh/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
@@ -62,7 +62,7 @@ const Landingpage = () => {
                 <FaInstagram className="text-[#000000] w-5 h-5 phone:w-6 phone:h-6 sm:w-8 sm:h-8 hover:scale-110 transition" />
               </a>
               <a
-                href="https://linkedin.com/"
+                href="https://linkedin.com/company/tech-society-iiitbh/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
@@ -71,7 +71,7 @@ const Landingpage = () => {
                 <FaLinkedin className="text-[#000000] w-5 h-5 phone:w-6 phone:h-6 sm:w-8 sm:h-8 hover:scale-110 transition" />
               </a>
               <a
-                href="https://x.com/"
+                href="https://x.com/techsociiitbh"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
@@ -80,7 +80,7 @@ const Landingpage = () => {
                 <FaXTwitter className="text-black w-5 h-5 phone:w-6 phone:h-6 sm:w-8 sm:h-8 hover:scale-110 transition" />
               </a>
               <a
-                href="https://unstop.com/"
+                href="https://unstop.com/college-fests/d3-tech-fest-iiit-bhubaneswar-international-institute-of-information-technology-bhubaneswar-374277"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
