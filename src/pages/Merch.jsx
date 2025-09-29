@@ -70,7 +70,7 @@ export const Merch = () => {
           <img
             src={sparkles}
             alt="Sparkles"
-            className={`hidden md:block absolute top-6 w-[10rem] lg:w-[12rem] xl:w-[16rem] 2xl:w-[18rem] right-[-3rem] lg:right-[1rem] 2xl:right-[6rem] transition-all duration-500 ease-out ${
+            className={`hidden md:block absolute top-6 w-[10rem] lg:w-[12rem] xl:w-[16rem] 2xl:w-[18rem] right-[-3rem] lg:right-[-1.5rem] 2xl:right-[5rem] transition-all duration-500 ease-out ${
               isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'
             }`}
             style={{ transitionDelay: '500ms' }}
