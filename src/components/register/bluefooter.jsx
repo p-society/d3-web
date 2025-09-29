@@ -25,7 +25,7 @@ function Bluefooter() {
             alt="arrow"
             className="absolute top-0 right-[15px] h-[120px] w-[120px]"
           /> */}
-        <div className="relative h-[8px] w-full bg-[#4271FF] rounded-full"></div>
+        {/* <div className="relative h-[8px] w-full bg-[#4271FF] rounded-full"></div> */}
         {/* <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-5 w-auto p-2 font-aclinica ">
             {buttons.map(buttonText => (
               <div key={buttonText} className="relative">
