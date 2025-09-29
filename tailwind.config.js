@@ -6,6 +6,8 @@ export default {
       fontFamily: {
         adlam: ['ADLaM Display', 'cursive'],
         cascadia: ['Cascadia Code', 'monospace'],
+        poppins: ['Poppins', 'sans-serif'],
+        aclinica: ['Aclonica', 'sans-serif'],
       },
       keyframes: {
         fadeIn: {
