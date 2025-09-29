@@ -120,13 +120,14 @@ const Navbar = ({
             >
               MERCH
             </button> */}
-            <button
+            <Link
+              to="/contact-us"
               onClick={closeSidebar}
-              className={`nav-link-mobile px-4 py-3 mb-2 font-bold rounded-lg uppercase text-xl tracking-wide transition-all duration-300 transform ${animateItems ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'} text-left`}
-              style={{ transitionDelay: '200ms' }}
+              className={`nav-link-mobile px-4 py-3 mb-2 font-bold rounded-lg uppercase text-xl tracking-wide transition-all duration-300 transform ${animateItems ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}`}
+              style={{ transitionDelay: '250ms' }}
             >
               CONTACT US
-            </button>
+            </Link>
             <Link
               to="/register"
               onClick={closeSidebar}
@@ -177,9 +178,12 @@ const Navbar = ({
             {/* <button className="nav-link-desktop px-4 py-2 font-bold rounded-lg uppercase text-xl tracking-wide transition-colors">
               MERCH
             </button> */}
-            <button className="nav-link-desktop px-4 py-2 font-bold rounded-lg uppercase text-xl tracking-wide transition-colors">
+            <Link
+              to="/contact-us"
+              className="nav-link-desktop px-4 py-2 font-bold rounded-lg uppercase text-xl tracking-wide transition-colors"
+            >
               CONTACT US
-            </button>
+            </Link>
             <Link
               to="/register"
               className="nav-link-desktop px-4 py-2 font-bold rounded-lg uppercase text-xl tracking-wide transition-colors"
