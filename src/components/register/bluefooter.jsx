@@ -19,7 +19,7 @@ function Bluefooter() {
         /> */}
 
       <div className="absolute inset-0 max-w-4xl bg-black rounded-[37.5px] "></div>
-      <div className="relative z-10 bg-white rounded-[37.5px] border-[3px] border-black p-6 w-2xl max-w-4xl flex flex-col items-center  md:space-y-2 transform -translate-x-4 -translate-y-4 md:pl-10 md:pr-10 ">
+      <div className="relative z-10 bg-white rounded-[37.5px] border-[3px] border-black p-6 w-full md:w-2xl max-w-4xl flex flex-col items-center  md:space-y-2 transform -translate-x-4 -translate-y-4 md:pl-10 md:pr-10 ">
         {/* <img
             src={curlArrow}
             alt="arrow"
