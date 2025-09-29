@@ -2,7 +2,7 @@ import BgcardStack from '../components/events/Bgcard-stack'
 import ForegroundCard from '../components/events/Foreground-card'
 import Navbar from '../components/landingpage/navbar'
 import useRouteAnimation from '../utils/animatie'
-import EventHero from '../components/events/EventHero' // Import the new component
+import EventHero from '../components/events/EventHero'
 import Footer from '../components/landingpage/footer'
 import col from '../assets/codeolympics.jpg'
 import rr from '../assets/rewindandrecode.jpg'
