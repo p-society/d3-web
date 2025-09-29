@@ -4,32 +4,89 @@ import Navbar from '../components/landingpage/navbar'
 import useRouteAnimation from '../utils/animatie'
 import EventHero from '../components/events/EventHero' // Import the new component
 import Footer from '../components/landingpage/footer'
+import col from '../assets/codeolympics.jpg'
+import rr from '../assets/rewindandrecode.jpg'
+import bop from '../assets/bitofpast.jpg'
+import tt from '../assets/terratrek.jpg'
+import wrkshp from '../assets/workshop.jpg'
+import row from '../assets/drone.jpg'
+import ctf from '../assets/ctf.jpg'
+import roborogue from '../assets/roborogue.jpg'
+import sts from '../assets/sts.jpg'
 
-// Sample data for events
+// Data for events
 const eventsData = [
   {
-    eventName: 'Sample Event 1',
-    eventDescription: 'This is a sample event description for the first event.',
-    applyLink: 'https://example.com/apply1',
+    eventName: 'Race of Wings',
+    eventDescription:
+      'Experience the electrifying world of competitive drone racing where speed meets surgical precision. Pilots must navigate a fast-paced aerial obstacle course, combining throttle with control, focus, and instinct.',
+    applyLink: '',
     color: '#4271FF',
+    image: row,
   },
   {
-    eventName: 'Sample Event 2',
-    eventDescription: 'This is a sample event description for the second event.',
-    applyLink: 'https://example.com/apply2',
+    eventName: 'Terra Trek',
+    eventDescription:
+      'Welcome to the ultimate all-terrain robotics challenge where teams design a mobile robot to navigate complex multi-surface courses. Compete in record time on sand, gravel, and slopes with minimum loss of stability and control.',
+    applyLink: '',
     color: '#FFEABB',
+    image: tt,
   },
   {
-    eventName: 'Sample Event 3',
-    eventDescription: 'This is a sample event description for the third event.',
-    applyLink: 'https://example.com/apply3',
+    eventName: 'Robo Rogue',
+    eventDescription:
+      'Step into the arena for an adrenaline-charged RoboSoccer challenge where bots dribble, pass, and score in a mini soccer field. It’s a battle of agility, strategy, and engineering finesse to decide the champions. ',
+    applyLink: '',
     color: '#ff8c34',
+    image: roborogue,
   },
   {
-    eventName: 'Sample Event 4',
-    eventDescription: 'This is a sample event description for the fourth event.',
-    applyLink: 'https://example.com/apply4',
+    eventName: 'Save the Survivors',
+    eventDescription:
+      'Guide your rescue bot through a disaster zone to save the right victims, whether Alive, Injured, or Dead. Drop them at their designated safe spots using smart moves and quick thinking, with no human help allowed!',
+    applyLink: '',
     color: '#4271FF',
+    image: sts,
+  },
+  {
+    eventName: 'Rewind and Recode',
+    eventDescription:
+      'Gear up for the ultimate national-level hackathon, a 24-hour non-stop coding competition. Innovate, collaborate, and solve real-world challenges while competing with top talents from across the country.',
+    applyLink: '',
+    color: '#FFEABB',
+    image: rr,
+  },
+  {
+    eventName: 'Code-o-lympics',
+    eventDescription:
+      'Join an ICPC-inspired programming competition where teams of coders solve a series of algorithmic problems. Tackle a variety of computational challenges that test your coding skills, problem-solving abilities, and efficiency.',
+    applyLink: '',
+    color: '#ff8c34',
+    image: col,
+  },
+  {
+    eventName: 'Workshop.exe',
+    eventDescription:
+      'Engage in hands-on learning with industry experts in cutting-edge technologies like AI, Blockchain, and Web3. This workshop is designed to provide practical experience and in-depth knowledge in Augmented Reality (AR) and Virtual Reality (VR).',
+    applyLink: '',
+    color: '#4271FF',
+    image: wrkshp,
+  },
+  {
+    eventName: 'Bits of Past',
+    eventDescription:
+      'Join us for an inspiring Tech Talk where leading industry experts and innovators dive into the latest trends. This session will spark new ideas, broaden your perspective, and give you a front-row seat to the future of technology.',
+    applyLink: '',
+    color: '#FFEABB',
+    image: bop,
+  },
+  {
+    eventName: 'Capture the Flag',
+    eventDescription:
+      'Join the CyberSec Battle and demonstrate your expertise in protecting digital assets and national security. Address critical issues like financial fraud, security breaches, and emerging cyberattacks.',
+    applyLink: '',
+    color: '#ff8c34',
+    image: ctf,
   },
 ]
 
@@ -63,7 +120,7 @@ export default function Event() {
                 key={index}
                 className={`flex w-full ${isEven ? 'justify-end' : 'justify-start'}`}
               >
-                <div className="w-full  md:w-auto">
+                <div className="w-full md:w-auto">
                   <BgcardStack
                     isLoaded={isLoaded}
                     animationDelay={`${800 + index * 150}ms`}
@@ -74,6 +131,7 @@ export default function Event() {
                       eventDescription: event.eventDescription,
                       applyLink: event.applyLink,
                       imagePosition: isEven ? 'right' : 'left',
+                      imageSrc: event.image,
                     }}
                   />
                 </div>

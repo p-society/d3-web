@@ -161,7 +161,7 @@ const Navbar = ({
         style={{ transitionDelay: '100ms' }}
       >
         <div className="bg-transparent border-2 nav-border rounded-2xl p-2 backdrop-blur-sm">
-          <div className="flex gap-8 items-center justify-center px-2">
+          <div className="flex gap-3 items-center justify-center px-2">
             <Link
               to="/"
               className="nav-link-desktop px-4 py-2 rounded-lg font-bold uppercase text-xl tracking-wide transition-colors"

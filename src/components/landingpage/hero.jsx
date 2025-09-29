@@ -8,7 +8,7 @@ import './hero.css' // Import the CSS file with LemonSmash font
 
 const Hero = ({ isLoaded }) => {
   return (
-    <div className={`min-h-screen w-full overflow-hidden z-20`}>
+    <div className={`xl:min-h-screen w-full overflow-hidden z-20`}>
       <Sidebar isLoaded={isLoaded} />
       <Grid isLoaded={isLoaded} />
       {/* Orange section */}
