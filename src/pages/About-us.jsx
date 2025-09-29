@@ -4,7 +4,7 @@ import useRouteAnimation from '../utils/animatie'
 import Navbar from '../components/landingpage/navbar'
 import Footer from '../components/landingpage/footer'
 
-const Aboutus = () => {
+const AboutUs = () => {
   const isLoaded = useRouteAnimation()
 
   return (
@@ -14,7 +14,7 @@ const Aboutus = () => {
       </div>
       <div className="m-2 flex">
         <div
-          className={`absolute top-15 xl:top-25 left-4 sm:left-28 flex items-center gap-6 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
+          className={`absolute top-16 xl:top-24 left-4 sm:left-28 flex items-center gap-6 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
           style={{ transitionDelay: '200ms' }}
         >
           <div className="transform -rotate-12 bg-[#ff8c34] px-4 sm:px-8 py-2 rounded border-2 border-black text-white font-bold shadow-[8px_8px_0_rgba(0,0,0,0.75)] hover:shadow-[12px_12px_0_rgba(0,0,0,0.75)] hover:scale-105 transition-all duration-300">
@@ -24,14 +24,13 @@ const Aboutus = () => {
 
         {/* Decorative green circles (top-right) */}
         <div
-          className={`absolute top-15 right-4 sm:right-12 flex flex-col items-center gap-4 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-4'}`}
+          className={`absolute top-16 right-4 sm:right-12 flex flex-col items-center gap-4 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-4'}`}
           style={{ transitionDelay: '300ms' }}
         >
           <svg
+            aria-hidden="true"
             width="100"
             height="130"
-            sm:width="152"
-            sm:height="197"
             viewBox="0 0 162 207"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +66,7 @@ const Aboutus = () => {
       <div className="flex flex-col xl:flex-row gap-2 lg:gap-2 p-4 sm:p-10 w-full">
         {/* Left column: Paragraph */}
         <div
-          className={`w-full lg:max-w-s relative gap-1 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
+          className={`w-full relative gap-1 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
           style={{ transitionDelay: '500ms' }}
         >
           <p className="transition-all duration-300 hover:text-gray-700">
@@ -144,4 +143,4 @@ const Aboutus = () => {
   )
 }
 
-export default Aboutus
+export default AboutUs
