@@ -26,7 +26,6 @@ const AboutUs = () => {
         <div
           className={`absolute top-16 right-4 sm:right-12 flex flex-col items-center gap-4 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-4'}`}
           style={{ transitionDelay: '300ms' }}
-        >
           <svg
             aria-hidden="true"
             width="100"
