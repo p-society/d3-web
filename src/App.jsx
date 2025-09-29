@@ -1,12 +1,12 @@
-import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Landingpage from './pages/Landingpage'
 import Event from './pages/Event'
 import Register from './pages/Register'
-import ContactUs from './pages/ContactUs'
+import ContactUs from './pages/Contactus'
 import NotFound from './pages/NotFound'
 import Sponsors from './pages/Sponsors'
 import { Merch } from './pages/Merch'
+import AboutUs from './pages/AboutUs'
 
 function App() {
   return (
@@ -19,6 +19,7 @@ function App() {
         <Route path="/sponsors" element={<Sponsors />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/merch" element={<Merch />} />
+        <Route path="/about-us" element={<AboutUs />} />
       </Routes>
     </Router>
   )

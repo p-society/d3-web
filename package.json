@@ -11,7 +11,9 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "preview": "vite preview"
+    "preview": "pnpm run build && wrangler pages dev",
+    "deploy": "pnpm run build && wrangler pages deploy",
+    "cf-typegen": "wrangler types"
   },
   "engines": {
     "pnpm": ">=8.0.0"
@@ -40,7 +42,8 @@
     "postcss": "^8.5.6",
     "prettier": "^3.3.3",
     "tailwindcss": "^4.1.13",
-    "vite": "^7.1.2"
+    "vite": "^7.1.2",
+    "wrangler": "^4.40.2"
   },
   "lint-staged": {
     "*.{js,jsx}": [
