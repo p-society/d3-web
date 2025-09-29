@@ -2,6 +2,7 @@ import Frame from '../assets/Frame.svg'
 import useRouteAnimation from '../utils/animatie'
 import Navbar from '../components/landingpage/navbar'
 import Footer from '../components/landingpage/footer'
+import Bluefooter from '../components/register/bluefooter'
 
 const AboutUs = () => {
   const isLoaded = useRouteAnimation()
@@ -100,14 +101,15 @@ const AboutUs = () => {
           </div>
         </div>
 
+        {/** black line */}
         <div
           className={`hidden xl:block w-[8px] bg-black mx-5 h-[340px] transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 scale-y-100' : 'opacity-0 scale-y-0'}`}
           style={{ transitionDelay: '600ms', transformOrigin: 'top' }}
         ></div>
 
-        <div className="flex flex-col sm:flex-row gap-5 lg:gap-10 lg:ml-5 w-full lg:w-auto">
+        <div className="lg:ml-5 w-full lg:w-auto">
           {/* Card 1 */}
-          <div
+          {/* <div
             className={`flex-1 w-full sm:w-[300px] h-[300px] bg-white border-2 border-black rounded-md shadow-[8px_8px_0_rgba(0,0,0,0.75)] overflow-hidden transition-all duration-700 ease-out hover:shadow-[12px_12px_0_rgba(0,0,0,0.75)] hover:-translate-y-1 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
             style={{ transitionDelay: '700ms' }}
           >
@@ -118,10 +120,10 @@ const AboutUs = () => {
               <h3 className="font-semibold"></h3>
               <p className="text-sm text-gray-700 mt-2"></p>
             </div>
-          </div>
+          </div> */}
 
           {/* Card 2 */}
-          <div
+          {/* <div
             className={`flex-1 w-full sm:w-[300px] h-[300px] bg-white border-2 border-black rounded-md shadow-[8px_8px_0_rgba(0,0,0,0.75)] overflow-hidden transition-all duration-700 ease-out hover:shadow-[12px_12px_0_rgba(0,0,0,0.75)] hover:-translate-y-1 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
             style={{ transitionDelay: '800ms' }}
           >
@@ -132,7 +134,8 @@ const AboutUs = () => {
               <h3 className="font-semibold"></h3>
               <p className="text-sm text-gray-700 mt-2"></p>
             </div>
-          </div>
+          </div> */}
+          <Bluefooter />
         </div>
       </div>
       <div className="w-full absolute bottom-0 left-0 z-20 pt-2">
