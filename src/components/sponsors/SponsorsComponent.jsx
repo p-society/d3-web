@@ -2,13 +2,31 @@ import React, { useState, useRef, useLayoutEffect, useCallback, useMemo } from '
 import './Sponsors.css'
 import circleImage from '../../assets/circles.png'
 import sparklesImage from '../../assets/sparkles.png'
-import Logo from '../../assets/circles.png'
+import Logo from '../../assets/comingsoon.png'
+import iete from '../../assets/iete.jpg'
+import ietl from '../../assets/ietl.png'
+import iiitbgp from '../../assets/iiitbgp.png'
+import issacc from '../../assets/issacc.png'
+import logo from '../../assets/logo.jpg'
+import mitj from '../../assets/mitj.png'
+import nitj from '../../assets/nitj.png'
+import nsut from '../../assets/nsut.jpg'
+import sitp from '../../assets/sitp.jpg'
+import vitap from '../../assets/vitap.jpg'
+import vitc from '../../assets/vitc.jpg'
+
+import bitm from '../../assets/bitm.png'
+import igdtuw from '../../assets/igdtuw.png'
+import jgec from '../../assets/jgec.png'
+import nfsu from '../../assets/nfsu.jpg'
+import rvu from '../../assets/rvu.jpg'
+import svce from '../../assets/svce.png'
 
 const sponsorLogos = [Logo, Logo, Logo, Logo, Logo, Logo, Logo]
 
-const coOrganiserLogos = [Logo, Logo, Logo, Logo, Logo, Logo, Logo]
+const coOrganiserLogos = [iete, ietl, iiitbgp, issacc, logo, mitj, nitj, nsut, sitp, vitap, vitc]
 
-const communityLogos = [Logo, Logo, Logo, Logo, Logo, Logo, Logo]
+const communityLogos = [bitm, igdtuw, jgec, nfsu, rvu, svce]
 
 const TAB_CONFIG = {
   sponsors: {
@@ -34,6 +52,12 @@ const ANIMATION_DELAYS = {
 const SponsorsComponent = ({ isLoaded }) => {
   const [activeTab, setActiveTab] = useState('sponsors')
   const [sliderStyle, setSliderStyle] = useState({})
+  const [isFlipping, setIsFlipping] = useState(false)
+
+  const triggerFlip = useCallback(() => {
+    setIsFlipping(true)
+    setTimeout(() => setIsFlipping(false), 600) // match animation duration
+  }, [])
 
   const buttonRefs = useRef({
     sponsors: null,
@@ -66,9 +90,13 @@ const SponsorsComponent = ({ isLoaded }) => {
     return [...logos, ...logos]
   }, [currentTabData])
 
-  const handleTabChange = useCallback(tab => {
-    setActiveTab(tab)
-  }, [])
+  const handleTabChange = useCallback(
+    tab => {
+      setActiveTab(tab)
+      triggerFlip()
+    },
+    [triggerFlip]
+  )
 
   const renderTabButton = useCallback(
     (tabKey, label) => (
@@ -129,12 +157,18 @@ const SponsorsComponent = ({ isLoaded }) => {
           }`}
           style={{ transitionDelay: ANIMATION_DELAYS.title }}
         >
-          <div className="p-3 bg-[#ff8c34] rounded-full border-2 border-solid border-black transform -rotate-7">
+          <div
+            className={`p-3 bg-[#ff8c34] rounded-full border-2 border-solid border-black transform -rotate-7 cursor-pointer
+              ${isFlipping ? 'coin-flip' : ''}`}
+            onClick={triggerFlip}
+          >
             <div className="bg-[#ff8c34] text-black font-['ADLaM_Display'] font-bold text-2xl sm:text-4xl p-0.5 sm:p-5 rounded-full border-2 border-dashed border-black">
               <div className="relative h-26 w-64 text-center overflow-hidden">
                 <span
                   key={activeTab}
-                  className="animate-fade-in absolute inset-0 flex items-center justify-center"
+                  className={`absolute inset-0 flex items-center justify-center transition-opacity duration-300 ${
+                    isFlipping ? 'opacity-0' : 'opacity-100'
+                  }`}
                 >
                   {currentTabData.title}
                 </span>
