@@ -26,7 +26,3 @@ dist-ssr
 
 # ESLint cache (explicitly ignored if generated locally)
 .eslintcache
-
-# Lock files
-package-lock.json
-pnpm-lock.yaml
