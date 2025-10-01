@@ -15,7 +15,7 @@ const Hero = ({ isLoaded }) => {
 
   const handleDownload = () => {
     const link = document.createElement('a')
-    link.href = '/brochure.pdf' // PDF in public folder
+    link.href = '/brochure.pdf'
     link.download = 'D3-TechnoFest-Brochure.pdf'
     link.click()
   }
@@ -46,11 +46,18 @@ const Hero = ({ isLoaded }) => {
 
           <div className="flex flex-col justify-center items-center px-2 phone:px-3 sm:px-4 lg:px-8 relative flex-1">
             <div className="image-wrapper mb-2 phone:mb-3 sm:mb-4 max-w-[240px] phone:max-w-[250px] sm:max-w-xs md:max-w-sm lg:max-w-sm absolute -top-28 phone:-top-32 sm:-top-40 md:-top-52 lg:-top-48">
-              <img
-                src={computerImage}
-                alt="Retro computer screen"
-                className="w-full h-auto object-contain"
-              />
+              <div className="relative w-full h-full">
+                <img
+                  src={computerImage}
+                  alt="Retro computer screen"
+                  className="w-full h-auto object-contain"
+                />
+                <div className="absolute flex items-center justify-center bg-[#2e2e2e] tv-screen">
+                  <span className="px-4 py-2 rounded-lg font-bold text-lg sm:text-2xl coming-text">
+                    Coming soon
+                  </span>
+                </div>
+              </div>
             </div>
 
             <div className="mb-1 phone:mb-2 sm:mb-2 pt-16 phone:pt-18 sm:pt-22 lg:pt-18 max-w-xs phone:max-w-sm sm:max-w-lg text-left">

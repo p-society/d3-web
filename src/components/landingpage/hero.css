@@ -9,7 +9,6 @@
   font-family: 'LemonSmash', sans-serif;
 }
 
-/* Static effect styles */
 .static-effect {
   background-color: #1a1a1a;
   border-radius: 8px;
@@ -17,8 +16,57 @@
     inset 0 0 20px rgba(0, 255, 0, 0.1),
     0 0 20px rgba(0, 255, 0, 0.05);
 }
-
-/* Add a subtle glow effect to the computer container */
 .computer-container {
   filter: drop-shadow(0 0 10px rgba(0, 255, 0, 0.2));
+}
+
+.tv-screen {
+  /* position inside TV */
+  top: 15%;
+  left: 9%;
+  width: 65%;
+  height: 70%;
+
+  background: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnkxbWVnb2hvN3EzZGc2aHZ0NWw2ejgzODk3NWlsZG40MXQ1enQwbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/NqJrgXD25sjzlmaMLe/giphy.gif');
+  background-size: cover;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.coming-text {
+  font-family: 'Lemon Smash', sans-serif;
+  font-size: 2rem;
+  color: white;
+  text-transform: lowercase;
+  font-weight: bold;
+  text-align: center;
+
+  text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
+
+  animation: vibrate 0.005s infinite;
+}
+
+@keyframes vibrate {
+  0% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(-1px, 1px);
+  }
+  40% {
+    transform: translate(-1px, -1px);
+  }
+  60% {
+    transform: translate(1px, 1px);
+  }
+  80% {
+    transform: translate(1px, -1px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
