@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import Button from '../buttons'
 import computerImage from '../../assets/computer.png' // Ensure this path is correct
 import StaticEffect from '../StaticEffect'
@@ -7,6 +8,8 @@ import Grid from './grid'
 import './hero.css' // Import the CSS file with LemonSmash font
 
 const Hero = ({ isLoaded }) => {
+  const navigate = useNavigate()
+
   return (
     <div className={`xl:min-h-screen w-full overflow-hidden z-20`}>
       <Sidebar isLoaded={isLoaded} />
@@ -52,7 +55,7 @@ const Hero = ({ isLoaded }) => {
 
             {/* Buttons */}
             <div className="flex flex-col gap-2 phone:gap-3 sm:flex-row sm:gap-4 mb-4 phone:mb-6 sm:mb-8 max-w-xs phone:max-w-sm sm:max-w-lg w-full">
-              <Button onClick={() => console.log('Explore clicked')}>Explore</Button>
+              <Button onClick={() => navigate('/events')}>Explore</Button>
               <Button onClick={() => console.log('Download Brochure clicked')}>
                 Download Brochure
               </Button>
