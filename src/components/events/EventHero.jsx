@@ -4,9 +4,9 @@ import Button from '../buttons'
 const EventHero = ({ isLoaded }) => {
   return (
     <div className="w-full max-w-7xl mx-auto px-8 pt-20 pb-16 md:pt-12 md:pb-24">
-      <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16">
+      <div className="flex flex-col justify-center md:flex-row items-center gap-12 md:gap-16">
         {/* Left Side: Image Placeholder */}
-        <div
+        {/* <div
           className={`w-full md:w-1/2 order-1 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
           style={{ transitionDelay: '300ms' }}
         >
@@ -15,7 +15,7 @@ const EventHero = ({ isLoaded }) => {
               Event Image
             </span>
           </div>
-        </div>
+        </div> */}
 
         {/* Right Side: Content */}
         <div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left order-2">
@@ -26,7 +26,7 @@ const EventHero = ({ isLoaded }) => {
             Our Premier Events
           </h1>
           <p
-            className={`max-w-lg text-lg text-black font-['Cascadia_Code'] lowercase mb-8 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
+            className={`max-w-lg text-lg text-black font-['Cascadia_Code'] text-center leading-10  lowercase mb-0 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
             style={{ transitionDelay: '600ms' }}
           >
             Explore a series of engaging and innovative events designed to challenge and inspire.
@@ -36,12 +36,12 @@ const EventHero = ({ isLoaded }) => {
             className={`transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
             style={{ transitionDelay: '700ms' }}
           >
-            <Button
+            {/* <Button
               onClick={() => console.log('Register Now clicked')}
               className="w-auto" // Keeps the button from being full-width
             >
               REGISTER NOW
-            </Button>
+            </Button> */}
           </div>
         </div>
       </div>
