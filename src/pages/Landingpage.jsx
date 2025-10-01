@@ -53,7 +53,7 @@ const Landingpage = () => {
             {/* Social Icons - right side */}
             <div className="flex gap-2 phone:gap-3 sm:gap-6 pb-1 phone:pb-2 sm:pb-4">
               <a
-                href="https://instagram.com/techsociiitbh/"
+                href="https://www.instagram.com/d3fest.iiitbh/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
