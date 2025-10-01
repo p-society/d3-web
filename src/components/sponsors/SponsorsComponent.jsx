@@ -1,4 +1,4 @@
-import React, { useState, useRef, useLayoutEffect, useCallback, useMemo } from 'react'
+import React, { useState, useRef, useLayoutEffect, useCallback, useEffect, useMemo } from 'react'
 import './Sponsors.css'
 import circleImage from '../../assets/circles.png'
 import sparklesImage from '../../assets/sparkles.png'
@@ -55,8 +55,9 @@ const SponsorsComponent = ({ isLoaded }) => {
   const [isFlipping, setIsFlipping] = useState(false)
 
   const triggerFlip = useCallback(() => {
+    clearTimeout(timeoutRef.current)
     setIsFlipping(true)
-    setTimeout(() => setIsFlipping(false), 600) // match animation duration
+    timeoutRef.current = setTimeout(() => setIsFlipping(false), 600)
   }, [])
 
   const buttonRefs = useRef({
@@ -65,6 +66,12 @@ const SponsorsComponent = ({ isLoaded }) => {
     community: null,
   })
   const containerRef = useRef(null)
+
+  const timeoutRef = useRef(null)
+
+  useEffect(() => {
+    return () => clearTimeout(timeoutRef.current)
+  }, [])
 
   const updateSlider = useCallback(() => {
     if (!containerRef.current) return
