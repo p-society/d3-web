@@ -8,14 +8,16 @@ const Sponsors = () => {
   const isLoaded = useRouteAnimation()
 
   return (
-    <div className="min-h-screen bg-[#ffeabb] relative overflow-hidden">
+    <div className="min-h-screen relative bg-[#ffeabb] overflow-hidden">
       <div className="w-full flex justify-center pt-2">
         <Navbar isLoaded={isLoaded} />
       </div>
       <div className="flex-grow flex items-center justify-center">
         <SponsorsComponent isLoaded={isLoaded} />
       </div>
-      <Footer isLoaded={isLoaded} />
+      <div className="absolute md:relative bottom-0 w-full">
+        <Footer isLoaded={isLoaded} />
+      </div>
     </div>
   )
 }

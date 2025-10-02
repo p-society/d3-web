@@ -106,6 +106,14 @@ const Navbar = ({
               HOME
             </Link>
             <Link
+              to="/about-us"
+              onClick={closeSidebar}
+              className={`nav-link-mobile px-4 py-3 mb-2 rounded-lg font-bold uppercase text-xl tracking-wide transition-all duration-300 transform ${animateItems ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}`}
+              style={{ transitionDelay: '50ms' }}
+            >
+              ABOUT US
+            </Link>
+            <Link
               to="/events"
               onClick={closeSidebar}
               className={`nav-link-mobile px-4 py-3 mb-2 font-bold rounded-lg uppercase text-xl tracking-wide transition-all duration-300 transform ${animateItems ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}`}
@@ -120,13 +128,14 @@ const Navbar = ({
             >
               MERCH
             </button> */}
-            <button
+            <Link
+              to="/contact-us"
               onClick={closeSidebar}
-              className={`nav-link-mobile px-4 py-3 mb-2 font-bold rounded-lg uppercase text-xl tracking-wide transition-all duration-300 transform ${animateItems ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'} text-left`}
-              style={{ transitionDelay: '200ms' }}
+              className={`nav-link-mobile px-4 py-3 mb-2 font-bold rounded-lg uppercase text-xl tracking-wide transition-all duration-300 transform ${animateItems ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}`}
+              style={{ transitionDelay: '250ms' }}
             >
               CONTACT US
-            </button>
+            </Link>
             <Link
               to="/register"
               onClick={closeSidebar}
@@ -161,7 +170,7 @@ const Navbar = ({
         style={{ transitionDelay: '100ms' }}
       >
         <div className="bg-transparent border-2 nav-border rounded-2xl p-2 backdrop-blur-sm">
-          <div className="flex gap-8 items-center justify-center px-2">
+          <div className="flex gap-5 items-center justify-center px-2">
             <Link
               to="/"
               className="nav-link-desktop px-4 py-2 rounded-lg font-bold uppercase text-xl tracking-wide transition-colors"
@@ -169,17 +178,23 @@ const Navbar = ({
               HOME
             </Link>
             <Link
+              to="/about-us"
+              className="nav-link-desktop px-4 py-2 rounded-lg font-bold uppercase text-xl tracking-wide transition-colors"
+            >
+              ABOUT US
+            </Link>
+            <Link
               to="/events"
               className="nav-link-desktop px-4 py-2 font-bold rounded-lg uppercase text-xl tracking-wide transition-colors"
             >
               EVENTS
             </Link>
-            {/* <button className="nav-link-desktop px-4 py-2 font-bold rounded-lg uppercase text-xl tracking-wide transition-colors">
-              MERCH
-            </button> */}
-            <button className="nav-link-desktop px-4 py-2 font-bold rounded-lg uppercase text-xl tracking-wide transition-colors">
+            <Link
+              to="/contact-us"
+              className="nav-link-desktop px-4 py-2 font-bold rounded-lg uppercase text-xl tracking-wide transition-colors"
+            >
               CONTACT US
-            </button>
+            </Link>
             <Link
               to="/register"
               className="nav-link-desktop px-4 py-2 font-bold rounded-lg uppercase text-xl tracking-wide transition-colors"

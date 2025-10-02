@@ -1,10 +1,10 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import Button from '../buttons'
 import computerImage from '../../assets/computer.png'
 import Sidebar from './sidebar'
 import Grid from './grid'
 import './hero.css'
-import { useNavigate } from 'react-router-dom'
 
 const Hero = ({ isLoaded }) => {
   const navigate = useNavigate()
@@ -21,12 +21,14 @@ const Hero = ({ isLoaded }) => {
   }
 
   return (
-    <div className={`min-h-screen w-full overflow-hidden z-20`}>
+    <div className="xl:min-h-screen w-full overflow-hidden z-20">
       <Sidebar isLoaded={isLoaded} />
       <Grid isLoaded={isLoaded} />
 
       <div
-        className={`absolute w-full bg-[#ff8c34] top-[50vh] transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
+        className={`absolute w-full bg-[#ff8c34] top-[50vh] transition-all duration-700 ease-out ${
+          isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'
+        }`}
         style={{ transitionDelay: '300ms' }}
       >
         <div className="flex justify-between px-2 phone:px-3 sm:px-4 lg:px-16 pt-4 phone:pt-6 sm:pt-8 lg:pt-2">
