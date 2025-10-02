@@ -11,7 +11,7 @@ const Landingpage = () => {
   return (
     <div className="min-h-screen bg-[#ffeabb] relative overflow-x-hidden">
       <div className="max-w-screen-2xl mx-auto relative min-h-screen flex flex-col">
-        <div className="w-full flex justify-center pt-2 z-40">
+        <div className="w-full flex justify-center pt-2 z-50">
           <Navbar isLoaded={isLoaded} />
         </div>
 

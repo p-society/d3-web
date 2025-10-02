@@ -15,7 +15,7 @@ const ContactUs = () => {
         </div>
         <div className="flex-grow flex flex-col">
           <div
-            className={`z-2 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
+            className={`z-10 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
             style={{ transitionDelay: '300ms' }}
           >
             <ContactHeader />
