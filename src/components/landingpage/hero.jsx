@@ -55,8 +55,8 @@ const Hero = ({ isLoaded }) => {
                   className="w-full h-auto object-contain"
                 />
                 <div className="absolute flex items-center justify-center bg-[#2e2e2e] tv-screen">
-                  <span className="px-4 py-2 rounded-lg font-bold text-lg sm:text-2xl coming-text">
-                    Coming soon
+                  <span className="px-4 py-2 rounded-lg text-lg sm:text-2xl coming-text">
+                    COMING SOON.
                   </span>
                 </div>
               </div>

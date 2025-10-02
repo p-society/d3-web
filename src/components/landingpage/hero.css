@@ -33,18 +33,20 @@
 }
 
 .coming-text {
-  font-family: 'Lemon Smash', sans-serif;
+  font-family: 'Casserole';
   font-size: 2rem;
-  color: white;
   text-transform: lowercase;
   font-weight: bold;
   text-align: center;
 
+  color: #17bcbb;
+
   text-shadow:
-    -2px -2px 0 #000,
-    2px -2px 0 #000,
-    -2px 2px 0 #000,
-    2px 2px 0 #000;
+    -1px -1px 0 rgba(0, 0, 0, 0.6),
+    1px -1px 0 rgba(0, 0, 0, 0.5),
+    -1px 1px 0 rgba(0, 0, 0, 0.5),
+    1px 1px 0 rgba(0, 0, 0, 0.6),
+    3px 4px 0 rgba(40, 12, 28, 0.7);
 
   animation: vibrate 0.005s infinite;
 }
