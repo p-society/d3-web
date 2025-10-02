@@ -21,13 +21,12 @@
 }
 
 .tv-screen {
-  /* position inside TV */
   top: 15%;
   left: 9%;
   width: 65%;
   height: 70%;
 
-  background: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnkxbWVnb2hvN3EzZGc2aHZ0NWw2ejgzODk3NWlsZG40MXQ1enQwbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/NqJrgXD25sjzlmaMLe/giphy.gif');
+  background: url('https://media.giphy.com/media/oEI9uBYSzLpBK/giphy.gif');
   background-size: cover;
   border-radius: 4px;
   overflow: hidden;
