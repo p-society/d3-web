@@ -33,7 +33,7 @@ export const Merch = () => {
   return (
     <div className="bg-[#FFEABB] w-full min-h-screen flex flex-col">
       {/* Navbar */}
-      <div className="w-full flex justify-center relative z-20 pt-2">
+      <div className="w-full flex justify-center relative z-50 pt-2">
         <Navbar isLoaded={isLoaded} />
       </div>
 

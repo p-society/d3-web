@@ -14,7 +14,7 @@ const RegisterHero = ({ isLoaded }) => {
       style={{ transitionDelay: '100ms' }}
     >
       {/* Navbar (on top, centered) */}
-      <div className="w-full flex justify-center relative z-20 pt-2">
+      <div className="w-full flex justify-center relative z-50 pt-2">
         <Navbar
           isLoaded={isLoaded}
           color="#FFEAAB" // Desktop link text color (light yellow)
@@ -49,7 +49,7 @@ const RegisterHero = ({ isLoaded }) => {
               </h1>
 
               {/* Registrations Banner - positioned at top right for md+, below title for mobile */}
-              <div className="md:absolute md:-top-12 md:-right-18 lg:-right-60 md:top-3 flex justify-center md:block mt-4 md:mt-0">
+              <div className="md:absolute md:-right-18 lg:-right-60 md:top-3 flex justify-center md:block mt-4 md:mt-0">
                 <div className="transform rotate-[7deg]">
                   <RegistrationsBanner />
                 </div>
