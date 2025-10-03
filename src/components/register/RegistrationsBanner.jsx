@@ -1,5 +1,5 @@
 import React from 'react'
-import D2Image from '../../assets/D2.png'
+import D2Image from '../../assets/D2.webp'
 
 const RegistrationsBanner = ({ text = 'REGISTRATIONS OPEN', icon = '', className = '' }) => {
   return (
