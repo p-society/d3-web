@@ -27,6 +27,13 @@ body {
 }
 
 @font-face {
+  font-family: 'Casserole';
+  src: url('./assets/CasseroleDemo-Classic.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'CascadiaCode';
   src: url('./assets/CascadiaCode-Regular.ttf') format('truetype');
   font-weight: normal;
