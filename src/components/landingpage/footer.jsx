@@ -1,8 +1,8 @@
 // src/components/landingpage/Footer.jsx
 
 import { FaInstagram, FaLinkedin, FaXTwitter, FaLink } from 'react-icons/fa6'
-import d3Logo from '../../assets/d3-.png'
-import decorLogo from '../../assets/decorBottom.png'
+import d3Logo from '../../assets/d3-.webp'
+import decorLogo from '../../assets/decorBottom.webp'
 
 const Footer = ({ isLoaded }) => {
   return (
