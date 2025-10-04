@@ -4,6 +4,7 @@ import computerImage from '../../assets/computer.png'
 import Sidebar from './sidebar'
 import Grid from './grid'
 import './hero.css'
+import tvscreen from '../../assets/tvscreen.gif'
 import { useNavigate } from 'react-router-dom'
 
 const Hero = ({ isLoaded }) => {
@@ -52,7 +53,10 @@ const Hero = ({ isLoaded }) => {
                   alt="Retro computer screen"
                   className="w-full h-auto object-contain"
                 />
-                <div className="absolute flex items-center justify-center bg-[#2e2e2e] tv-screen">
+                <div
+                  className="absolute flex items-center justify-center bg-[#2e2e2e] tv-screen"
+                  style={{ backgroundImage: `url(${tvscreen})`, backgroundSize: 'cover' }}
+                >
                   <span className="px-4 py-2 rounded-lg font-bold text-lg sm:text-2xl coming-text">
                     Coming soon
                   </span>
