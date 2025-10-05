@@ -122,7 +122,7 @@ export const Merch = () => {
               }`}
               style={{ transitionDelay: '850ms' }}
             >
-              <Button className="bg-blue-400 hover:bg-blue-500 font-aclonica">BUY NOW</Button>
+              <Button className="bg-blue-400 hover:bg-blue-500 font-aclonica">COMING SOON</Button>
             </div>
           </div>
 
