@@ -70,24 +70,25 @@ const AboutUs = () => {
           style={{ transitionDelay: '500ms' }}
         >
           <p className="transition-all duration-300 hover:text-gray-700">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ab quo sint nihil
-            tempore deserunt modi nesciunt temporibus debitis, numquam impedit nulla. Quos,
-            distinctio voluptate alias.
+            D³ Fest (Dream • Dare • Develop) is the flagship celebration of innovation and
+            technology at IIIT Bhubaneswar, organized by the Tech Society in collaboration with the
+            TARS Society. It’s a festival that encourages students to dream beyond boundaries, dare
+            to create, and develop ideas that inspire change.
           </p>
           <p
             className={`mt-1 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
             style={{ transitionDelay: '600ms' }}
           >
-            Nam finibus faucibus nibh iaculis vulputate. Donec orci lectus, commodo vitae
-            sollicitudin vel, vulputate quis purus. dolor sit amet consectetur adipisicing elit.
+            From hands-on workshops to thrilling competitions, D³Fest brings together curious minds
+            who live and breathe technology.
           </p>
           <p
             className={`mt-1 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
             style={{ transitionDelay: '700ms' }}
           >
-            Cras ullamcorper porta justo at porttitor. Etiam bibendum ultricies gravida. dolor sit
-            amet, consectetur adipisicing elit. Tempora qui accusamus enim ullam modi deleniti
-            eaque. Quam, odit!
+            This website has been crafted by the Programming Society (PSoC) in partnership with the
+            Tech Society - a collaboration that reflects the essence of D³Fest itself: creativity,
+            teamwork, and a passion for building something meaningful.
           </p>
           <div
             className={`mt-1 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0 rotate-0' : 'opacity-0 translate-y-3 rotate-12'}`}
