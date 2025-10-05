@@ -63,10 +63,16 @@ const RegisterHero = ({ isLoaded }) => {
             >
               <StackedCard
                 title="D3 TECH FEST"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, ut at massa mi, aliquam in hendrerit urna, pellentesque sit amet elit, ut et massa mi, aliquam in hendrerit urna, pellentesque sit amet"
+                description="Whether you’re a coder, designer, builder, or dreamer, this is your chance to connect, compete, and create alongside some of the brightest minds on campus. Limited slots available! Secure your spot today and be part of the movement that dares to dream and develops the impossible."
                 buttonText="Register Now"
                 className="max-w-md"
-                onRegisterClick={() => console.log('Register clicked')}
+                onRegisterClick={() =>
+                  window.open(
+                    'https://unstop.com/college-fests/d3-tech-fest-iiit-bhubaneswar-international-institute-of-information-technology-bhubaneswar-374277',
+                    '_blank',
+                    'noopener,noreferrer'
+                  )
+                }
               />
             </div>
 
