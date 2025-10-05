@@ -1,6 +1,6 @@
 import React from 'react'
-import SparkleImage from '../../assets/Sparkle.png'
-import arrowImage from '../../assets/arrow.png'
+import SparkleImage from '../../assets/Sparkle.webp'
+import arrowImage from '../../assets/arrow.webp'
 
 const StackedCard = ({
   title = 'D3 TECH FEST',

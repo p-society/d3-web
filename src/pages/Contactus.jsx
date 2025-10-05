@@ -20,6 +20,8 @@ const ContactUs = () => {
           >
             <ContactHeader />
           </div>
+
+          {/* Mailer with animation */}
           <div
             className={`flex-grow transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
             style={{ transitionDelay: '500ms' }}

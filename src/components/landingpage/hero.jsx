@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import Button from '../buttons'
-import computerImage from '../../assets/computer.png' // Ensure this path is correct
+import computerImage from '../../assets/computer.webp' // Ensure this path is correct
 import StaticEffect from '../StaticEffect'
 import Sidebar from './sidebar'
 import Grid from './grid'
