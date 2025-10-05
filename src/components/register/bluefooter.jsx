@@ -72,8 +72,8 @@ function Bluefooter() {
         <div className="flex flex-col md:text-base items-center text-center text-sm md:text-base text-black space-y-1 break-words">
           <p className="pb-2 pt-2 ">IIIT Bhubaneswar, Gothapatna, Bhubaneswar, Odisha, 751003</p>
 
-          <p>Email: techsociety@iiitbh.ac.in</p>
-          <p>Phone: +91-1234567890</p>
+          <p>Email: tech-society@iiit-bh.ac.in</p>
+          <p>Phone: +91-6299465636</p>
         </div>
 
         <p className="text-sm md:text-base text-black break-words pt-3">
