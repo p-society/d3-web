@@ -51,7 +51,7 @@ export const MerchCard = ({ cardText = 'Front View', imageSrc, isLoaded, delay =
         ))}
 
         {/* Product Image */}
-        <div className="absolute w-[61.6%] h-[52.1%] left-[23.4%] top-0">
+        <div className="absolute w-[61.6%] h-[75%] left-1/2 top-0 transform -translate-x-1/2 flex items-center justify-center">
           {imageSrc && (
             <img
               src={imageSrc}

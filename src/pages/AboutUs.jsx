@@ -9,7 +9,7 @@ const AboutUs = () => {
 
   return (
     <div className="min-h-screen bg-[#F6E9D0] overflow-x-hidden flex flex-col items-start justify-center p-4 sm:p-8 sm:pt-2 relative font-['ADLaM_Display']">
-      <div className="w-full flex justify-center relative z-20">
+      <div className="w-full flex justify-center relative z-50">
         <Navbar isLoaded={isLoaded} />
       </div>
       <div className="m-2 flex">

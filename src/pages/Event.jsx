@@ -17,38 +17,6 @@ import sts from '../assets/sts.webp'
 // Data for events
 const eventsData = [
   {
-    eventName: 'Race of Wings',
-    eventDescription:
-      'Experience the electrifying world of competitive drone racing where speed meets surgical precision. Pilots must navigate a fast-paced aerial obstacle course, combining throttle with control, focus, and instinct.',
-    applyLink: '',
-    color: '#4271FF',
-    image: row,
-  },
-  {
-    eventName: 'Terra Trek',
-    eventDescription:
-      'Welcome to the ultimate all-terrain robotics challenge where teams design a mobile robot to navigate complex multi-surface courses. Compete in record time on sand, gravel, and slopes with minimum loss of stability and control.',
-    applyLink: '',
-    color: '#FFEABB',
-    image: tt,
-  },
-  {
-    eventName: 'Robo Rogue',
-    eventDescription:
-      'Step into the arena for an adrenaline-charged RoboSoccer challenge where bots dribble, pass, and score in a mini soccer field. It’s a battle of agility, strategy, and engineering finesse to decide the champions. ',
-    applyLink: '',
-    color: '#ff8c34',
-    image: roborogue,
-  },
-  {
-    eventName: 'Save the Survivors',
-    eventDescription:
-      'Guide your rescue bot through a disaster zone to save the right victims, whether Alive, Injured, or Dead. Drop them at their designated safe spots using smart moves and quick thinking, with no human help allowed!',
-    applyLink: '',
-    color: '#4271FF',
-    image: sts,
-  },
-  {
     eventName: 'Rewind and Recode',
     eventDescription:
       'Gear up for the ultimate national-level hackathon, a 24-hour non-stop coding competition. Innovate, collaborate, and solve real-world challenges while competing with top talents from across the country.',
@@ -88,6 +56,38 @@ const eventsData = [
     color: '#ff8c34',
     image: ctf,
   },
+  {
+    eventName: 'Race of Wings',
+    eventDescription:
+      'Experience the electrifying world of competitive drone racing where speed meets surgical precision. Pilots must navigate a fast-paced aerial obstacle course, combining throttle with control, focus, and instinct.',
+    applyLink: '',
+    color: '#4271FF',
+    image: row,
+  },
+  {
+    eventName: 'Terra Trek',
+    eventDescription:
+      'Welcome to the ultimate all-terrain robotics challenge where teams design a mobile robot to navigate complex multi-surface courses. Compete in record time on sand, gravel, and slopes with minimum loss of stability and control.',
+    applyLink: '',
+    color: '#FFEABB',
+    image: tt,
+  },
+  {
+    eventName: 'Robo Rogue',
+    eventDescription:
+      'Step into the arena for an adrenaline-charged RoboSoccer challenge where bots dribble, pass, and score in a mini soccer field. It’s a battle of agility, strategy, and engineering finesse to decide the champions. ',
+    applyLink: '',
+    color: '#ff8c34',
+    image: roborogue,
+  },
+  {
+    eventName: 'Save the Survivors',
+    eventDescription:
+      'Guide your rescue bot through a disaster zone to save the right victims, whether Alive, Injured, or Dead. Drop them at their designated safe spots using smart moves and quick thinking, with no human help allowed!',
+    applyLink: '',
+    color: '#4271FF',
+    image: sts,
+  },
 ]
 
 export default function Event() {
@@ -96,7 +96,7 @@ export default function Event() {
   return (
     <div className="page-wrapper">
       <div className="min-h-screen bg-[#ffeabb] w-full relative overflow-x-hidden">
-        <div className="w-full flex mt-2 justify-center">
+        <div className="w-full flex mt-2 justify-center z-50">
           <Navbar
             isLoaded={isLoaded}
             color="#ff8c34"

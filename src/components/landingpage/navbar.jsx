@@ -87,7 +87,7 @@ const Navbar = ({
       >
         {/* Backdrop */}
         <div
-          className={`fixed inset-0 bg-black transition-opacity duration-300 ${isOpen ? 'bg-opacity-50' : 'bg-opacity-0'}`}
+          className={`fixed inset-0 bg-black opacity-80 transition-opacity duration-300 ${isOpen ? 'bg-opacity-50' : 'bg-opacity-0'}`}
           onClick={closeSidebar}
         ></div>
 
@@ -109,7 +109,7 @@ const Navbar = ({
               to="/about-us"
               onClick={closeSidebar}
               className={`nav-link-mobile px-4 py-3 mb-2 rounded-lg font-bold uppercase text-xl tracking-wide transition-all duration-300 transform ${animateItems ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}`}
-              style={{ transitionDelay: '50ms' }}
+              style={{ transitionDelay: '100ms' }}
             >
               ABOUT US
             </Link>
@@ -117,7 +117,7 @@ const Navbar = ({
               to="/events"
               onClick={closeSidebar}
               className={`nav-link-mobile px-4 py-3 mb-2 font-bold rounded-lg uppercase text-xl tracking-wide transition-all duration-300 transform ${animateItems ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}`}
-              style={{ transitionDelay: '100ms' }}
+              style={{ transitionDelay: '150ms' }}
             >
               EVENTS
             </Link>
@@ -132,7 +132,7 @@ const Navbar = ({
               to="/contact-us"
               onClick={closeSidebar}
               className={`nav-link-mobile px-4 py-3 mb-2 font-bold rounded-lg uppercase text-xl tracking-wide transition-all duration-300 transform ${animateItems ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}`}
-              style={{ transitionDelay: '250ms' }}
+              style={{ transitionDelay: '200ms' }}
             >
               CONTACT US
             </Link>
@@ -156,7 +156,7 @@ const Navbar = ({
               to="/merch"
               onClick={closeSidebar}
               className={`nav-link-mobile px-4 py-3 mb-2 font-bold rounded-lg uppercase text-xl tracking-wide transition-all duration-300 transform ${animateItems ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}`}
-              style={{ transitionDelay: '300ms' }}
+              style={{ transitionDelay: '350ms' }}
             >
               MERCH
             </Link>
