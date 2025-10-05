@@ -7,7 +7,7 @@ import { MerchCard } from '../components/MerchCard'
 import Navbar from '../components/landingpage/navbar'
 import Button from '../components/buttons'
 import Footer from '../components/landingpage/footer'
-import comingSoon from '../assets/comingsoon.png'
+import comingSoon from '../assets/comingsoon.webp'
 
 const BackgroundTitle = () => (
   <div className="w-full text-center">
