@@ -26,6 +26,8 @@ dist-ssr
 
 # ESLint cache (explicitly ignored if generated locally)
 .eslintcache
+#
+.env
 
 
 .wrangler

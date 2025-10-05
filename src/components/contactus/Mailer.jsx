@@ -1,29 +1,33 @@
-import React, { useState } from "react";
-import emailjs from "@emailjs/browser";
+import React, { useState } from 'react'
+import emailjs from '@emailjs/browser'
 
 export default function Mailer() {
-  const [loading, setLoading] = useState(false);
-  const [status, setStatus] = useState("");
+  const [loading, setLoading] = useState(false)
+  const [status, setStatus] = useState('')
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-    setLoading(true);
-    setStatus("");
+  const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+  const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID
+  const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
+
+  const sendEmail = e => {
+    e.preventDefault()
+    setLoading(true)
+    setStatus('')
 
     emailjs
       .sendForm(
-        "", // replace with your EmailJS Service ID
-        "", // replace with your EmailJS Template ID
+        serviceID,
+        templateID,
         e.target, // form element
-        "" // replace with your EmailJS Public Key
+        publicKey
       )
       .then(() => {
-        setStatus("Message sent successfully!");
-        e.target.reset();
+        setStatus('Message sent successfully!')
+        e.target.reset()
       })
-      .catch(() => setStatus("Failed to send message. Try again."))
-      .finally(() => setLoading(false));
-  };
+      .catch(() => setStatus('Failed to send message. Try again.'))
+      .finally(() => setLoading(false))
+  }
 
   return (
     <div className="flex items-center justify-center p-2 font-sans">
@@ -68,12 +72,12 @@ export default function Mailer() {
             disabled={loading}
             className="mt-4 bg-black text-white font-bold text-lg py-3 px-6 rounded-[37.5px] border-[3px] border-black hover:bg-gray-800 transition-all duration-300 disabled:opacity-50"
           >
-            {loading ? "Sending..." : "Send Message"}
+            {loading ? 'Sending...' : 'Send Message'}
           </button>
 
           {status && <p className="mt-2 text-center font-bold">{status}</p>}
         </form>
       </div>
     </div>
-  );
+  )
 }

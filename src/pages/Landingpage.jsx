@@ -31,7 +31,6 @@ const Landingpage = () => {
           />
         </div>
 
-        {/* Spacer pushes footer down */}
         <div className="flex-grow"></div>
 
         {/* Footer */}
