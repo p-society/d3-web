@@ -125,12 +125,12 @@ const SponsorsComponent = ({ isLoaded }) => {
       <img
         src={circleImage}
         alt=""
-        className="w-24 lg:w-32 h-auto object-contain absolute top-0 left-0 hidden md:block"
+        className="w-24 lg:w-48 h-auto object-contain absolute top-2 left-0 hidden md:block"
       />
       <img
         src={sparklesImage}
         alt=""
-        className="w-24 lg:w-32 h-auto object-contain absolute top-0 right-0 hidden md:block"
+        className="w-24 lg:w-48 h-auto object-contain absolute top-0 right-0 hidden md:block"
       />
 
       <div className="flex flex-col gap-16 sm:gap-20 pt-2">

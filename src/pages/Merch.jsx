@@ -7,6 +7,7 @@ import { MerchCard } from '../components/MerchCard'
 import Navbar from '../components/landingpage/navbar'
 import Button from '../components/buttons'
 import Footer from '../components/landingpage/footer'
+import comingSoon from '../assets/comingsoon.png'
 
 const BackgroundTitle = () => (
   <div className="w-full text-center">
@@ -100,8 +101,18 @@ export const Merch = () => {
           {/* Cards */}
           <div className="col-span-3 flex flex-col items-center w-full gap-6">
             <div className="flex flex-col md:flex-row justify-center items-center gap-6 w-full">
-              <MerchCard cardText="Front View" isLoaded={isLoaded} delay="750ms" />
-              <MerchCard cardText="Back View" isLoaded={isLoaded} delay="800ms" />
+              <MerchCard
+                cardText="Front View"
+                isLoaded={isLoaded}
+                imageSrc={comingSoon}
+                delay="750ms"
+              />
+              <MerchCard
+                cardText="Back View"
+                isLoaded={isLoaded}
+                imageSrc={comingSoon}
+                delay="800ms"
+              />
             </div>
 
             {/* Buy button */}
