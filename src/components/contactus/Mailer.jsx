@@ -5,6 +5,10 @@ export default function Mailer() {
   const [loading, setLoading] = useState(false)
   const [status, setStatus] = useState('')
 
+  const serviceID = 'service_3frv7g8'
+  const publicKey = 'YXATuwgrhfccevWDK'
+  const templateID = 'template_x8ub55q'
+
   const sendEmail = e => {
     e.preventDefault()
     setLoading(true)
@@ -12,10 +16,10 @@ export default function Mailer() {
 
     emailjs
       .sendForm(
-        '', // replace with your EmailJS Service ID
-        '', // replace with your EmailJS Template ID
+        serviceID,
+        templateID,
         e.target, // form element
-        '' // replace with your EmailJS Public Key
+        publicKey
       )
       .then(() => {
         setStatus('Message sent successfully!')
