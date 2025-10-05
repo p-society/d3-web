@@ -14,12 +14,13 @@ const ContactUs = () => {
       {/* Centered container wrapper */}
       <div className="max-w-screen-2xl mx-auto w-full flex-grow flex flex-col">
         {/* Navbar with animation */}
-        <div
+
+        <Navbar isLoaded={isLoaded} />
+        {/* <div
           className={`w-full flex justify-center pt-2 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-3'}`}
           style={{ transitionDelay: '100ms' }}
         >
-          <Navbar isLoaded={isLoaded} />
-        </div>
+        </div> */}
 
         <div className="flex-grow flex flex-col">
           {/* ContactHeader with animation */}

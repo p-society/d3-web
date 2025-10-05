@@ -28,3 +28,6 @@ dist-ssr
 .eslintcache
 #
 .env
+
+
+.wrangler
