@@ -7,13 +7,13 @@ import decorLogo from '../../assets/decorBottom.webp'
 const Footer = ({ isLoaded }) => {
   return (
     <div
-      className={`relative bottom-0 left-0 right-0 z-30 px-2 phone:px-4 sm:px-8 pb-2 phone:pb-4 sm:pb-6 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
+      className={`relative bottom-0 left-0 right-0 z-30 px-2 phone:px-4 sm:px-8 pb-2 phone:pb-4 sm:pb-6 transition-all duration-700 ease-out pointer-events-none ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
       style={{ transitionDelay: '700ms' }}
     >
-      <div className="flex justify-between items-end">
+      <div className="flex justify-between items-end pointer-events-none">
         {/* D3 Logo section - left side */}
         <div
-          className={`flex flex-col transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
+          className={`flex flex-col transition-all duration-700 ease-out pointer-events-auto ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
           style={{ transitionDelay: '800ms' }}
         >
           <img src={d3Logo} alt="D3 Logo" className="w-32 phone:w-40 sm:w-48 md:w-64" />
@@ -25,7 +25,7 @@ const Footer = ({ isLoaded }) => {
         </div>
 
         {/* Social Icons - right side */}
-        <div className="flex gap-2 phone:gap-3 sm:gap-6 pb-1 phone:pb-2 sm:pb-4">
+        <div className="flex gap-2 phone:gap-3 sm:gap-6 pb-1 phone:pb-2 sm:pb-4 pointer-events-auto">
           <a
             href="https://www.instagram.com/d3fest.iiitbh/"
             target="_blank"
