@@ -5,9 +5,9 @@ export default function Mailer() {
   const [loading, setLoading] = useState(false)
   const [status, setStatus] = useState('')
 
-  const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-  const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID
-  const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
+  const serviceID = 'service_3frv7g8'
+  const publicKey = 'YXATuwgrhfccevWDK'
+  const templateID = 'template_x8ub55q'
 
   const sendEmail = e => {
     e.preventDefault()
