@@ -33,12 +33,12 @@ const Hero = ({ isLoaded }) => {
         style={{ transitionDelay: '300ms' }}
       >
         <div className="flex justify-between px-2 phone:px-3 sm:px-4 lg:px-16 pt-4 phone:pt-6 sm:pt-8 lg:pt-2">
-          <div className="ml-2 phone:ml-4 sm:ml-10 lg:mb-4 flex flex-col h-full pt-2 phone:pt-3 sm:pt-4">
+          <div className="ml-2 phone:ml-4 sm:ml-10 lg:mb-4 flex flex-col h-full pt-2 phone:pt-3 sm:pt-2">
             <h1 className="text-white font-bold leading-none flex-1 flex flex-col lemon-smash-font">
-              <div className="text-3xl phone:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[125px] flex items-center -mb-2 phone:-mb-3 sm:-mb-4 lg:-mb-6">
+              <div className="text-3xl phone:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[125px] flex items-center -mb-2 phone:-mb-3 sm:-mb-2 lg:-mb-2 xl:-mb-6">
                 dare
               </div>
-              <div className="text-3xl phone:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[125px] flex items-center -mb-2 phone:-mb-3 sm:-mb-4 lg:-mb-6">
+              <div className="text-3xl phone:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[125px] flex items-center -mb-2 phone:-mb-3 sm:-mb-2 lg:-mb-2">
                 dream
               </div>
               <div className="text-3xl phone:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[125px] flex items-center">
