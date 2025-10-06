@@ -12,10 +12,10 @@ import comingSoon from '../assets/comingsoon.webp'
 const BackgroundTitle = () => (
   <div className="w-full text-center">
     <span className="text-[#FF8C34] text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-['Alfa_Slab_One']">
-      DARE
+      DREAM
     </span>
     <span className="text-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-['Alfa_Slab_One']">
-      , DREAM ,
+      , DARE,
     </span>
     <span className="text-[#ED4F30] text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-['Alfa_Slab_One']">
       DEVELOP
