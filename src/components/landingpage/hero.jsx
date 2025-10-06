@@ -6,6 +6,7 @@ import Sidebar from './sidebar'
 import Grid from './grid'
 import './hero.css'
 import tvscreen from '../../assets/tvscreen.gif'
+import brochurePdf from '../../assets/d3brochure.pdf'
 
 const Hero = ({ isLoaded }) => {
   const navigate = useNavigate()
@@ -16,7 +17,7 @@ const Hero = ({ isLoaded }) => {
 
   const handleDownload = () => {
     const link = document.createElement('a')
-    link.href = '/brochure.pdf'
+    link.href = brochurePdf
     link.download = 'D3-TechnoFest-Brochure.pdf'
     link.click()
   }
