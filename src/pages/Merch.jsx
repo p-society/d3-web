@@ -12,10 +12,10 @@ import comingSoon from '../assets/comingsoon.webp'
 const BackgroundTitle = () => (
   <div className="w-full text-center">
     <span className="text-[#FF8C34] text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-['Alfa_Slab_One']">
-      DARE
+      DREAM
     </span>
     <span className="text-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-['Alfa_Slab_One']">
-      , DREAM ,
+      , DARE,
     </span>
     <span className="text-[#ED4F30] text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-['Alfa_Slab_One']">
       DEVELOP
@@ -38,7 +38,7 @@ export const Merch = () => {
         <Navbar isLoaded={isLoaded} />
       </div>
 
-      <main className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 flex flex-col gap-12">
+      <main className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 flex flex-col gap-12 flex-grow">
         {/* Background Titles & Merch Banner */}
         <section className="relative flex flex-col items-center pt-7 gap-3 sm:gap-4 md:gap-6">
           {['0ms', '100ms', '200ms', '300ms'].map((delay, idx) => (
@@ -122,7 +122,7 @@ export const Merch = () => {
               }`}
               style={{ transitionDelay: '850ms' }}
             >
-              <Button className="bg-blue-400 hover:bg-blue-500 font-aclonica">BUY NOW</Button>
+              <Button className="bg-blue-400 hover:bg-blue-500 font-aclonica">COMING SOON</Button>
             </div>
           </div>
 

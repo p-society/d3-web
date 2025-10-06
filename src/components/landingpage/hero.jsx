@@ -60,7 +60,7 @@ const Hero = ({ isLoaded }) => {
                   style={{ backgroundImage: `url(${tvscreen})`, backgroundSize: 'cover' }}
                 >
                   <span className="px-4 py-2 rounded-lg font-bold text-lg sm:text-2xl coming-text">
-                    8-10<sup>th</sup> November
+                    7<sup>th</sup>-9<sup>th</sup> November
                   </span>
                 </div>
               </div>
