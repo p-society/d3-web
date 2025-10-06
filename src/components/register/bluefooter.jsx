@@ -9,7 +9,7 @@ function Bluefooter() {
 
   return (
     <div
-      className={`relative transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
+      className={`relative flex justify-center transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
       style={{ transitionDelay: '400ms' }}
     >
       {/* <img
@@ -18,8 +18,8 @@ function Bluefooter() {
           className="absolute -top-[45px] -left-[3px] w-[60px] h-[60px] z-20"
         /> */}
 
-      <div className="absolute inset-0 max-w-4xl bg-black rounded-[37.5px] "></div>
-      <div className="relative z-10 bg-white rounded-[37.5px] border-[3px] border-black p-6 w-full md:w-2xl max-w-4xl flex flex-col items-center  md:space-y-2 transform -translate-x-4 -translate-y-4 md:pl-10 md:pr-10 ">
+      <div className="absolute w-full md:w-2xl max-w-4xl h-full bg-black rounded-[37.5px] transform translate-y-[10px] translate-x-[10px] z-0"></div>
+      <div className="relative z-10 bg-white rounded-[37.5px] border-[3px] border-black p-6 w-full md:w-2xl max-w-4xl flex flex-col items-center  md:space-y-2  md:pl-10 md:pr-10 ">
         {/* <img
             src={curlArrow}
             alt="arrow"
