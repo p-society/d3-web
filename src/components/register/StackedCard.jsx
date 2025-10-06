@@ -15,7 +15,7 @@ const StackedCard = ({
       <img
         src={arrowImage}
         alt="Arrow decoration"
-        className="hidden sm:block absolute -top-22 -right-36 w-16 h-16 lg:w-24 lg:h-34 z-20 pointer-events-none select-none"
+        className="hidden sm:block absolute -top-22 -right-36 w-16 h-16 md:-right-25 lg:-right-35 lg:w-24 lg:h-34 z-20 pointer-events-none select-none"
         style={{}}
       />
 
@@ -26,7 +26,7 @@ const StackedCard = ({
       ></div>
 
       {/* Main card */}
-      <div className="relative bg-[#FFEABB] rounded-2xl p-6 lg:p-8 shadow-xl border-2 border-black w-full max-w-2xl">
+      <div className="relative bg-[#FFEABB] rounded-2xl p-6 lg:p-8 shadow-xl border-2 border-black max-w-2xl w-[95%] mx-auto sm:w-[90%] md:w-[95%] md:max-w-lg">
         {/* Card header with title */}
         <div className="mb-4">
           <h3
