@@ -4,32 +4,12 @@ import StackedCard from './StackedCard'
 import RegistrationsBanner from './RegistrationsBanner'
 import GroupImage from '../../assets/Group.webp'
 import FrameImage from '../../assets/Frame.webp'
-import Navbar from '../landingpage/navbar'
-import Footer from '../landingpage/footer'
 
 const RegisterHero = ({ isLoaded }) => {
   return (
-    <div
-      className={`bg-[#3366FF] min-h-screen overflow-x-hidden pb-14 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
-      style={{ transitionDelay: '100ms' }}
-    >
-      {/* Navbar (on top, centered) */}
-      <div className="w-full flex justify-center relative z-50 pt-2">
-        <Navbar
-          isLoaded={isLoaded}
-          color="#FFEAAB" // Desktop link text color (light yellow)
-          borderColor="#FFEAAB" // Desktop border color (light yellow)
-          hoverColor="#FFEAAB" // Hover background for both desktop and mobile (light yellow)
-          hoverTextColor="#000000" // Hover text color for both (black)
-          sidebarBg="#3366FF" // Mobile sidebar background (blue)
-          mobileTextColor="#FFFFFF" // Mobile sidebar text color (white, for contrast)
-          hamburgerColor="#3366FF" // Hamburger lines color (blue on the yellow button)
-        />
-      </div>
-
+    <div>
       {/* Main content container */}
       <div className="relative z-10 max-w-6xl mx-auto mt-8">
-        {/* Responsive layout: single column for mobile/sm, two columns for md and above */}
         {/* Responsive: single column for <md, two columns for md+ */}
         <div className="flex flex-col md:grid md:grid-cols-2 gap-8 mb-8 md:mb-16">
           {/* Left column for md+, main column for mobile */}
@@ -40,7 +20,7 @@ const RegisterHero = ({ isLoaded }) => {
               style={{ transitionDelay: '300ms' }}
             >
               <h1
-                className="text-4xl md:text-5xl lg:text-6xl mb-6 leading-tight"
+                className="text-4xl md:text-5xl lg:text-6xl mb-6 ml-2 leading-tight"
                 style={{ fontFamily: 'Alfa Slab One', color: '#FFEABB' }}
               >
                 Unleash
@@ -49,7 +29,7 @@ const RegisterHero = ({ isLoaded }) => {
               </h1>
 
               {/* Registrations Banner - positioned at top right for md+, below title for mobile */}
-              <div className="md:absolute md:-right-18 lg:-right-60 md:top-3 flex justify-center md:block mt-4 md:mt-0">
+              <div className="md:absolute md:-right-35 lg:-right-60 md:top-0 lg:top-5 flex justify-center md:block mt-4 md:mt-0">
                 <div className="transform rotate-[7deg]">
                   <RegistrationsBanner />
                 </div>
@@ -155,7 +135,6 @@ const RegisterHero = ({ isLoaded }) => {
       >
         <Register />
       </div>
-      <Footer isLoaded={isLoaded} />
     </div>
   )
 }
