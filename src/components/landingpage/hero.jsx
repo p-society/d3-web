@@ -36,10 +36,10 @@ const Hero = ({ isLoaded }) => {
           <div className="ml-2 phone:ml-4 sm:ml-10 lg:mb-4 flex flex-col h-full pt-2 phone:pt-3 sm:pt-2">
             <h1 className="text-white font-bold leading-none flex-1 flex flex-col lemon-smash-font">
               <div className="text-3xl phone:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[125px] flex items-center -mb-2 phone:-mb-3 sm:-mb-2 lg:-mb-2 xl:-mb-5">
-                dare
+                dream
               </div>
               <div className="text-3xl phone:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[125px] flex items-center -mb-2 phone:-mb-3 sm:-mb-2 lg:-mb-2 xl:-mb-5">
-                dream
+                dare
               </div>
               <div className="text-3xl phone:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[125px] flex items-center">
                 develop
