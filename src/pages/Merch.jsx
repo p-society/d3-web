@@ -38,7 +38,7 @@ export const Merch = () => {
         <Navbar isLoaded={isLoaded} />
       </div>
 
-      <main className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 flex flex-col gap-12">
+      <main className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 flex flex-col gap-12 flex-grow">
         {/* Background Titles & Merch Banner */}
         <section className="relative flex flex-col items-center pt-7 gap-3 sm:gap-4 md:gap-6">
           {['0ms', '100ms', '200ms', '300ms'].map((delay, idx) => (
