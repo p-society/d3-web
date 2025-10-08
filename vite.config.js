@@ -8,6 +8,7 @@ export default defineConfig({
     react(),
     sitemap({
       hostname: 'https://d3.techsoc-iiitbbsr.com',
+      urls: ['/', '/about-us', '/events', '/register', '/merch', '/sponsor', '/contact-us'],
     }),
   ],
   server: {
