@@ -72,7 +72,7 @@ const ForegroundCard = ({
         </p>
 
         <Button href={applyLink} className="w-full md:w-auto">
-          Coming Soon
+          Register Now
         </Button>
       </div>
     </div>
