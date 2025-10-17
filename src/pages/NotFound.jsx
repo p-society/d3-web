@@ -69,8 +69,8 @@ const NotFound = () => {
             className={`absolute bottom-48 left-1/2 transform -translate-x-1/2 text-center max-w-md px-4 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
             style={{ transitionDelay: '500ms' }}
           >
-            <p className="text-black text-sm sm:text-base font-mono lowercase mb-6 opacity-90">
-              oops! the page you're looking for seems to have crashed. don't worry, even the best
+            <p className="text-black text-sm sm:text-base mb-6 bold opacity-90">
+              Oops! The page you're looking for seems to have crashed. Don't worry, even the best
               systems have their glitches.
             </p>
 

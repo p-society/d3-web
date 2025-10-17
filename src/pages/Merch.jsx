@@ -7,7 +7,8 @@ import { MerchCard } from '../components/MerchCard'
 import Navbar from '../components/landingpage/navbar'
 import Button from '../components/buttons'
 import Footer from '../components/landingpage/footer'
-import comingSoon from '../assets/comingsoon.webp'
+import frontMerch from '../assets/front.webp'
+import backMerch from '../assets/back.webp'
 
 const BackgroundTitle = () => (
   <div className="w-full text-center">
@@ -104,13 +105,13 @@ export const Merch = () => {
               <MerchCard
                 cardText="Front View"
                 isLoaded={isLoaded}
-                imageSrc={comingSoon}
+                imageSrc={frontMerch}
                 delay="750ms"
               />
               <MerchCard
                 cardText="Back View"
                 isLoaded={isLoaded}
-                imageSrc={comingSoon}
+                imageSrc={backMerch}
                 delay="800ms"
               />
             </div>

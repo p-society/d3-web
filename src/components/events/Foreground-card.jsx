@@ -65,9 +65,7 @@ const ForegroundCard = ({
           />
         </div>
 
-        <p
-          className={`max-w-[610px] text-black text-base sm:text-xl font-['Cascadia_Code'] lowercase`}
-        >
+        <p className={`max-w-[610px] text-black text-base sm:text-xl font-['Cascadia_Code'] `}>
           {eventDescription}
         </p>
 

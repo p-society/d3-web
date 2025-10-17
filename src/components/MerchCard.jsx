@@ -51,7 +51,7 @@ export const MerchCard = ({ cardText = 'Front View', imageSrc, isLoaded, delay =
         ))}
 
         {/* Product Image */}
-        <div className="absolute w-[61.6%] h-[75%] left-1/2 top-0 transform -translate-x-1/2 flex items-center justify-center">
+        <div className="absolute w-[85.6%] h-[95%] left-1/2 top-0 transform -translate-x-1/2 flex items-center justify-center">
           {imageSrc && (
             <img
               src={imageSrc}
@@ -67,7 +67,7 @@ export const MerchCard = ({ cardText = 'Front View', imageSrc, isLoaded, delay =
         {/* Text */}
         <div
           style={{ fontFamily: 'Aclonica', transitionDelay: '300ms' }}
-          className={`absolute w-[70.2%] left-[16.7%] top-[79.1%] text-center text-[#FFEABB] text-lg sm:text-xl md:text-xl lg:text-2xl font-aclonica font-normal leading-tight transition-all duration-700 ease-out ${
+          className={`absolute w-[70.2%] left-[16.7%] top-[89.1%] text-center text-[#FFEABB] text-lg sm:text-xl md:text-xl lg:text-2xl font-aclonica font-normal leading-tight transition-all duration-700 ease-out ${
             isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'
           }`}
         >

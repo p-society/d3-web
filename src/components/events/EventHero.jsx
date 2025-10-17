@@ -26,7 +26,7 @@ const EventHero = ({ isLoaded }) => {
             Our Premier Events
           </h1>
           <p
-            className={`max-w-lg text-lg text-black font-['Cascadia_Code'] text-center leading-10  lowercase mb-0 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
+            className={`max-w-lg text-lg text-black font-['Cascadia_Code'] text-center leading-10  mb-0 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
             style={{ transitionDelay: '600ms' }}
           >
             Explore a series of engaging and innovative events designed to challenge and inspire.

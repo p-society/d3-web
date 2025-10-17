@@ -47,5 +47,12 @@ body {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'CooperBlack';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./assets/CooperBlack-Std.woff') format('woff');
+}
+
 /* Example utility overrides / custom classes (optional) */
 /* .btn-primary { @apply px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white font-medium rounded; } */

@@ -100,7 +100,7 @@ const Navbar = ({
             <Link
               to="/"
               onClick={closeSidebar}
-              className={`nav-link-mobile px-4 py-3 mb-2 rounded-lg font-bold uppercase text-xl tracking-wide transition-all duration-300 transform ${animateItems ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}`}
+              className={`nav-link-mobile px-4 py-3 mb-2 rounded-lg font-[CooperBlack] uppercase text-xl tracking-wide transition-all duration-300 transform ${animateItems ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}`}
               style={{ transitionDelay: '50ms' }}
             >
               HOME
@@ -108,7 +108,7 @@ const Navbar = ({
             <Link
               to="/about-us"
               onClick={closeSidebar}
-              className={`nav-link-mobile px-4 py-3 mb-2 rounded-lg font-bold uppercase text-xl tracking-wide transition-all duration-300 transform ${animateItems ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}`}
+              className={`nav-link-mobile px-4 py-3 mb-2 rounded-lg font-[CooperBlack] uppercase text-xl tracking-wide transition-all duration-300 transform ${animateItems ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}`}
               style={{ transitionDelay: '100ms' }}
             >
               ABOUT US
@@ -116,14 +116,14 @@ const Navbar = ({
             <Link
               to="/events"
               onClick={closeSidebar}
-              className={`nav-link-mobile px-4 py-3 mb-2 font-bold rounded-lg uppercase text-xl tracking-wide transition-all duration-300 transform ${animateItems ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}`}
+              className={`nav-link-mobile px-4 py-3 mb-2 font-[CooperBlack] rounded-lg uppercase text-xl tracking-wide transition-all duration-300 transform ${animateItems ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}`}
               style={{ transitionDelay: '150ms' }}
             >
               EVENTS
             </Link>
             {/* <button
               onClick={closeSidebar}
-              className={`nav-link-mobile px-4 py-3 mb-2 font-bold rounded-lg uppercase text-xl tracking-wide transition-all duration-300 transform ${animateItems ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'} text-left`}
+              className={`nav-link-mobile px-4 py-3 mb-2 font-[CooperBlack] rounded-lg uppercase text-xl tracking-wide transition-all duration-300 transform ${animateItems ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'} text-left`}
               style={{ transitionDelay: '150ms' }}
             >
               MERCH
@@ -131,7 +131,7 @@ const Navbar = ({
             <Link
               to="/contact-us"
               onClick={closeSidebar}
-              className={`nav-link-mobile px-4 py-3 mb-2 font-bold rounded-lg uppercase text-xl tracking-wide transition-all duration-300 transform ${animateItems ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}`}
+              className={`nav-link-mobile px-4 py-3 mb-2 font-[CooperBlack] rounded-lg uppercase text-xl tracking-wide transition-all duration-300 transform ${animateItems ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}`}
               style={{ transitionDelay: '200ms' }}
             >
               CONTACT US
@@ -139,7 +139,7 @@ const Navbar = ({
             <Link
               to="/register"
               onClick={closeSidebar}
-              className={`nav-link-mobile px-4 py-3 mb-2 font-bold rounded-lg uppercase text-xl tracking-wide transition-all duration-300 transform ${animateItems ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}`}
+              className={`nav-link-mobile px-4 py-3 mb-2 font-[CooperBlack] rounded-lg uppercase text-xl tracking-wide transition-all duration-300 transform ${animateItems ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}`}
               style={{ transitionDelay: '250ms' }}
             >
               REGISTER
@@ -147,7 +147,7 @@ const Navbar = ({
             <Link
               to="/sponsors"
               onClick={closeSidebar}
-              className={`nav-link-mobile px-4 py-3 mb-2 font-bold rounded-lg uppercase text-xl tracking-wide transition-all duration-300 transform ${animateItems ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}`}
+              className={`nav-link-mobile px-4 py-3 mb-2 font-[CooperBlack] rounded-lg uppercase text-xl tracking-wide transition-all duration-300 transform ${animateItems ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}`}
               style={{ transitionDelay: '300ms' }}
             >
               SPONSORS
@@ -155,7 +155,7 @@ const Navbar = ({
             <Link
               to="/merch"
               onClick={closeSidebar}
-              className={`nav-link-mobile px-4 py-3 mb-2 font-bold rounded-lg uppercase text-xl tracking-wide transition-all duration-300 transform ${animateItems ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}`}
+              className={`nav-link-mobile px-4 py-3 mb-2 font-[CooperBlack] rounded-lg uppercase text-xl tracking-wide transition-all duration-300 transform ${animateItems ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}`}
               style={{ transitionDelay: '350ms' }}
             >
               MERCH
@@ -169,47 +169,47 @@ const Navbar = ({
         className={`hidden lg:block z-20 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
         style={{ transitionDelay: '100ms' }}
       >
-        <div className="bg-transparent border-2 nav-border rounded-2xl p-2 backdrop-blur-sm">
+        <div className="bg-transparent border-3 nav-border rounded-2xl p-2 backdrop-blur-sm">
           <div className="flex gap-5 items-center justify-center px-2">
             <Link
               to="/"
-              className="nav-link-desktop px-4 py-2 rounded-lg font-bold uppercase text-xl tracking-wide transition-colors"
+              className="nav-link-desktop px-4 py-2 rounded-lg font-[CooperBlack] uppercase text-xl tracking-wide transition-colors"
             >
               HOME
             </Link>
             <Link
               to="/about-us"
-              className="nav-link-desktop px-4 py-2 rounded-lg font-bold uppercase text-xl tracking-wide transition-colors"
+              className="nav-link-desktop px-4 py-2 rounded-lg font-[CooperBlack] uppercase text-xl tracking-wide transition-colors"
             >
               ABOUT US
             </Link>
             <Link
               to="/events"
-              className="nav-link-desktop px-4 py-2 font-bold rounded-lg uppercase text-xl tracking-wide transition-colors"
+              className="nav-link-desktop px-4 py-2 font-[CooperBlack] rounded-lg uppercase text-xl tracking-wide transition-colors"
             >
               EVENTS
             </Link>
             <Link
               to="/contact-us"
-              className="nav-link-desktop px-4 py-2 font-bold rounded-lg uppercase text-xl tracking-wide transition-colors"
+              className="nav-link-desktop px-4 py-2 font-[CooperBlack] rounded-lg uppercase text-xl tracking-wide transition-colors"
             >
               CONTACT US
             </Link>
             <Link
               to="/register"
-              className="nav-link-desktop px-4 py-2 font-bold rounded-lg uppercase text-xl tracking-wide transition-colors"
+              className="nav-link-desktop px-4 py-2 font-[CooperBlack] rounded-lg uppercase text-xl tracking-wide transition-colors"
             >
               REGISTER
             </Link>
             <Link
               to="/sponsors"
-              className="nav-link-desktop px-4 py-2 font-bold rounded-lg uppercase text-xl tracking-wide transition-colors"
+              className="nav-link-desktop px-4 py-2 font-[CooperBlack] rounded-lg uppercase text-xl tracking-wide transition-colors"
             >
               SPONSORS
             </Link>
             <Link
               to="/merch"
-              className="nav-link-desktop px-4 py-2 font-bold rounded-lg uppercase text-xl tracking-wide transition-colors"
+              className="nav-link-desktop px-4 py-2 font-[CooperBlack] rounded-lg uppercase text-xl tracking-wide transition-colors"
             >
               MERCH
             </Link>

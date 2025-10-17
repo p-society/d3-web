@@ -68,7 +68,7 @@ const Hero = ({ isLoaded }) => {
             </div>
 
             <div className="mb-1 phone:mb-2 sm:mb-2 pt-16 phone:pt-18 sm:pt-22 lg:pt-18 max-w-xs phone:max-w-sm sm:max-w-lg text-left">
-              <p className="text-white text-xs phone:text-sm md:text-base font-mono lowercase">
+              <p className="text-white text-xs phone:text-sm md:text-base font-mono">
                 Get ready to rewind the past and fast-forward the future at D3 Techno Fest! Brought
                 to life by the Tech and Robotics Societies of IIIT Bhubaneswar.
               </p>
