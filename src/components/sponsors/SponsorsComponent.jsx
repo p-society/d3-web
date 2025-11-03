@@ -22,7 +22,10 @@ import nfsu from '../../assets/nfsu.webp'
 import rvu from '../../assets/rvu.webp'
 import svce from '../../assets/svce.webp'
 
-const sponsorLogos = [Logo, Logo, Logo, Logo, Logo, Logo, Logo]
+import hamleys from '../../assets/hamleys.webp'
+import aeropioneer from '../../assets/aeropioneer.webp'
+
+const sponsorLogos = [hamleys, aeropioneer, hamleys, aeropioneer, hamleys, aeropioneer]
 
 const coOrganiserLogos = [iete, ietl, iiitbgp, issacc, logo, mitj, nitj, nsut, sitp, vitap, vitc]
 
@@ -202,7 +205,7 @@ const SponsorsComponent = ({ isLoaded }) => {
                   <img
                     src={logo}
                     alt={`Logo ${Math.floor(index / 4) + 1}`}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                   />
                 </div>
               </li>
