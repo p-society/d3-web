@@ -4,6 +4,8 @@ import Button from '../buttons'
 const ForegroundCard = ({
   eventName,
   eventDescription,
+  eventLocation,
+  eventTime,
   applyLink,
   imagePosition = 'left',
   imageSrc,
@@ -46,7 +48,7 @@ const ForegroundCard = ({
 
       {/* Content Section */}
       <div
-        className={`max-w-[630px] flex flex-col gap-4 sm:gap-9 flex-shrink-0 items-center text-center md:items-start md:text-left ${
+        className={`max-w-[630px] flex flex-col gap-4 flex-shrink-0 items-center text-center md:items-start md:text-left ${
           isImageLeft ? 'md:items-start' : 'md:items-end md:text-right'
         }`}
       >
@@ -69,6 +71,16 @@ const ForegroundCard = ({
           {eventDescription}
         </p>
 
+        <div
+          className={`flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6 text-black font-['Cascadia_Code'] sm:text-lg `}
+        >
+          <span className="px-2 bg-lime-200 border-2 border-black rounded-full">
+            📍 <span className="font-semibold">{eventLocation}</span>
+          </span>
+          <span className="px-2 bg-sky-200 border-2 border-black rounded-full">
+            ⏰ <span className="font-semibold">{eventTime}</span>
+          </span>
+        </div>
         <Button href={applyLink} className="w-full md:w-auto">
           Register Now
         </Button>
