@@ -1,5 +1,13 @@
 import React from 'react'
 import Button from '../buttons'
+import timelinePdf from '../../assets/d3timeline.pdf'
+
+const handleDownload = () => {
+  const link = document.createElement('a')
+  link.href = timelinePdf
+  link.download = 'D3-TechFest-Timeline.pdf'
+  link.click()
+}
 
 const EventHero = ({ isLoaded }) => {
   return (
@@ -18,7 +26,7 @@ const EventHero = ({ isLoaded }) => {
         </div> */}
 
         {/* Right Side: Content */}
-        <div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left order-2">
+        <div className="w-full md:w-1/2 flex flex-col items-center text-center md:text-left order-2">
           <h1
             className={`text-5xl md:text-6xl font-bold text-black mb-6 font-['ADLaM_Display'] leading-tight transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
             style={{ transitionDelay: '500ms' }}
@@ -26,7 +34,7 @@ const EventHero = ({ isLoaded }) => {
             Our Premier Events
           </h1>
           <p
-            className={`max-w-lg text-lg text-black font-['Cascadia_Code'] text-center leading-10  mb-0 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
+            className={`max-w-lg text-lg text-black font-['Cascadia_Code'] text-center leading-10 mb-3 transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
             style={{ transitionDelay: '600ms' }}
           >
             Explore a series of engaging and innovative events designed to challenge and inspire.
@@ -36,12 +44,9 @@ const EventHero = ({ isLoaded }) => {
             className={`transition-all duration-700 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
             style={{ transitionDelay: '700ms' }}
           >
-            {/* <Button
-              onClick={() => console.log('Register Now clicked')}
-              className="w-auto" // Keeps the button from being full-width
-            >
-              REGISTER NOW
-            </Button> */}
+            <Button onClick={handleDownload} className="font-['Cascadia_Code']">
+              Event Schedule
+            </Button>
           </div>
         </div>
       </div>
